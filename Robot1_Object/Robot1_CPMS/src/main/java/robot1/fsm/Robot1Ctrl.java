@@ -2,11 +2,17 @@ package robot1.fsm;
 
 
 
+import org.newsclub.net.unix.AFUNIXServerSocket;
+import org.newsclub.net.unix.AFUNIXSocketAddress;
+import robot1.ConfigurationUtils;
 import robot1.Robot1CpmsApplication;
 import robot1.lwm2m.RobotInstance;
 import uml4iot.GenericStateMachine.core.*;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.FileHandler;
@@ -387,11 +393,67 @@ public class Robot1Ctrl extends StateMachine{
         Robot1Ctrl.LOGGER.warning("SubAss1 started.."+"\n");
         pos1avail=true;
      //   RobotInstance.fireResourcesChange(1);
-        try {
+        /*try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }*/
+
+        try (AFUNIXServerSocket server = AFUNIXServerSocket.newInstance()) {
+            server.bind(new AFUNIXSocketAddress(ConfigurationUtils.socketFile));
+            System.out.println("Robot1: " + server);
+
+            //startWorkerTask1(server);
+
+            while (!Thread.interrupted()) {
+                Thread.sleep(1000);
+                System.out.println("Waiting for connection...");
+                String sendText = new JSONObject()
+                        .put("WorkerTask1", "START")
+                        .toString();
+                try (Socket sock = server.accept()) {
+                    System.out.println("Connected: " + sock);
+
+                    try (InputStream is = sock.getInputStream(); //
+                         OutputStream os = sock.getOutputStream()) {
+                        System.out.println("Starting WorkerTask1: " + os);
+                        os.write(sendText.getBytes("UTF-8"));
+                        os.flush();
+
+                        byte[] buf = new byte[128];
+                        int read = is.read(buf);
+                        System.out.println("WorkerTask1's response: " + new String(buf, 0, read, "UTF-8"));
+                        while (!new String(buf,0,read).equals("")){}
+                        if (new String(buf,0,read).equals(new JSONObject()
+                                .put("WorkerTask1", "FINISHED")
+                                .toString())){
+                            System.out.println("WorkerTask1 finished.");
+                            is.close();
+                            os.close();
+                            break;
+                        }
+                    }
+                } catch (Exception e){
+                    if (server.isClosed()) {
+                        //throw e;
+                        e.printStackTrace();
+                    } else {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
         }
+
+        /*try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
+
+
         Robot1Ctrl.LOGGER.warning("SubAss1 completed.."+"\n");
         //notificationQueue.add(new SubAss1Completed());
         SignalDetector.msgQ.add(new SubAss1Completed());

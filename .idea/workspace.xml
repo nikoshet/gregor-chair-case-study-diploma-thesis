@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_common_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_core_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_native_common_2_2_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Robot1_CPMS/target/" />
     <ignored path="$PROJECT_DIR$/Robot2_CPMS/target/" />
@@ -29,7 +28,35 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="407" column="43" lean-forward="true" selection-start-line="407" selection-start-column="43" selection-end-line="407" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,13 +72,17 @@
         <option value="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java" />
         <option value="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java" />
         <option value="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
     <option name="y" value="-4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1084" />
+    <option name="width" value="1855" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -68,13 +99,58 @@
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot1" type="462c0819:PsiDirectoryNode" />
+              <item name="fsm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,14 +198,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="7" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2498618" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14870094" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -293,10 +370,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        <state relative-caret-position="637">
+          <caret line="407" column="43" lean-forward="true" selection-start-line="407" selection-start-column="43" selection-end-line="407" selection-end-column="43" />
         </state>
       </provider>
     </entry>
