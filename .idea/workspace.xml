@@ -2,193 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/robot1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/Robot1CpmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Logger_Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/MessageRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/R1SMEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Robot1CtrlState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/SignalDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/driver/R1Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1AvailSignal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1Reached.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos2Reached.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAss1Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAssW2Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/W2Available.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/AbstractDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Device.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/R1_LwM2m_Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot1App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotInstance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/models/W1_Objects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_CPMS/src/test/java/com/example/demo/Robot1CpmsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/robot2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/ConfigurationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/Robot2CpmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Logger_Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/R2SMEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Robot2Ctrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Robot2CtrlState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/SignalDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/driver/R2Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos1Reached.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos2Reached.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_1Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_2Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAssW2Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/W1Pos2Available.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/W2Available.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/AbstractDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot2LeshanClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/models/R2_Objects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_CPMS/src/test/java/robot2/Robot2CpmsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/robot3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/Robot3CpmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Logger_Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/R1SMEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Robot3Ctrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Robot3CtrlState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/SignalDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/driver/R3Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/signals/SubAssR3Completed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/signals/W1Pos3Available.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/AbstractDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot3LeshanClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotInstance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/models/R3_Objects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_CPMS/src/test/java/robot3/Robot3CpmsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/W1Events.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/ConfigurationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/Workbench1CpmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/Rbt_2_W1_Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1_2_Rbt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/Logger_Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/MessageRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachineIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachineIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachineIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1_App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/RegistrationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanAttributeIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanExecuteIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot1Port.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot2Port.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot3Port.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/RResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/ResourceIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/W1_Objects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/rpi-device.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_CPMS/src/test/java/workbench1/Workbench1CpmsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/ConfigurationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/Workbench2CpmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/Logger_Formatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Ctrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2CtrlState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2SMEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/driver/W2Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/events/W2Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/RegistrationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot1Port.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot2Port.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/RResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/ResourceIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/W2_Objects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/rpi-device.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/src/test/java/workbench2/Workbench2CpmsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/workbench2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_CPMS/workbench2.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Robot1_CPMS/target/" />
     <ignored path="$PROJECT_DIR$/Robot2_CPMS/target/" />
     <ignored path="$PROJECT_DIR$/Robot3_CPMS/target/" />
     <ignored path="$PROJECT_DIR$/Workbench1_CPMS/target/" />
     <ignored path="$PROJECT_DIR$/Workbench2_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,15 +29,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1224" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -227,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="-4" />
     <option name="width" value="1920" />
     <option name="height" value="1084" />
@@ -247,69 +68,13 @@
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-              <item name="lwm2m" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench2_CPMS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
@@ -357,8 +122,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="7" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -531,7 +295,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224" />
+        <state relative-caret-position="141">
+          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        </state>
       </provider>
     </entry>
   </component>

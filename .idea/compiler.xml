@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Robot3_CPMS" />
         <module name="Workbench2_CPMS" />
         <module name="Robot1_CPMS" />
-        <module name="Robot2_CPMS" />
-        <module name="Workbench1_CPMS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

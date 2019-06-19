@@ -1,61 +1,58 @@
 version: "2"
 
 networks:
-  gregor-chair-network:
+  gregor-chair-network-r3:
     driver: bridge
     ipam:
       driver: default
       config:
         - subnet: 172.16.239.0/24
           gateway: 172.16.239.11
+volumes:
+  Robot3socket:
+    driver: "local"
+  Workertask3socket:
+    driver: "local"
 services:
-  w1:
-    build: 
-      context: ./Workbench1_CPMS
-      dockerfile: Dockerfile
-    ports:
-      - "8563:8563/udp"
-    networks:
-      gregor-chair-network:
-        ipv4_address: 172.16.239.10 
-  w2:
-    build: 
-      context: ./Workbench2_CPMS
-      dockerfile: Dockerfile
-    ports:
-      - "8565:8565/udp"
-    networks:
-      gregor-chair-network:
-        ipv4_address: 172.16.239.20 
-  robot1:
-    build: 
-      context: ./Robot1_CPMS
-      dockerfile: Dockerfile
-    networks:
-      gregor-chair-network:
-        ipv4_address: 172.16.239.30 
-    links:
-      - w1
-      - w2
-  robot2:
-    build: 
-      context: ./Robot2_CPMS
-      dockerfile: Dockerfile
-    networks:
-      gregor-chair-network:
-        ipv4_address: 172.16.239.40
-    links:
-      - w1
-      - w2
   robot3:
     build: 
       context: ./Robot3_CPMS
       dockerfile: Dockerfile
     networks:
-      gregor-chair-network:
+      gregor-chair-network-r3:
         ipv4_address: 172.16.239.50
+    volumes:
+      - Robot3socket:/tmp
+    mem_limit: 700m
+  workertask1:
+    build:
+      context: ./Worker_Task3
+      dockerfile: Dockerfile
+    volumes:
+      - Workertask3socket:/tmp
     links:
-      - w1
-      - w2
-
+      - robot2
+    volumes_from:
+      - robot2
+    mem_limit: 700m
+  pickandplace:
+    build:
+      context: ./PickAndPlace
+      dockerfile: Dockerfile
+    links:
+      - workertask3
+    volumes_from:
+      - workertask3
+#    cpus: 0.6
+    mem_limit: 700m
+  pickandinsert:
+    build:
+      context: ./PickAndInsert
+      dockerfile: Dockerfile
+    links:
+      - workertask3
+    volumes_from:
+      - workertask3
+#    cpus: 0.6
+    mem_limit: 700m
 

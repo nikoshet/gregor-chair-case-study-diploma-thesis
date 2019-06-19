@@ -2,9 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Robot1_CPMS" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Robot2_CPMS" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Robot3_CPMS" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Workbench1_CPMS" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Workbench2_CPMS" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS" charset="UTF-8" />
   </component>
 </project>

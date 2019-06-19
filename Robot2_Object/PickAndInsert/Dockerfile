@@ -1,6 +1,8 @@
 FROM python:3
-COPY . /client
-WORKDIR /client
-ENTRYPOINT ["python3","pickAndInsert.py"]
+LABEL MAINTAINER GOCAS
 
+COPY . /pickandinsert
+WORKDIR /pickandinsert
+
+ENTRYPOINT ["python3","PickAndInsert/pickAndInsert.py"]
 

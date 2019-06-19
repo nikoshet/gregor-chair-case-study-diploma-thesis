@@ -1,4 +1,8 @@
 FROM python:3
-COPY . /server
-WORKDIR /server
-ENTRYPOINT ["python3", "unix_server.py"]
+LABEL MAINTAINER GOCAS
+
+COPY . /workertask2
+WORKDIR /workertask2
+
+ENTRYPOINT ["python3", "workerTask2.py"]
+
