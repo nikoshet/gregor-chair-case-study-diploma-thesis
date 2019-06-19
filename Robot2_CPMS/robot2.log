@@ -1,0 +1,414 @@
+Mon Nov 19 17:07:36 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:07:36 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:09:08 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:09:08 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:09:11 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:09:11 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:15:17 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:15:17 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:15:19 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:15:19 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:17:08 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:17:08 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:17:10 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:17:10 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:20:49 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:20:49 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:20:52 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:20:52 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:25:10 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:25:10 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:25:12 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:25:12 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:28:17 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:28:17 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:28:19 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:28:19 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:30:11 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:30:11 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:30:14 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:30:14 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:33:24 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:33:24 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:33:26 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:33:26 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:41:43 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:41:43 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:41:45 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:41:45 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:43:06 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:43:06 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:43:08 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:43:08 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:45:32 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:45:32 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:45:35 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:45:35 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:46:56 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:46:56 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:46:58 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:46:58 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:49:24 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:49:24 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:49:26 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:49:26 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+
+Mon Nov 19 17:50:53 EET 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mon Nov 19 17:50:53 EET 2018  R2: Controller State = null
+
+
+Mon Nov 19 17:50:55 EET 2018  Now Sending Acquire message to W1 for Pos2..
+
+
+Mon Nov 19 17:50:55 EET 2018  R2: Controller State = WAITING_4_W1POS2
+
+

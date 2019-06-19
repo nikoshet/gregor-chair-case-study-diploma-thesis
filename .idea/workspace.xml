@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="simple version">
+      <change afterPath="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_californium_core_2_0_0_M12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_element_connector_2_0_0_M12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_element_connector_test_jar_tests_2_0_0_M12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_scandium_2_0_0_M12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_client_cf_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_client_core_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_core_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_core_cf_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/robot1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/Robot1CpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Logger_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/MessageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/R1SMEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Robot1CtrlState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/SignalDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/driver/R1Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1AvailSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1Reached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos2Reached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAss1Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAssW2Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/signals/W2Available.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/R1_LwM2m_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot1App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/models/W1_Objects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_CPMS/src/test/java/com/example/demo/Robot1CpmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/robot2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/ConfigurationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/Robot2CpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Logger_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/R2SMEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Robot2Ctrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/Robot2CtrlState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/SignalDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/driver/R2Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos1Reached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos2Reached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_1Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_2Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAssW2Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/W1Pos2Available.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/fsm/signals/W2Available.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot2LeshanClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/models/R2_Objects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_CPMS/src/test/java/robot2/Robot2CpmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/robot3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/Robot3CpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Logger_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/R1SMEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Robot3Ctrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/Robot3CtrlState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/SignalDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/driver/R3Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/signals/SubAssR3Completed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/fsm/signals/W1Pos3Available.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot3LeshanClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/models/R3_Objects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_CPMS/src/test/java/robot3/Robot3CpmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/W1Events.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/ConfigurationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/Workbench1CpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/Rbt_2_W1_Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1_2_Rbt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/Logger_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/MessageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachineIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachineIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachineIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1_App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanAttributeIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanExecuteIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot1Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot2Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot3Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/RResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/ResourceIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/W1_Objects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/main/resources/models/rpi-device.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench1_CPMS/src/test/java/workbench1/Workbench1CpmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/ConfigurationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/Workbench2CpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/Logger_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Ctrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2CtrlState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/W2SMEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/driver/W2Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/events/W2Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot1Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot2Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/RResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/ResourceIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/W2_Objects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/main/resources/models/rpi-device.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/src/test/java/workbench2/Workbench2CpmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/workbench2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workbench2_CPMS/workbench2.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/Robot1_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Robot2_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Robot3_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench1_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench2_CPMS/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_californium_core_2_0_0_M12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_element_connector_2_0_0_M12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_element_connector_test_jar_tests_2_0_0_M12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_californium_scandium_2_0_0_M12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_client_cf_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_client_core_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_core_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_core_cf_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-4" />
+    <option name="width" value="1920" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot3_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench2_CPMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="" />
+      <created>1560940682068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560940682068</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498618" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simple version" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple version" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,858 @@
+Mon Nov 12 19:40:27 EET 2018  Robot1 starting
+
+Mon Nov 12 19:40:27 EET 2018  R1: Controller State = null
+
+
+Mon Nov 12 19:42:54 EET 2018  Robot1 starting
+
+Mon Nov 12 19:42:54 EET 2018  R1: Controller State = null
+
+
+Mon Nov 12 19:42:56 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 12 19:42:56 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 12 19:44:59 EET 2018  Robot1 starting
+
+Mon Nov 12 19:44:59 EET 2018  R1: Controller State = null
+
+
+Mon Nov 12 19:45:02 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 12 19:45:02 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:01:29 EET 2018  Robot1 starting
+
+Fri Nov 16 07:01:29 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:01:31 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:01:31 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:14:20 EET 2018  Robot1 starting
+
+Fri Nov 16 07:14:20 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:14:22 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:14:22 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:24:19 EET 2018  Robot1 starting
+
+Fri Nov 16 07:24:19 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:24:21 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:24:21 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:25:42 EET 2018  Robot1 starting
+
+Fri Nov 16 07:25:42 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:25:44 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:25:44 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:30:24 EET 2018  Robot1 starting
+
+Fri Nov 16 07:30:24 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:30:26 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:30:26 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:32:59 EET 2018  Robot1 starting
+
+Fri Nov 16 07:32:59 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:33:01 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:33:01 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:35:19 EET 2018  Robot1 starting
+
+Fri Nov 16 07:35:19 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:35:21 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:35:21 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:38:29 EET 2018  Robot1 starting
+
+Fri Nov 16 07:38:29 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:38:31 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:38:31 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:45:54 EET 2018  Robot1 starting
+
+Fri Nov 16 07:45:54 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:45:56 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:45:56 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:51:12 EET 2018  Robot1 starting
+
+Fri Nov 16 07:51:12 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:51:15 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:51:15 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 07:54:00 EET 2018  Robot1 starting
+
+Fri Nov 16 07:54:00 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 07:54:02 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 07:54:02 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:00:40 EET 2018  Robot1 starting
+
+Fri Nov 16 08:00:40 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:00:42 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:00:42 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:01:46 EET 2018  Robot1 starting
+
+Fri Nov 16 08:01:46 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:01:48 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:01:48 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:11:35 EET 2018  Robot1 starting
+
+Fri Nov 16 08:11:35 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:11:37 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:11:37 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:15:16 EET 2018  Robot1 starting
+
+Fri Nov 16 08:15:16 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:15:19 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:15:19 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:16:41 EET 2018  Robot1 starting
+
+Fri Nov 16 08:16:41 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:16:43 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:16:43 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:19:33 EET 2018  Robot1 starting
+
+Fri Nov 16 08:19:33 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:19:36 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:19:36 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:24:58 EET 2018  Robot1 starting
+
+Fri Nov 16 08:24:58 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:25:01 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:25:01 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:27:32 EET 2018  Robot1 starting
+
+Fri Nov 16 08:27:32 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:27:34 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:27:34 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:27:49 EET 2018  Robot1 starting
+
+Fri Nov 16 08:27:49 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:27:51 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:27:51 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:30:17 EET 2018  Robot1 starting
+
+Fri Nov 16 08:30:17 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:30:19 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:30:19 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:32:47 EET 2018  Robot1 starting
+
+Fri Nov 16 08:32:47 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:32:49 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:32:49 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:41:59 EET 2018  Robot1 starting
+
+Fri Nov 16 08:41:59 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:42:01 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:42:01 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:43:57 EET 2018  Robot1 starting
+
+Fri Nov 16 08:43:57 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:43:59 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:43:59 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:45:30 EET 2018  Robot1 starting
+
+Fri Nov 16 08:45:30 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:45:32 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:45:32 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:46:20 EET 2018  Robot1 starting
+
+Fri Nov 16 08:46:20 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:46:22 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:46:22 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:47:04 EET 2018  Robot1 starting
+
+Fri Nov 16 08:47:04 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:47:06 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:47:06 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:50:29 EET 2018  Robot1 starting
+
+Fri Nov 16 08:50:29 EET 2018  R1: Controller State = null
+
+
+Fri Nov 16 08:50:31 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Fri Nov 16 08:50:31 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Fri Nov 16 08:50:31 EET 2018  R1: Controller State = SUBASS1
+
+
+Fri Nov 16 08:50:31 EET 2018  SubAss1 started..
+
+
+Fri Nov 16 08:50:35 EET 2018  SubAss1 completed..
+
+
+Fri Nov 16 08:50:35 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Fri Nov 16 08:50:35 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 11:10:45 EET 2018  Robot1 starting
+
+Mon Nov 19 11:10:45 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 11:10:47 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 11:10:47 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 11:10:47 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 11:10:47 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 11:10:51 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 11:10:51 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 11:10:51 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:09:24 EET 2018  Robot1 starting
+
+Mon Nov 19 17:09:24 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:09:26 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:09:26 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:09:26 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:09:26 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:09:30 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:09:30 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:09:30 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:21:30 EET 2018  Robot1 starting
+
+Mon Nov 19 17:21:30 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:21:32 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:21:32 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:21:32 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:21:32 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:21:37 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:21:37 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:21:37 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:34:12 EET 2018  Robot1 starting
+
+Mon Nov 19 17:34:12 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:34:14 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:34:14 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:38:24 EET 2018  Robot1 starting
+
+Mon Nov 19 17:38:24 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:38:26 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:38:26 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:38:26 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:38:26 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:38:30 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:38:30 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:38:30 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:42:50 EET 2018  Robot1 starting
+
+Mon Nov 19 17:42:50 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:42:53 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:42:53 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:42:53 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:42:53 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:42:57 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:42:57 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:42:57 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:46:25 EET 2018  Robot1 starting
+
+Mon Nov 19 17:46:25 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:46:27 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:46:27 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:46:27 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:46:27 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:46:31 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:46:31 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:46:31 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 17:47:41 EET 2018  Robot1 starting
+
+Mon Nov 19 17:47:41 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 17:47:43 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 17:47:43 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 17:47:43 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 17:47:43 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 17:47:47 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 17:47:47 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 17:47:47 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 18:50:06 EET 2018  Robot1 starting
+
+Mon Nov 19 18:50:06 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 18:50:09 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 18:50:09 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 18:50:09 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 18:50:09 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 18:50:13 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 18:50:13 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 18:50:13 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 18:52:55 EET 2018  Robot1 starting
+
+Mon Nov 19 18:52:55 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 18:52:57 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 18:52:57 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 18:52:57 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 18:52:57 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 18:53:01 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 18:53:01 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 18:53:01 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 18:53:01 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 18:53:01 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:03:48 EET 2018  Robot1 starting
+
+Mon Nov 19 19:03:48 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:03:50 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:03:50 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:03:50 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:03:50 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:03:54 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:03:54 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:03:54 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:03:54 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:03:54 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:08:54 EET 2018  Robot1 starting
+
+Mon Nov 19 19:08:54 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:08:56 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:08:56 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:08:57 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:08:57 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:09:01 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:09:01 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:09:01 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:09:01 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:09:01 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:13:14 EET 2018  Robot1 starting
+
+Mon Nov 19 19:13:14 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:13:17 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:13:17 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:13:17 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:13:17 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:13:21 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:13:21 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:13:21 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:13:21 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:13:21 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:14:39 EET 2018  Robot1 starting
+
+Mon Nov 19 19:14:39 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:14:42 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:14:42 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:14:42 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:14:42 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:14:46 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:14:46 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:14:46 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:14:46 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:14:46 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:17:58 EET 2018  Robot1 starting
+
+Mon Nov 19 19:17:58 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:18:01 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:18:01 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:18:01 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:18:01 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:18:05 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:18:05 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:18:05 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:18:05 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:18:05 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:19:24 EET 2018  Robot1 starting
+
+Mon Nov 19 19:19:24 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:19:26 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:19:26 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:19:26 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:19:26 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:19:30 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:19:30 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:19:30 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:19:30 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:19:30 EET 2018  R1: Controller State = WAITING4W2
+
+
+Mon Nov 19 19:20:43 EET 2018  Robot1 starting
+
+Mon Nov 19 19:20:43 EET 2018  R1: Controller State = null
+
+
+Mon Nov 19 19:20:46 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Mon Nov 19 19:20:46 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Mon Nov 19 19:20:46 EET 2018  R1: Controller State = SUBASS1
+
+
+Mon Nov 19 19:20:46 EET 2018  SubAss1 started..
+
+
+Mon Nov 19 19:20:50 EET 2018  SubAss1 completed..
+
+
+Mon Nov 19 19:20:50 EET 2018  Now Sending Release message to W1 for Pos1..
+
+
+Mon Nov 19 19:20:50 EET 2018  R1: Controller State = MOVING2POS2
+
+
+Mon Nov 19 19:20:50 EET 2018  Now Sending Acquire message to W2..
+
+
+Mon Nov 19 19:20:50 EET 2018  R1: Controller State = WAITING4W2
+
+
+Tue Nov 20 20:04:41 EET 2018  Robot1 starting
+
+Tue Nov 20 20:04:41 EET 2018  R1: Controller State = null
+
+
+Tue Nov 20 20:04:43 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Tue Nov 20 20:04:43 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Wed Nov 21 00:02:15 EET 2018  Robot1 starting
+
+Wed Nov 21 00:02:15 EET 2018  R1: Controller State = null
+
+
+Wed Nov 21 00:02:18 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Wed Nov 21 00:02:18 EET 2018  R1: Controller State = WAITING4W1POS1
+
+
+Wed Nov 21 00:04:06 EET 2018  Robot1 starting
+
+Wed Nov 21 00:04:06 EET 2018  R1: Controller State = null
+
+
+Wed Nov 21 00:04:09 EET 2018  Now Sending Acquire message to W1 for Pos1..
+
+
+Wed Nov 21 00:04:09 EET 2018  R1: Controller State = WAITING4W1POS1
+
+

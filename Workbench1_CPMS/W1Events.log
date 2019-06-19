@@ -1,0 +1,720 @@
+Fri Nov 16 07:24:07 EET 2018  W1 starting
+
+Fri Nov 16 07:25:36 EET 2018  W1 starting
+
+Fri Nov 16 07:30:18 EET 2018  W1 starting
+
+Fri Nov 16 07:32:53 EET 2018  W1 starting
+
+Fri Nov 16 07:35:12 EET 2018  W1 starting
+
+Fri Nov 16 07:38:21 EET 2018  W1 starting
+
+Fri Nov 16 07:45:48 EET 2018  W1 starting
+
+Fri Nov 16 07:45:56 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 07:45:56 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 07:45:56 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 07:45:56 EET 2018  P1Available
+
+Fri Nov 16 07:51:06 EET 2018  W1 starting
+
+Fri Nov 16 07:51:15 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 07:51:15 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 07:51:15 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 07:51:15 EET 2018  P1Available
+
+Fri Nov 16 07:53:54 EET 2018  W1 starting
+
+Fri Nov 16 07:54:02 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 07:54:02 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 07:54:02 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 07:54:02 EET 2018  P1Available
+
+Fri Nov 16 08:00:25 EET 2018  W1 starting
+
+Fri Nov 16 08:00:42 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:00:42 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:00:42 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:00:42 EET 2018  P1Available
+
+Fri Nov 16 08:01:41 EET 2018  W1 starting
+
+Fri Nov 16 08:01:48 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:01:48 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:01:48 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:01:48 EET 2018  P1Available
+
+Fri Nov 16 08:11:32 EET 2018  W1 starting
+
+Fri Nov 16 08:11:37 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:11:37 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:11:37 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:11:37 EET 2018  P1Available
+
+Fri Nov 16 08:15:14 EET 2018  W1 starting
+
+Fri Nov 16 08:15:19 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:15:19 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:15:19 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:15:19 EET 2018  P1Available
+
+Fri Nov 16 08:16:37 EET 2018  W1 starting
+
+Fri Nov 16 08:16:43 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:16:43 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:16:43 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:16:43 EET 2018  P1Available
+
+Fri Nov 16 08:19:31 EET 2018  W1 starting
+
+Fri Nov 16 08:19:36 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:19:36 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:19:36 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:19:36 EET 2018  P1Available
+
+Fri Nov 16 08:24:56 EET 2018  W1 starting
+
+Fri Nov 16 08:25:01 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:25:01 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:25:01 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:25:01 EET 2018  P1Available
+
+Fri Nov 16 08:27:38 EET 2018  W1 starting
+
+Fri Nov 16 08:27:51 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:27:51 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:27:51 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:27:51 EET 2018  P1Available
+
+Fri Nov 16 08:30:15 EET 2018  W1 starting
+
+Fri Nov 16 08:30:19 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:30:19 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:30:19 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:30:19 EET 2018  P1Available
+
+Fri Nov 16 08:32:43 EET 2018  W1 starting
+
+Fri Nov 16 08:32:49 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:32:49 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:32:49 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:32:49 EET 2018  P1Available
+
+Fri Nov 16 08:41:52 EET 2018  W1 starting
+
+Fri Nov 16 08:42:01 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:42:01 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:42:01 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:42:01 EET 2018  P1Available
+
+Fri Nov 16 08:43:56 EET 2018  W1 starting
+
+Fri Nov 16 08:43:59 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:43:59 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:43:59 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:43:59 EET 2018  P1Available
+
+Fri Nov 16 08:45:27 EET 2018  W1 starting
+
+Fri Nov 16 08:45:32 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:45:32 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:45:32 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:45:32 EET 2018  P1Available
+
+Fri Nov 16 08:46:19 EET 2018  W1 starting
+
+Fri Nov 16 08:46:22 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:46:22 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:46:22 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:46:22 EET 2018  P1Available
+
+Fri Nov 16 08:47:03 EET 2018  W1 starting
+
+Fri Nov 16 08:47:07 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:47:07 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:47:07 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:47:07 EET 2018  P1Available
+
+Fri Nov 16 08:50:26 EET 2018  W1 starting
+
+Fri Nov 16 08:50:31 EET 2018  Before transision : p1CurSt == Free
+
+Fri Nov 16 08:50:31 EET 2018  Event : R1AcquireP1
+
+Fri Nov 16 08:50:31 EET 2018  After transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:50:31 EET 2018  P1Available
+
+Fri Nov 16 08:50:35 EET 2018  Before transition : p1CurSt == SubAss1
+
+Fri Nov 16 08:50:35 EET 2018  Event : R1ReleaseP1
+
+Fri Nov 16 08:50:35 EET 2018  After transition : p1CurSt == Free
+
+Fri Nov 16 08:50:35 EET 2018  Current State = Free 
+
+
+Fri Nov 16 08:50:35 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Fri Nov 16 08:50:35 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Fri Nov 16 08:50:35 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 11:10:42 EET 2018  W1 starting
+
+Mon Nov 19 11:10:47 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 11:10:47 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 11:10:47 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 11:10:47 EET 2018  P1Available
+
+Mon Nov 19 11:10:51 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 11:10:51 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 11:10:51 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 11:10:51 EET 2018  Current State = Free 
+
+
+Mon Nov 19 11:10:51 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 11:10:51 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 11:10:51 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:07:27 EET 2018  W1 starting
+
+Mon Nov 19 17:09:26 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:09:26 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:09:26 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:09:26 EET 2018  P1Available
+
+Mon Nov 19 17:09:30 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:09:30 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:09:30 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:09:30 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:09:30 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:09:30 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:09:30 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:15:12 EET 2018  W1 starting
+
+Mon Nov 19 17:17:03 EET 2018  W1 starting
+
+Mon Nov 19 17:20:30 EET 2018  W1 starting
+
+Mon Nov 19 17:21:32 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:21:32 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:21:32 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:21:32 EET 2018  P1Available
+
+Mon Nov 19 17:21:37 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:21:37 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:21:37 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:21:37 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:21:37 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:21:37 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:21:37 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:24:10 EET 2018  W1 starting
+
+Mon Nov 19 17:28:10 EET 2018  W1 starting
+
+Mon Nov 19 17:30:04 EET 2018  W1 starting
+
+Mon Nov 19 17:33:19 EET 2018  W1 starting
+
+Mon Nov 19 17:34:07 EET 2018  W1 starting
+
+Mon Nov 19 17:38:19 EET 2018  W1 starting
+
+Mon Nov 19 17:38:26 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:38:26 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:38:26 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:38:26 EET 2018  P1Available
+
+Mon Nov 19 17:38:30 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:38:30 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:38:30 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:38:30 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:38:30 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:38:30 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:38:30 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:41:35 EET 2018  W1 starting
+
+Mon Nov 19 17:42:46 EET 2018  W1 starting
+
+Mon Nov 19 17:42:53 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:42:53 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:42:53 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:42:53 EET 2018  P1Available
+
+Mon Nov 19 17:42:57 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:42:57 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:42:57 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:42:57 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:42:57 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:42:57 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:42:57 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:45:28 EET 2018  W1 starting
+
+Mon Nov 19 17:46:16 EET 2018  W1 starting
+
+Mon Nov 19 17:46:27 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:46:27 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:46:27 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:46:27 EET 2018  P1Available
+
+Mon Nov 19 17:46:32 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:46:32 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:46:32 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:46:32 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:46:32 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:46:32 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:46:32 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:46:52 EET 2018  W1 starting
+
+Mon Nov 19 17:47:31 EET 2018  W1 starting
+
+Mon Nov 19 17:47:43 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 17:47:43 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 17:47:43 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:47:43 EET 2018  P1Available
+
+Mon Nov 19 17:47:47 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 17:47:47 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 17:47:47 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 17:47:47 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:47:47 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 17:47:47 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:47:47 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 17:49:20 EET 2018  W1 starting
+
+Mon Nov 19 17:50:49 EET 2018  W1 starting
+
+Mon Nov 19 17:50:55 EET 2018  Current State = Free 
+
+
+Mon Nov 19 17:50:55 EET 2018  Event : R2AcuireP2 
+
+
+Mon Nov 19 17:50:55 EET 2018  No transition : p2CurSt = Free 
+
+
+Mon Nov 19 18:01:56 EET 2018  W1 starting
+
+Mon Nov 19 18:03:36 EET 2018  W1 starting
+
+Mon Nov 19 18:03:43 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 18:03:43 EET 2018  Event : R3AcquireP3 
+ 
+
+Mon Nov 19 18:03:43 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 18:48:47 EET 2018  W1 starting
+
+Mon Nov 19 18:50:09 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 18:50:09 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 18:50:09 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 18:50:09 EET 2018  P1Available
+
+Mon Nov 19 18:50:13 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 18:50:13 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 18:50:13 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 18:50:13 EET 2018  Current State = Free 
+
+
+Mon Nov 19 18:50:13 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 18:50:13 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 18:50:13 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 18:52:35 EET 2018  W1 starting
+
+Mon Nov 19 18:52:57 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 18:52:57 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 18:52:57 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 18:52:57 EET 2018  P1Available
+
+Mon Nov 19 18:53:01 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 18:53:01 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 18:53:01 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 18:53:01 EET 2018  Current State = Free 
+
+
+Mon Nov 19 18:53:01 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 18:53:01 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 18:53:01 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:03:39 EET 2018  W1 starting
+
+Mon Nov 19 19:03:50 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:03:50 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:03:50 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:03:50 EET 2018  P1Available
+
+Mon Nov 19 19:03:54 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:03:54 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:03:54 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:03:54 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:03:54 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:03:54 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:03:54 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:08:39 EET 2018  W1 starting
+
+Mon Nov 19 19:08:56 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:08:57 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:08:57 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:08:57 EET 2018  P1Available
+
+Mon Nov 19 19:09:01 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:09:01 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:09:01 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:09:01 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:09:01 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:09:01 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:09:01 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:13:04 EET 2018  W1 starting
+
+Mon Nov 19 19:13:17 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:13:17 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:13:17 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:13:17 EET 2018  P1Available
+
+Mon Nov 19 19:13:21 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:13:21 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:13:21 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:13:21 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:13:21 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:13:21 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:13:21 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:14:29 EET 2018  W1 starting
+
+Mon Nov 19 19:14:42 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:14:42 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:14:42 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:14:42 EET 2018  P1Available
+
+Mon Nov 19 19:14:46 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:14:46 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:14:46 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:14:46 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:14:46 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:14:46 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:14:46 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:17:49 EET 2018  W1 starting
+
+Mon Nov 19 19:18:01 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:18:01 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:18:01 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:18:01 EET 2018  P1Available
+
+Mon Nov 19 19:18:05 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:18:05 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:18:05 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:18:05 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:18:05 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:18:05 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:18:05 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:19:01 EET 2018  W1 starting
+
+Mon Nov 19 19:19:26 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:19:26 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:19:26 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:19:26 EET 2018  P1Available
+
+Mon Nov 19 19:19:30 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:19:30 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:19:30 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:19:30 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:19:30 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:19:30 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:19:30 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:20:35 EET 2018  W1 starting
+
+Mon Nov 19 19:20:46 EET 2018  Before transision : p1CurSt == Free
+
+Mon Nov 19 19:20:46 EET 2018  Event : R1AcquireP1
+
+Mon Nov 19 19:20:46 EET 2018  After transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:20:46 EET 2018  P1Available
+
+Mon Nov 19 19:20:50 EET 2018  Before transition : p1CurSt == SubAss1
+
+Mon Nov 19 19:20:50 EET 2018  Event : R1ReleaseP1
+
+Mon Nov 19 19:20:50 EET 2018  After transition : p1CurSt == Free
+
+Mon Nov 19 19:20:50 EET 2018  Current State = Free 
+
+
+Mon Nov 19 19:20:50 EET 2018  After transition : p2CurSt == Sub1Completed 
+
+
+Mon Nov 19 19:20:50 EET 2018  Before transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 19:20:50 EET 2018  No transition : p3CurSt == Free 
+ 
+
+Mon Nov 19 22:47:59 EET 2018  W1 starting
+
+Mon Nov 19 23:05:47 EET 2018  W1 starting
+
+Mon Nov 19 23:27:09 EET 2018  W1 starting
+

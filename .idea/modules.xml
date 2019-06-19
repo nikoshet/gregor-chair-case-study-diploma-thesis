@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" filepath="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot1_CPMS/Robot1_CPMS.iml" filepath="$PROJECT_DIR$/Robot1_CPMS/Robot1_CPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot2_CPMS/Robot2_CPMS.iml" filepath="$PROJECT_DIR$/Robot2_CPMS/Robot2_CPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot3_CPMS/Robot3_CPMS.iml" filepath="$PROJECT_DIR$/Robot3_CPMS/Robot3_CPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workbench1_CPMS/Workbench1_CPMS.iml" filepath="$PROJECT_DIR$/Workbench1_CPMS/Workbench1_CPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workbench2_CPMS/Workbench2_CPMS.iml" filepath="$PROJECT_DIR$/Workbench2_CPMS/Workbench2_CPMS.iml" />
+    </modules>
+  </component>
+</project>

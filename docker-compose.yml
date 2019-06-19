@@ -1,0 +1,61 @@
+version: "2"
+
+networks:
+  gregor-chair-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.239.0/24
+          gateway: 172.16.239.11
+services:
+  w1:
+    build: 
+      context: ./Workbench1_CPMS
+      dockerfile: Dockerfile
+    ports:
+      - "8563:8563/udp"
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.10 
+  w2:
+    build: 
+      context: ./Workbench2_CPMS
+      dockerfile: Dockerfile
+    ports:
+      - "8565:8565/udp"
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.20 
+  robot1:
+    build: 
+      context: ./Robot1_CPMS
+      dockerfile: Dockerfile
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.30 
+    links:
+      - w1
+      - w2
+  robot2:
+    build: 
+      context: ./Robot2_CPMS
+      dockerfile: Dockerfile
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.40
+    links:
+      - w1
+      - w2
+  robot3:
+    build: 
+      context: ./Robot3_CPMS
+      dockerfile: Dockerfile
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.50
+    links:
+      - w1
+      - w2
+
+

@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Robot1",
+    "id": 20000,
+    "instancetype": "single",
+    "mandatory": true,
+    "description": "",
+    "resourcedefs": [
+      {
+        "id": 0,
+        "name": "state",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 1,
+        "name": "pos1 reached",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "pos2 reached",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "set W1_Pos1 available",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 4,
+        "name": "set W2 available",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 16,
+        "name": "R1event2W2",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "Robot2",
+    "id": 20001,
+    "instancetype": "single",
+    "mandatory": true,
+    "description": "",
+    "resourcedefs": [
+      {
+        "id": 0,
+        "name": "state",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 1,
+        "name": "pos1 reached",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "pos2 reached",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "set W1_Pos1 available",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 4,
+        "name": "set W2 available",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "boolean",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 16,
+        "name": "event",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "Workbench2",
+    "id": 20004,
+    "instancetype": "single",
+    "mandatory": true,
+    "description": "",
+    "resourcedefs": [
+      {
+        "id": 20,
+        "name": "W2Event2Sim",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      }
+    ]
+  }
+]
