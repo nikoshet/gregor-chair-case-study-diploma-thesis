@@ -1,0 +1,57 @@
+version: "2"
+
+networks:
+  gregor-chair-network-r2:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.239.0/24
+          gateway: 172.16.239.11
+volumes:
+  Robot2socket:
+    driver: "local"
+  Workertask2socket:
+    driver: "local"
+services:
+  robot2:
+    build:
+      context: ./Robot2_CPMS
+      dockerfile: Dockerfile
+    networks:
+      gregor-chair-network-r2:
+        ipv4_address: 172.16.240.40
+    volumes:
+      - Robot2socket:/tmp
+    mem_limit: 700m
+  workertask1:
+    build:
+      context: ./Worker_Task2
+      dockerfile: Dockerfile
+    volumes:
+      - Workertask2socket:/tmp
+    links:
+      - robot2
+    volumes_from:
+      - robot2
+    mem_limit: 700m
+  pickandplace:
+    build:
+      context: ./PickAndPlace
+      dockerfile: Dockerfile
+    links:
+      - workertask2
+    volumes_from:
+      - workertask2
+#    cpus: 0.6
+    mem_limit: 700m
+  pickandinsert:
+    build:
+      context: ./PickAndInsert
+      dockerfile: Dockerfile
+    links:
+      - workertask2
+    volumes_from:
+      - workertask2
+#    cpus: 0.6
+    mem_limit: 700m

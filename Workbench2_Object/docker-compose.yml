@@ -1,0 +1,20 @@
+version: "2"
+
+networks:
+  gregor-chair-network-w2:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.239.0/24
+          gateway: 172.16.239.11
+services:
+  w2:
+    build: 
+      context: ./Workbench2_CPMS
+      dockerfile: Dockerfile
+    ports:
+      - "8565:8565/udp"
+    networks:
+      gregor-chair-network:
+        ipv4_address: 172.16.239.20 
