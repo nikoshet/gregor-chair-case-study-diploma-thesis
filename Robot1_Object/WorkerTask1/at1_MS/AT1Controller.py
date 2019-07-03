@@ -3,12 +3,11 @@ from unix_sockets.unix_client import  UnixClient
 from Communication_Wrapper.robot1ctrl_wrapper import Robot1Ctrl_Wrapper
 from Communication_Wrapper.robot1Coordinator_Wrapper import Robot1Coordinator_Wrapper
 import json
-import eureka.eureka_client as eureka_client
 
 class AT1Controller:
 
-    unix_server: UnixServer
-    unix_client: UnixClient
+   # unix_server: UnixServer
+   # unix_client: UnixClient
     robot1ctrl_wrapper= Robot1Ctrl_Wrapper()
     robot1coordinator_wrapper= Robot1Coordinator_Wrapper()
     SERVER_ADDRESS = "/tmp/at1.sock"
@@ -35,7 +34,7 @@ class AT1Controller:
                             message = self.unix_server.read_data()
                             print(str(message))
                             if message ==  '{"PickAndPlace_MS": "FINISHED"}':
-                                print("\n \n \n \n pick and place has completed \n \n \n \n")
+                                print("\n pick and place has completed \n")
                                 self.robot1ctrl_wrapper.unix_client.close_client()
                                 break
                         print(" PICK AND PLACE FINISHED . LETS START PICK AND INSERT NOW")
@@ -47,7 +46,7 @@ class AT1Controller:
                             message = self.unix_server.read_data()
                             print(str(message))
                             if message ==  '{"PickAndInsert_MS": "FINISHED"}':
-                                print("\n \n \n \n pick and insert has completed \n \n \n \n")
+                                print("\n pick and insert has completed \n")
                                 self.robot1ctrl_wrapper.unix_client.close_client()
                                 break
                         print("PICK AND INSERT FINISHED")

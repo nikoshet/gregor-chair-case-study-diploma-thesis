@@ -21,8 +21,6 @@ import json
 
 class RobotController:
 
-    unix_server: UnixServer
-    unix_client: UnixClient
     SERVER_ADDRESS = "/tmp/robot1ctrl.sock"
 
     def __init__(self):

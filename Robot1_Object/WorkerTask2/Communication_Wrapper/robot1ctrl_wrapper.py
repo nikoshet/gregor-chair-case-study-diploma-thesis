@@ -4,7 +4,6 @@ import json
 
 class Robot1Ctrl_Wrapper:
 
-    unix_client: UnixClient = ""
     START_MESSAGE_PickAndPlace = '{"PickAndPlace": "STARTED","sender": "/tmp/at1.sock"}'
     COMPLETED_MESSAGE_PickAndPlace = '{"PickAndPlace": "FINISHED","sender": "/tmp/at1.sock"}'
     START_MESSAGE_PickAndInsert = '{"PickAndInsert": "STARTED","sender": "/tmp/at1.sock"}'

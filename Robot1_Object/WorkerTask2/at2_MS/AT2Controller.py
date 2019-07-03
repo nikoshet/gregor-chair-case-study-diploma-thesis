@@ -7,8 +7,6 @@ import eureka.eureka_client as eureka_client
 
 class AT2Controller:
 
-    unix_server: UnixServer
-    unix_client: UnixClient
     robot1ctrl_wrapper= Robot1Ctrl_Wrapper()
     robot1coordinator_wrapper= Robot1Coordinator_Wrapper()
     SERVER_ADDRESS = "/tmp/at1.sock"

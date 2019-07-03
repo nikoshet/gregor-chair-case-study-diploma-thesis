@@ -58,9 +58,10 @@ public class W1_LwM2mServer {
 		setSecurelocalAddress(ConfigurationUtils.W1_HOSTNAME);
 		setSecurelocalPort(ConfigurationUtils.W1_COAPS_PORT);
 		initServer();
-		addRegistationService();
 		setW1_App(new W1_App(W1_LwM2mServer.lwServer, null));
 		getW1_App().start();
+		//addRegistationService();
+
 	}
 	
 	public static W1_App getW1_App() {

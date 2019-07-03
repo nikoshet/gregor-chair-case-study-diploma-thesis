@@ -5,11 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT1Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/target/" />
     <ignored path="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/target/" />
@@ -28,69 +29,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="225">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+              <folding>
+                <element signature="e#2393#2394#0" expanded="true" />
+                <element signature="e#2430#2431#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndInsert.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="487">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="-803">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,15 +139,12 @@
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachine.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachine.java" />
-        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Controller.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1_2_Rbt.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/Rbt_2_W1_Event.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java" />
-        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
-        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" />
@@ -148,10 +157,14 @@
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" />
-        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" />
         <option value="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" />
       </list>
     </option>
   </component>
@@ -184,21 +197,108 @@
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="RobotControllerMs" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="RobotControllerMs" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="RobotControllerMs" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench1" type="462c0819:PsiDirectoryNode" />
+              <item name="fsm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench1" type="462c0819:PsiDirectoryNode" />
+              <item name="lwm2m" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,7 +309,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -232,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Robot1CoordinatorApplication">
     <configuration name="Robot1CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="robot1.Robot1CoordinatorApplication" />
       <module name="Robot1_Coordinator" />
@@ -240,9 +340,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Workbench1CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="workbench1.Workbench1CoordinatorApplication" />
+      <module name="Workbench1_Coordinator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Robot1CoordinatorApplication" />
+        <item itemvalue="Application.Workbench1CoordinatorApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -260,22 +368,22 @@
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25755286" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49778762" visible="true" weight="0.25755286" />
+      <window_info id="Structure" order="1" sideWeight="0.5022124" side_tool="true" weight="0.25755286" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32986626" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32838038" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.19762258" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22882615" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32986626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -297,27 +405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ports/Robot2Port.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -385,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2SMEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -443,48 +523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="83" column="105" selection-start-line="83" selection-start-column="105" selection-end-line="83" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,18 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2377#2378#0" expanded="true" />
-            <element signature="e#2406#2407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -597,33 +627,11 @@
     <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1Coordinator_Wrapper.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py">
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndInsert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -638,19 +646,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndInsert.py">
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/leshan/leshan-server-core/1.0.0-M9/leshan-server-core-1.0.0-M9-sources.jar!/org/eclipse/leshan/server/impl/RegistrationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-803">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,10 +812,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>Robot1_Coordinator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

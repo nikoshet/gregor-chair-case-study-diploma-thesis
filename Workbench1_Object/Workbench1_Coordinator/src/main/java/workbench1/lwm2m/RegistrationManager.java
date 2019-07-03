@@ -1,5 +1,6 @@
 package workbench1.lwm2m;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,6 +20,7 @@ public class RegistrationManager implements RegistrationListener{
 	private static final Logger LOG = LoggerFactory.getLogger(RegistrationManager.class);
 
 	  public static Map<String, Registration> registrations = new HashMap<>();
+	  //public static ArrayList<String > registrations = new ArrayList();
 	  public LeshanServer server;
 	  
 	  public RegistrationManager(LeshanServer server) {
@@ -27,52 +29,54 @@ public class RegistrationManager implements RegistrationListener{
 	      System.out.println(" \n RegistrationListener Added \n ");
 	  }
 
-	  public void waitDevices(String... devices) throws InterruptedException {
-
+	  public static void waitDevices(String... devices) throws InterruptedException {
 	    LOG.info("Waiting for devices {}", devices.toString());
-
-	    for (String device : devices) {
-	      while (true) {
-	        synchronized (registrations) {
-	          if (registrations.containsKey(device)) {
-	            break;
-	          }
-	          registrations.wait();
-	        }
-	      }
-	    }
+		  for (String device : devices) {
+			  while (true) {
+				  synchronized (registrations) {
+					  if (registrations.containsKey(device)) {
+						  break;
+					  }
+					  registrations.wait();
+				  }
+			  }
+		  }
 	  }
 
 	@Override
 	public  void registered(Registration reg, Registration previousReg, Collection<Observation> previousObsersations) {
 		System.out.println("new registration : " + reg.getEndpoint());
-	      registrations.put(reg.getEndpoint(), reg);
-	      if(reg.getEndpoint().equals("Robot1")) {
-	    	  ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
-	    	  try {
+		synchronized (registrations) {
+			registrations.put(reg.getEndpoint(), reg);
+			registrations.notifyAll();
+			if(reg.getEndpoint().equals("Robot1")) {
+				ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
+				try {
 					LwM2mResponse response1= W1_App.server.send(reg, observe1);
 					System.out.println("device response: " + response1);
-	    	  }
-	    	  catch (InterruptedException e) { e.printStackTrace(); }
-	      }
-	      else if(reg.getEndpoint().equals("Robot2")) {
-			 ObserveRequest observe0 = new ObserveRequest("/20001/0/16");
-			 System.out.println(observe0.getPath());
-			 try {
-				LwM2mResponse response0= W1_App.server.send(reg, observe0);
-				System.out.println("device response: " + response0);
-			 }
-			 catch (InterruptedException e) { e.printStackTrace(); }
-		}
-	      else if(reg.getEndpoint().equals("Robot3")) {
-				 ObserveRequest observe0 = new ObserveRequest("/20002/0/16");
-				 System.out.println(observe0.getPath());
-				 try {
+				}
+				catch (InterruptedException e) { e.printStackTrace(); }
+			}
+			else if(reg.getEndpoint().equals("Robot2")) {
+				ObserveRequest observe0 = new ObserveRequest("/20001/0/16");
+				System.out.println(observe0.getPath());
+				try {
 					LwM2mResponse response0= W1_App.server.send(reg, observe0);
 					System.out.println("device response: " + response0);
-				 }
-				 catch (InterruptedException e) {e.printStackTrace(); }
+				}
+				catch (InterruptedException e) { e.printStackTrace(); }
 			}
+			else if(reg.getEndpoint().equals("Robot3")) {
+				ObserveRequest observe0 = new ObserveRequest("/20002/0/16");
+				System.out.println(observe0.getPath());
+				try {
+					LwM2mResponse response0= W1_App.server.send(reg, observe0);
+					System.out.println("device response: " + response0);
+				}
+				catch (InterruptedException e) {e.printStackTrace(); }
+			}
+		}
+
 	}
 
 	@Override
