@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" filepath="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/Robot1_CPMS.iml" filepath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/Robot1_CPMS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/Workbench2_CPMS.iml" filepath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/Workbench2_CPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Robot1_Coordinator.iml" filepath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Robot1_Coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Robot2_Coordinator.iml" filepath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Robot2_Coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Robot3_Coordinator.iml" filepath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Robot3_Coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/Workbench1_Coordinator.iml" filepath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/Workbench1_Coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/Workbench2_Coordinator.iml" filepath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/Workbench2_Coordinator.iml" />
     </modules>
   </component>
 </project>

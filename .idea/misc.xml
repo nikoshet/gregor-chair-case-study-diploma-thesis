@@ -3,13 +3,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Robot1_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Robot2_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Robot3_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Workbench1_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Workbench2_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,25 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Workbench2_CPMS" />
-        <module name="Robot1_CPMS" />
+        <module name="Robot3_Coordinator" />
+        <module name="Workbench2_Coordinator" />
+        <module name="Robot1_Coordinator" />
+        <module name="Workbench1_Coordinator" />
+        <module name="Robot2_Coordinator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Robot1_CPMS" target="1.8" />
-      <module name="Robot2_CPMS" target="1.8" />
-      <module name="Robot3_CPMS" target="1.8" />
-      <module name="Workbench1_CPMS" target="1.8" />
-      <module name="Workbench2_CPMS" target="1.8" />
+      <module name="Robot1_Coordinator" target="1.8" />
+      <module name="Robot2_Coordinator" target="1.8" />
+      <module name="Robot3_Coordinator" target="1.8" />
+      <module name="Workbench1_Coordinator" target="1.8" />
+      <module name="Workbench2_Coordinator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Robot1_CPMS" options="-parameters" />
-      <module name="Robot2_CPMS" options="-parameters" />
-      <module name="Robot3_CPMS" options="-parameters" />
-      <module name="Workbench1_CPMS" options="-parameters" />
-      <module name="Workbench2_CPMS" options="-parameters" />
+      <module name="Robot1_Coordinator" options="-parameters" />
+      <module name="Robot2_Coordinator" options="-parameters" />
+      <module name="Robot3_Coordinator" options="-parameters" />
+      <module name="Workbench1_Coordinator" options="-parameters" />
+      <module name="Workbench2_Coordinator" options="-parameters" />
     </option>
   </component>
 </project>

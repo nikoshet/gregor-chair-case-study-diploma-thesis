@@ -1,57 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_common_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_core_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_native_common_2_2_0.xml" afterDir="false" />
+    <list default="true" id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_Object/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1CoordinatorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndInsert/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndInsert/PickAndInsert/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndInsert/PickAndInsert/pickAndInsert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndPlace/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndPlace/PickAndPlace/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/PickAndPlace/PickAndPlace/pickAndPlace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/robot1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/Robot1CpmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/MessageRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/R1SMEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/SignalDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/SignalDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/driver/R1Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1AvailSignal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/Pos1AvailSignal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos1Reached.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/Pos1Reached.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/Pos2Reached.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/Pos2Reached.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAss1Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/SubAss1Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/SubAssW2Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/SubAssW2Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/signals/W2Available.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/signals/W2Available.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/R1_LwM2m_Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot1App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/resources/models/W1_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/resources/models/W1_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/test/java/com/example/demo/Robot1CpmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/test/java/com/example/demo/Robot1CpmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Logger_Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1CtrlState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Worker_Task1/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Worker_Task1/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Worker_Task1/pickAndInsertWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Worker_Task1/pickAndPlaceWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Worker_Task1/workerTask1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndInsert/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndInsert/PickAndInsert/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndInsert/PickAndInsert/pickAndInsert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndPlace/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndPlace/PickAndPlace/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/PickAndPlace/PickAndPlace/pickAndPlace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/robot2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/Robot2CpmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/Logger_Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/R2SMEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/Robot2Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/Robot2CtrlState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2CoordinatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/SignalDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/SignalDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/driver/R2Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos1Reached.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/Pos1Reached.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/Pos2Reached.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/Pos2Reached.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_1Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/SubAss2_1Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAss2_2Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/SubAss2_2Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/SubAssW2Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/SubAssW2Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/W1Pos2Available.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/W1Pos2Available.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/fsm/signals/W2Available.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/signals/W2Available.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/lwm2m/Robot2LeshanClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/resources/models/R2_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/resources/models/R2_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_CPMS/src/test/java/robot2/Robot2CpmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/test/java/robot2/Robot2CpmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Worker_Task2/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Worker_Task2/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Worker_Task2/pickAndInsertWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Worker_Task2/pickAndPlaceWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Worker_Task2/workerTask2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/robot3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/robot3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/Robot3CpmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/Logger_Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/R1SMEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/Robot3Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/Robot3CtrlState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3CoordinatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/SignalDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/SignalDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/driver/R3Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/signals/SubAssR3Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/signals/SubAssR3Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/fsm/signals/W1Pos3Available.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/signals/W1Pos3Available.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/lwm2m/Robot3LeshanClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/java/robot3/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/resources/models/R3_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/resources/models/R3_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_CPMS/src/test/java/robot3/Robot3CpmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/test/java/robot3/Robot3CpmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/W1Events.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/Workbench1CpmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/events/Rbt_2_W1_Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/Rbt_2_W1_Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/events/W1Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/events/W1_2_Rbt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/Logger_Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/MessageRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P1StateMachineIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachineIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P2StateMachineIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachineIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/P3StateMachineIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachineIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/fsm/W1_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanAttributeIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanAttributeIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanExecuteIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanExecuteIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot1Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot1Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot2Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot2Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ports/Robot3Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot3Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/RResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/resources/RResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/java/workbench1/lwm2m/resources/ResourceIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/resources/ResourceIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/resources/models/W1_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/models/W1_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/main/resources/models/rpi-device.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/resources/models/rpi-device.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/src/test/java/workbench1/Workbench1CpmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/test/java/workbench1/Workbench1CpmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/GenericStateMachine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/GenericStateMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/Workbench2CpmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/Workbench2CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/Logger_Formatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/SignalDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/W2Ctrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/W2CtrlState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2CoordinatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/W2SMEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2SMEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/driver/W2Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/driver/W2Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/fsm/events/W2Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/events/W2Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot1Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ports/Robot1Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ports/Robot2Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ports/Robot2Port.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/RResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/resources/RResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/java/workbench2/lwm2m/resources/ResourceIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/resources/ResourceIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/resources/models/W2_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/resources/models/W2_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/resources/models/oma-objects-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/models/oma-objects-spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/main/resources/models/rpi-device.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/resources/models/rpi-device.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/src/test/java/workbench2/Workbench2CpmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/test/java/workbench2/Workbench2CpmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/workbench2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/workbench2.log.1" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/Robot1_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Robot2_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Robot3_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Workbench1_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Workbench2_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/target/" />
-    <ignored path="$PROJECT_DIR$/Workbench2_Object/Workbench2_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
+        <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="407" column="43" lean-forward="true" selection-start-line="407" selection-start-column="43" selection-end-line="407" selection-end-column="43" />
+            <state relative-caret-position="270">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java">
+        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="160">
+              <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
             </state>
           </provider>
         </entry>
@@ -64,31 +267,66 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1Event.java" />
-        <option value="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/MessageRequest.java" />
-        <option value="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java" />
-        <option value="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java" />
-        <option value="$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot1App.java" />
-        <option value="$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java" />
-        <option value="$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java" />
-        <option value="$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/driver/R2Driver.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/SignalDetector.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotObject.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/SignalDetector.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3CoordinatorState.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/R1SMEvent.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixClient.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/Robot.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotInstance.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/SignalDetector.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Ctrl.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Coordinator.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Controller.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1_2_Rbt.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/Rbt_2_W1_Event.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1076" />
+    <option name="x" value="3" />
+    <option name="y" value="2" />
+    <option name="width" value="1362" />
+    <option name="height" value="756" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,71 +339,25 @@
               <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gregor Chair - FINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gregor Chair - FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_CPMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3" />
+      <recent name="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,213 +373,403 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="53e841d6-52d8-41d4-923e-f26e5ce9ebcb" name="Default Changelist" comment="" />
-      <created>1560940682068</created>
+      <changelist id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="" />
+      <created>1562070754441</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560940682068</updated>
+      <updated>1562070754441</updated>
     </task>
-    <task id="LOCAL-00001" summary="simple version">
-      <created>1560941110504</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1560941110504</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14870094" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" visible="true" weight="0.32925585" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25377643" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32986626" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="simple version" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple version" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Robot1_CPMS/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/fsm/Logger_Formatter.java">
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/ConfigurationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
           <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot3_CPMS/src/main/java/robot3/lwm2m/AbstractDevice.java">
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="74" column="35" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="83" />
+        <state relative-caret-position="90">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/RobotInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1351">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/ConfigurationUtils.java">
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/RegistrationManager.java">
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_CPMS/.mvn/wrapper/maven-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1_2_Rbt.java">
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/resources/ResourceIf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/resources/RResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ports/Robot1Port.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ports/Robot2Port.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanAttributeIf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanExecuteIf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="232" column="63" lean-forward="true" selection-start-line="232" selection-start-column="63" selection-end-line="232" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/MessageRequest.java" />
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachineIf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/SignalDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2SMEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2CoordinatorState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_CPMS/src/main/java/robot1/lwm2m/Robot1App.java">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1_2_Rbt.java" />
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1Event.java" />
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot1Port.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot2Port.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/fsm/SignalDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/W1Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="e#436#452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/leshanWrapper/LeshanUriIf.java">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot3Port.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanUriIf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/fsm/MessageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/lwm2m/ObservationData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot2_CPMS/src/main/java/robot2/lwm2m/RobotInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="142" column="16" lean-forward="true" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_CPMS/src/main/java/workbench1/events/W1Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/Workbench2CpmsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="69" lean-forward="true" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_CPMS/src/main/java/workbench2/lwm2m/ObservationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/ConfigurationUtils.java">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/Rbt_2_W1_Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="-110">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_CPMS/src/main/java/robot1/fsm/Robot1Ctrl.java">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="407" column="43" lean-forward="true" selection-start-line="407" selection-start-column="43" selection-end-line="407" selection-end-column="43" />
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="83" column="105" selection-start-line="83" selection-start-column="105" selection-end-line="83" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="269" column="24" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="415" column="20" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1CoordinatorState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
