@@ -18,7 +18,7 @@ public class Robot1CoordinatorApplication {
     	Robot1Coordinator robot1coordinator = new Robot1Coordinator();
     		
 
-    	robot1 = new Robot("Robot1", robot1coordinator, args);
+    	/*robot1 = new Robot("Robot1", robot1coordinator, args);
     	robot1.init();
     	try {
 			Thread.sleep(2000);
@@ -27,7 +27,7 @@ public class Robot1CoordinatorApplication {
 			e.printStackTrace();
 		}
     	new Thread(RobotInstance.robot1Coordinator).start();
-
-		//robot1coordinator.callAT1();
+*/
+		robot1coordinator.callAT1();
 	}
 }

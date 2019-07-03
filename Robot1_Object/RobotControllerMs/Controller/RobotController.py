@@ -81,7 +81,6 @@ class RobotController:
             try:
                 message_received = self.unix_server.read_data()
                 print(message_received)
-               #print(json.load(message_received["sender"]))
                 sender_address = message_received["sender"]
                 print(sender_address)
            #     q.put(message_received)
@@ -104,6 +103,24 @@ class RobotController:
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
           #          sem.release()
+                if "PickAndPress" in message_received:
+                    response = self.call_pick_and_press()
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
+                        print("\n \n \n \n paparas")
+                if "PickAndFlipAndPress" in message_received:
+                    response = self.call_pick_and_flip_press()
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
+            #          sem.release()
 
             except (ConnectionResetError, OSError) as e:
                 print(e)

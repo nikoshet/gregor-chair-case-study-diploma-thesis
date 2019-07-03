@@ -5,7 +5,7 @@ from Communication_Wrapper.robot1Coordinator_Wrapper import Robot1Coordinator_Wr
 import json
 import eureka.eureka_client as eureka_client
 
-class AT1Controller:
+class AT2Controller:
 
     unix_server: UnixServer
     unix_client: UnixClient
@@ -35,22 +35,22 @@ class AT1Controller:
                             message = self.unix_server.read_data()
                             print(str(message))
                             if message ==  '{"PickAndPlace_MS": "FINISHED"}':
-                                print("\n \n \n \n pick and place has completed \n \n \n \n")
+                                print("\n pick and place has completed \n")
                                 self.robot1ctrl_wrapper.unix_client.close_client()
                                 break
                         print(" PICK AND PLACE FINISHED . LETS START PICK AND INSERT NOW")
 
                         self.robot1ctrl_wrapper.create_client()
                         self.robot1ctrl_wrapper.connect_2_unix_server(Robot1Ctrl_Wrapper.SERVER_ADDRESS)
-                        self.robot1ctrl_wrapper.send_2_robotctrl(self.robot1ctrl_wrapper.START_MESSAGE_PickAndInsert)
+                        self.robot1ctrl_wrapper.send_2_robotctrl(self.robot1ctrl_wrapper.START_MESSAGE_PickAndFlipAndPress)
                         while True:
                             message = self.unix_server.read_data()
                             print(str(message))
-                            if message ==  '{"PickAndInsert_MS": "FINISHED"}':
-                                print("\n \n \n \n pick and insert has completed \n \n \n \n")
+                            if message ==  '{"PickAndFlipAndPress_MS": "FINISHED"}':
+                                print("\n \n \n \n pick and flip and press has completed \n \n \n \n")
                                 self.robot1ctrl_wrapper.unix_client.close_client()
                                 break
-                        print("PICK AND INSERT FINISHED")
+                        print("PICK AND FLIP AND PRESS FINISHED")
                         print("controller free to service another call")
 
                         self.robot1coordinator_wrapper.create_client()

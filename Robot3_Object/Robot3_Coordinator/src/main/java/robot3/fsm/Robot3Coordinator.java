@@ -18,12 +18,13 @@ import robot3.fsm.signals.W1Pos3Available;
 
 
 public class Robot3Coordinator extends StateMachine{
+
     Robot3CoordinatorState robot3State;
     public static Logger LOGGER;
     public static boolean pos3avail =false;
     public static BlockingQueue<SMReception> notificationQueue;
     State waiting4w1pos3,subAss3;
-    private static UnixClient unixClient = new UnixClient();
+    private UnixClient unixClient = new UnixClient();
 
     public Robot3Coordinator(){
         super(null);
@@ -33,23 +34,18 @@ public class Robot3Coordinator extends StateMachine{
 
         new waiting4W1Pos3_2_subAss3 (waiting4w1pos3,subAss3);
         new subAss3_2_waiting4W1Pos3 (subAss3,waiting4w1pos3);
-        
-        LOGGER = Logger.getLogger(Robot3Coordinator.class.getName() + " LOGGER");
 
+        LOGGER = Logger.getLogger(Robot3Coordinator.class.getName() + " LOGGER");
         LOGGER.info("\n ");
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot3 starting");
-
         setInitState(waiting4w1pos3);
         LOGGER.info("R3: Controller State = " + robot3State +"\n");
     }
-    
-    
+
     public BlockingQueue<SMReception> getEventQueue() {
         return itsMsgQ;
     }
-    
-
 
     //-----------------States----------------
 
@@ -63,14 +59,10 @@ public class Robot3Coordinator extends StateMachine{
         }
 
         @Override
-        protected void doActivity() {
-
-        }
+        protected void doActivity() { }
 
         @Override
-        protected void exit() {
-
-        }
+        protected void exit() { }
     }
 
     public class SubAss3 extends State {
@@ -83,9 +75,7 @@ public class Robot3Coordinator extends StateMachine{
         }
 
         @Override
-        protected void doActivity() {
-
-        }
+        protected void doActivity() { }
 
         @Override
         protected void exit() {
@@ -99,11 +89,9 @@ public class Robot3Coordinator extends StateMachine{
         }
     }
 
-
-    //---------------------Transitions----------------
+    //---------------------Transitions-----------------------------------------
 
     class waiting4W1Pos3_2_subAss3 extends Transition {
-
 
         public waiting4W1Pos3_2_subAss3(State fromState, State toState) {
             super(fromState, toState);
@@ -120,7 +108,6 @@ public class Robot3Coordinator extends StateMachine{
     }
 
     class subAss3_2_waiting4W1Pos3 extends Transition {
-
 
         public subAss3_2_waiting4W1Pos3(State fromState, State toState) {
             super(fromState, toState);
@@ -145,7 +132,6 @@ public class Robot3Coordinator extends StateMachine{
 			        .put("event", "R3acquireW1")
 			        .put("value", "").toString();
             Robot3CoordinatorApplication.robot3.robot2instance.fireResourcesChange(16);
-
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -158,17 +144,14 @@ public class Robot3Coordinator extends StateMachine{
 			        .put("event", "R3releaseW1")
 			        .put("value", "").toString();
             Robot3CoordinatorApplication.robot3.robot2instance.fireResourcesChange(16);
-
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-       
     }
 
     private void workOnW1(){
         LOGGER.severe("SubAss3 started.."+"\n");
         pos3avail =true;
-     
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -185,9 +168,7 @@ public class Robot3Coordinator extends StateMachine{
                 .put("AT3", "START")
                 .put("sender","coordinator")
                 .toString();
-
         unixClient.communicateWithAT(ConfigurationUtils.AT5SocketFile,sendText);
-
     }
 
     private void callAT6(){
@@ -197,9 +178,7 @@ public class Robot3Coordinator extends StateMachine{
                 .put("AT4", "START")
                 .put("sender","coordinator")
                 .toString();
-
         unixClient.communicateWithAT(ConfigurationUtils.AT6SocketFile,sendText);
-
     }
 
 }

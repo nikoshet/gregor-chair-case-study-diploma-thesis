@@ -52,7 +52,7 @@ public class W1Coordinator extends Thread {
                 updatePosLfcs();
                 /*turn tmt 2 false*/
                 tmt = false;
-                /*check if there are defEvents in defEvQueue and serve(eksuphrethse) them*/
+                /*check if there are defEvents in defEvQueue and serve them*/
                 if(!defEvQueue.isEmpty()){
                     processDefEvents();
                 }

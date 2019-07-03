@@ -11,6 +11,8 @@ class Robot1Ctrl_Wrapper:
     COMPLETED_MESSAGE_PickAndInsert = '{"PickAndInsert": "FINISHED","sender": "/tmp/at1.sock"}'
     START_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "STARTED","sender": "/tmp/at1.sock"}'
     COMPLETED_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "FINISHED","sender": "/tmp/at1.sock"}'
+    START_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "STARTED","sender": "/tmp/at1.sock"}'
+    COMPLETED_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "FINISHED","sender": "/tmp/at1.sock"}'
     SERVER_ADDRESS = '/tmp/robot1ctrl.sock'
 
     def create_client(self):
