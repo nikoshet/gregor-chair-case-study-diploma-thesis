@@ -1,57 +1,102 @@
 version: "2.2"
+#version: "3.4"
 
 networks:
   gregor-chair-network-r1:
+    external: true
     driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.16.240.0/24
-          gateway: 172.16.240.11
+#    driver: overlay
+#    driver: host
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 150.140.0.0/16
+#          gateway: 150.140.240.1
+  main:
+  default:
+    external: true
+    name: bridge
+
 volumes:
-  Robot1socket:
+  Robot1CoordinatorSocket:
     driver: "local"
-  Workertask1socket:
+  Robot1ControllerSocket:
+    driver: "local"
+  Workertask1Socket:
+    driver: "local"
+  Workertask2Socket:
     driver: "local"
 services:
-  robot1:
+  robot1coordinator:
     build:
-      context: ./Robot1_CPMS
+      context: ./Robot1_Coordinator
+#      network: host
       dockerfile: Dockerfile
-    networks:
-      gregor-chair-network-r1:
-        ipv4_address: 172.16.240.30
+#      network: host
+#    networks:
+#      hostnet: {}
+    network_mode: bridge
+#      gregor-chair-network-r1:
+#        ipv4_address: 150.140.244.222
+
     volumes:
-      - Robot1socket:/tmp
-    mem_limit: 700m
+      - Robot1CoordinatorSocket:/tmp
+#    mem_limit: 700m
+#    volumes_from:
+#      - robot1controller
+#      - workertask1
+#      - workertask2
+#    networks:
+#      main:
+#        aliases:
+#          - robot1coordinator
   workertask1:
     build:
-      context: ./Worker_Task1
+      context: ./WorkerTask1
       dockerfile: Dockerfile
     volumes:
-      - Workertask1socket:/tmp
+      - Workertask1Socket:/tmp
     links:
-      - robot1
-    volumes_from:
-      - robot1
-    mem_limit: 700m
-  pickandplace:
+      - robot1coordinator
+#    volumes_from:
+#      - robot1coordinator
+#      - robot1controller
+#    mem_limit: 700m
+    networks:
+      main:
+        aliases:
+          - workertask1
+  workertask2:
     build:
-      context: ./PickAndPlace
+      context: ./WorkerTask2
       dockerfile: Dockerfile
+    volumes:
+      - Workertask2Socket:/tmp
     links:
-      - workertask1
-    volumes_from:
-      - workertask1
+      - robot1coordinator
+#    volumes_from:
+#      - robot1coordinator
+#      - robot1controller
+#    mem_limit: 700m
+    networks:
+      main:
+        aliases:
+          - workertask2
 #    cpus: 0.6
-    mem_limit: 700m
-  pickandinsert:
+  robot1controller:
     build:
-      context: ./PickAndInsert
+      context: ./RobotControllerMs
       dockerfile: Dockerfile
-    links:
-      - workertask1
-    volumes_from:
-      - workertask1
-#    cpus: 0.6
-    mem_limit: 700m
+    volumes:
+      - Robot1ControllerSocket:/tmp
+#    mem_limit: 700m
+#    volumes_from:
+#      - robot1coordinator
+#      - workertask1
+#      - workertask2
+#    links:
+#      - robot1coordinator
+    networks:
+      main:
+        aliases:
+          - robot1controller

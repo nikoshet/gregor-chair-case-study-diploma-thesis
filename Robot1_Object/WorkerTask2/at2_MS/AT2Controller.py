@@ -3,7 +3,7 @@ from unix_sockets.unix_client import  UnixClient
 from Communication_Wrapper.robot1ctrl_wrapper import Robot1Ctrl_Wrapper
 from Communication_Wrapper.robot1Coordinator_Wrapper import Robot1Coordinator_Wrapper
 import json
-import eureka.eureka_client as eureka_client
+#import eureka.eureka_client as eureka_client
 
 class AT2Controller:
 

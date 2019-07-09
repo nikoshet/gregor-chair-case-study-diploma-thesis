@@ -48,7 +48,7 @@ public class RegistrationManager implements RegistrationListener{
 		System.out.println("new registration : " + reg.getEndpoint());
 		synchronized (registrations) {
 			registrations.put(reg.getEndpoint(), reg);
-			registrations.notifyAll();
+			registrations.notify();
 			if(reg.getEndpoint().equals("Robot1")) {
 				ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
 				try {
