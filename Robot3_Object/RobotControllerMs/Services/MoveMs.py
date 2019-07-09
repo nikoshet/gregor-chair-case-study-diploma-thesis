@@ -1,10 +1,16 @@
-import json
-
+import time
 
 class MoveMs:
 
+
+    START_MESSAGE = '{"Move_MS": "STARTED"}'
+    COMPLETED_MESSAGE = '{"Move_MS": "FINISHED"}'
+
+    def __init__(self):
+        print("\n \n Move_MS has just started \n \n")
+
     def run_moveMs(self):
         print(" running move microservice ")
-        sleep(1000)
+        time.sleep(5)
         print(" move microservice finished")
-        return self.Messages.COMPLETED
+        return self.COMPLETED_MESSAGE

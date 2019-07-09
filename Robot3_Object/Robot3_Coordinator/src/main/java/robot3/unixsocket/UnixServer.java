@@ -21,7 +21,7 @@ public class UnixServer extends Thread{
         try (AFUNIXServerSocket server = AFUNIXServerSocket.newInstance()) {
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
-
+            outerloop:
             while (true) {
                 System.out.println("Waiting for connection...");
                 try (Socket sock = server.accept()) {
@@ -35,12 +35,12 @@ public class UnixServer extends Thread{
                         if(!response.equals("")){
                             System.out.println("Client's response: " + response);
                             switch (response){
-                                case "AT5_FINISHED":
-                                    System.out.println("AT5 finished.");
-                                    break;
                                 case "AT6_FINISHED":
                                     System.out.println("AT6 finished.");
-                                    break;
+                                    break outerloop;
+                                case "AT7_FINISHED":
+                                    System.out.println("AT7 finished.");
+                                    break outerloop;
 
                             }
                         }

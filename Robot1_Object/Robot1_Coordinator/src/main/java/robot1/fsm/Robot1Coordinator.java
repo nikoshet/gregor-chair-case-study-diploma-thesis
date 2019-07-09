@@ -94,7 +94,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS2;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
-            callMoveMs("pos2");
+           // callMoveMs("pos2");
         }
 
         @Override
@@ -145,7 +145,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS1;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
-            callMoveMs("pos1");
+           // callMoveMs("pos1");
         }
 
         @Override

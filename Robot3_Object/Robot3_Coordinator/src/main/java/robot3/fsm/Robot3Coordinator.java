@@ -152,20 +152,18 @@ public class Robot3Coordinator extends StateMachine{
     private void workOnW1(){
         LOGGER.severe("SubAss3 started.."+"\n");
         pos3avail =true;
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        callAT6();
+
         LOGGER.severe("SubAss3 completed.."+"\n");
         SignalDetector.msgQ.add(new SubAssR3Completed());
     }
 
-    public void callAT5(){
+    public void callAT7(){
         UnixServer server = new UnixServer();
         server.start();
         String sendText = new JSONObject()
-                .put("AT3", "START")
+                .put("AT7", "START")
                 .put("sender","coordinator")
                 .toString();
         unixClient.communicateWithAT(ConfigurationUtils.AT5SocketFile,sendText);
@@ -175,7 +173,7 @@ public class Robot3Coordinator extends StateMachine{
         UnixServer server = new UnixServer();
         server.start();
         String sendText = new JSONObject()
-                .put("AT4", "START")
+                .put("AT6", "START")
                 .put("sender","coordinator")
                 .toString();
         unixClient.communicateWithAT(ConfigurationUtils.AT6SocketFile,sendText);

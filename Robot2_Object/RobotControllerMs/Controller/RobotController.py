@@ -1,29 +1,17 @@
-"""
-this class has all the provided services from this microservice .
-PICK AND PLACE , PICK AND INSERT , SCREW PICK AND FASTEN , MOVE , PICK AND PRESS , PICK AND FLIP AND PRESS ,
-are some of them.
 
-actually is something like coordinator.
-
-"""
-
-
-from unix_sockets.unix_server import UnixServer
-from unix_sockets.unix_client import UnixClient
+from unix_server import UnixServer
+from unix_client import UnixClient
 from multiprocessing import Queue
-from Services.MoveMs import MoveMs
-from Services.PickAndPlace import PickAndPlace
-from Services.PickAndInsert import PickAndInsert
-
-import threading
+from MoveMs import MoveMs
+from PickAndPlace import PickAndPlace
+from PickAndInsert import PickAndInsert
+from ScrewPickAndFasten import ScrewPickAndFasten
 import json
 
 
 class RobotController:
 
-    unix_server: UnixServer
-    unix_client: UnixClient
-    SERVER_ADDRESS = "/tmp/robot1ctrl.sock"
+    SERVER_ADDRESS = "/tmp/robot2ctrl.sock"
 
     def __init__(self):
         self.unix_server = UnixServer(self.SERVER_ADDRESS)
@@ -44,7 +32,8 @@ class RobotController:
         return pickandinsert.start_working() #"pick and insert service "
 
     def call_screw_pick_and_fasten(self):
-        return "screw pick and fasten service "
+        screwpickandfasten = ScrewPickAndFasten()
+        return screwpickandfasten.start_working() #"pick and insert service "
 
     def call_pick_and_press(self):
         return "screw pick and press service "
@@ -81,8 +70,8 @@ class RobotController:
             try:
                 message_received = self.unix_server.read_data()
                 print(message_received)
-               #print(json.load(message_received["sender"]))
-                sender_address = message_received["sender"]
+                message = json.loads(message_received)
+                sender_address = message['sender']
                 print(sender_address)
            #     q.put(message_received)
          #       sem.acquire()
@@ -94,9 +83,25 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-                        print("\n \n \n \n paparas")
+                        print("\n \n \n \n ok")
                 if "PickAndInsert" in message_received:
                     response = self.call_pick_and_insert()
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
+                if "ScrewPickAndFasten" in message_received:
+                    response = self.call_screw_pick_and_fasten()
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
+                if "Move" in message_received:
+                    response = self.call_move()
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.unix_client = UnixClient(str(sender_address))

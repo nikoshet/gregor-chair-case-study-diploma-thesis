@@ -25,5 +25,6 @@ public class Robot2CoordinatorApplication {
 			e.printStackTrace();
 		}
     	new Thread(RobotInstance.robot2Coordinator).start();
+		//robot2controller.callAT3();
 	}
 }

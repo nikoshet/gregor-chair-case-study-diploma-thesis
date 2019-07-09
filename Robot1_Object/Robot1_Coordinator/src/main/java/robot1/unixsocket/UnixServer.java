@@ -19,6 +19,7 @@ public class UnixServer extends Thread{
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
 
+            outerloop:
             while (true) {
                 System.out.println("Waiting for connection...");
                 try (Socket sock = server.accept()) {
@@ -34,16 +35,16 @@ public class UnixServer extends Thread{
                             switch (response){
                                 case "AT1_FINISHED":
                                     System.out.println("AT1 finished.");
-                                    break;
+                                    break outerloop;
                                 case "AT2_FINISHED":
                                     System.out.println("AT2 finished.");
-                                    break;
+                                    break outerloop;
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");
-                                    break;
+                                    break outerloop;
                                 case "POS2_REACHED":
                                     System.out.println("POS2_REACHED.");
-                                    break;
+                                    break outerloop;
                             }
                         }
                     }

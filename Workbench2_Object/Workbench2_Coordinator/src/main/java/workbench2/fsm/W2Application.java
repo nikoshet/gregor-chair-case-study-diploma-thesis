@@ -33,7 +33,7 @@ public class W2Application extends Thread {
 				 e.printStackTrace();
 			 }
 
-		 	System.out.println("All robots have connected");
+		 	System.out.println("All robots have been connected");
 
 	        w2controller = new W2Coordinator();
 	        new Thread (w2controller).start();
