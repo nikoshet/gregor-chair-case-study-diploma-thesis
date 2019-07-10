@@ -1,7 +1,5 @@
 import os
-from unix_client import UnixClient
-from RobotController import RobotController
-import eureka_client as eureka_client
+from Controller.RobotController import RobotController
 
 
 if __name__ == "__main__":

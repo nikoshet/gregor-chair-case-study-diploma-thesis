@@ -8,14 +8,14 @@ actually is something like coordinator.
 """
 
 
-from unix_server import UnixServer
-from unix_client import UnixClient
+from unix_sockets.unix_server import UnixServer
+from unix_sockets.unix_client import UnixClient
 from multiprocessing import Queue
-from MoveMs import MoveMs
-from PickAndPlace import PickAndPlace
-from PickAndInsert import PickAndInsert
-from ScrewPickAndFasten import ScrewPickAndFasten
-from PickAndPress import PickAndPress
+from Services.MoveMs import MoveMs
+from Services.PickAndPlace import PickAndPlace
+from Services.PickAndInsert import PickAndInsert
+from Services.ScrewPickAndFasten import ScrewPickAndFasten
+from Services.PickAndPress import PickAndPress
 
 import threading
 import json
@@ -83,7 +83,7 @@ class RobotController:
             try:
                 message_received = self.unix_server.read_data()
                 print(message_received)
-                message = json.loads(message_received)
+                message = message_received
                 sender_address = message['sender']
                 print(sender_address)
            #     q.put(message_received)

@@ -28,6 +28,6 @@ public class Robot1CoordinatorApplication {
 		}
     	new Thread(RobotInstance.robot1Coordinator).start();
 
-//		robot1coordinator.callAT1();
+		//robot1coordinator.callAT1();
 	}
 }

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e28b39a6-6f50-4f25-a538-f7d97c4326b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Worker_Task6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Worker_Task7/.idea/Worker_Task7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Robot3_Object.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Robot3_Object.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndInsert/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndInsert/PickAndInsert/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndInsert/PickAndInsert/pickAndInsert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndPlace/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndPlace/PickAndPlace/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PickAndPlace/PickAndPlace/pickAndPlace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task3/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task3/Unixsocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task3/pickAndInsertWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task3/pickAndPlaceWrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task3/workerTask3.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Communication_Wrapper/robot3ctrl_wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Communication_Wrapper/robot3Coordinator_Wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/at6_MS/AT6Controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///usr/lib/python3.5/socket.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="194" selection-start-line="194" selection-end-line="194" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Communication_Wrapper/robot3ctrl_wrapper.py" />
+        <option value="$PROJECT_DIR$/Communication_Wrapper/robot3Coordinator_Wrapper.py" />
+        <option value="$PROJECT_DIR$/at6_MS/AT6Controller.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="232" />
+    <option name="y" value="24" />
+    <option name="width" value="683" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Course" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Worker_Task6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Worker_Task6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Worker_Task6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Worker_Task6" type="462c0819:PsiDirectoryNode" />
+              <item name="at6_MS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Worker_Task8" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31811696" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32986626" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/unix_sockets/unix_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Communication_Wrapper/robot3ctrl_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Communication_Wrapper/robot3Coordinator_Wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at6_MS/AT6Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

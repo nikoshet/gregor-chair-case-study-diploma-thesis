@@ -6,6 +6,7 @@ package robot3.unixsocket;
 import org.newsclub.net.unix.AFUNIXServerSocket;
 import org.newsclub.net.unix.AFUNIXSocketAddress;
 import robot3.ConfigurationUtils;
+import robot3.fsm.Robot3Coordinator;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,15 +38,20 @@ public class UnixServer extends Thread{
                             switch (response){
                                 case "AT6_FINISHED":
                                     System.out.println("AT6 finished.");
+                                    Robot3Coordinator.atQueue.put("AT6_FINISHED");
                                     break outerloop;
                                 case "AT7_FINISHED":
                                     System.out.println("AT7 finished.");
+                                    Robot3Coordinator.atQueue.put("AT7_FINISHED");
                                     break outerloop;
-
+                                case "AT8_FINISHED":
+                                    System.out.println("AT8 finished.");
+                                    Robot3Coordinator.atQueue.put("AT8_FINISHED");
+                                    break outerloop;
                             }
                         }
                     }
-                }catch (IOException e) {
+                }catch (IOException | InterruptedException e) {
                     if (server.isClosed()) {
                         throw e;
                     } else {
@@ -53,7 +59,7 @@ public class UnixServer extends Thread{
                     }
                 }
             }
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
 

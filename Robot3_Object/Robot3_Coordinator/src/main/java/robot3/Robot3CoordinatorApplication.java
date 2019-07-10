@@ -16,14 +16,19 @@ public class Robot3CoordinatorApplication {
     	Robot3Coordinator robot3controller = new Robot3Coordinator();
 
     		
-    	robot3 = new Robot("Robot3", robot3controller, args);
-    	robot3.init();
-    	try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
+    	//robot3 = new Robot("Robot3", robot3controller, args);
+    	//robot3.init();
+    	//try {
+		//	Thread.sleep(2000);
+		//} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
+		//	e.printStackTrace();
+		//}
+    	//new Thread(RobotInstance.robot3Ctrl).start();
+		/*try {
+			robot3controller.workOnW1();
+		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
-    	new Thread(RobotInstance.robot3Ctrl).start();
+		}*/
 	}
 }
