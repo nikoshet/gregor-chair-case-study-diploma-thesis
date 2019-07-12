@@ -1,6 +1,6 @@
 import os
 from unix_sockets.unix_client import UnixClient
-from at2_MS.AT3Controller import AT2Controller
+from at2_MS.AT2Controller import AT2Controller
 #import eureka.eureka_client as eureka_client
 
 
