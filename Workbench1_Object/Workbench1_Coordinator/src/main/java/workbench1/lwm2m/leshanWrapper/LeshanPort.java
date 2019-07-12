@@ -20,8 +20,8 @@ public class LeshanPort {
 
 
   public LeshanPort(LeshanServer server, String endpoint) {
-    this.server = server;
-    this.endpoint = endpoint;
+    LeshanPort.server = server;
+    LeshanPort.endpoint = endpoint;
   }
 
   public void execute(LeshanExecuteIf e) throws InterruptedException {

@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b420ea8e-7d9e-4f81-a9c2-b379ec65bef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/Worker_Task6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task6/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Worker_Task7/.idea/Worker_Task7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Robot3_Object.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Robot3_Object.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndInsert/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndInsert/PickAndInsert/Unixsocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndInsert/PickAndInsert/pickAndInsert.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndPlace/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndPlace/PickAndPlace/Unixsocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PickAndPlace/PickAndPlace/pickAndPlace.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PickAndInsert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Worker_Task3/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Worker_Task3/Unixsocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Worker_Task3/pickAndInsertWrapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Worker_Task3/pickAndPlaceWrapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Worker_Task3/workerTask3.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/RobotController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-592">
+            <state relative-caret-position="255">
               <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
@@ -73,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/Services/PickAndInsert.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -123,7 +97,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,11 +123,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -233,14 +208,15 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24460967" />
       <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32952926" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3254086" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32524964" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -248,7 +224,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2981455" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29749632" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,20 +289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unix_sockets/unix_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/PickAndInsert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Services/ScrewPickAndFasten.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -344,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/RobotController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -358,6 +313,27 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unix_sockets/unix_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/RobotController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/PickAndInsert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
