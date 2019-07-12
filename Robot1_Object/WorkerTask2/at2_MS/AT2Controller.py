@@ -3,13 +3,13 @@ from unix_sockets.unix_client import  UnixClient
 from Communication_Wrapper.robot1ctrl_wrapper import Robot1Ctrl_Wrapper
 from Communication_Wrapper.robot1Coordinator_Wrapper import Robot1Coordinator_Wrapper
 import json
-import eureka.eureka_client as eureka_client
+#import eureka.eureka_client as eureka_client
 
 class AT2Controller:
 
     robot1ctrl_wrapper= Robot1Ctrl_Wrapper()
     robot1coordinator_wrapper= Robot1Coordinator_Wrapper()
-    SERVER_ADDRESS = "/tmp/at1.sock"
+    SERVER_ADDRESS = "/tmp/at2.sock"
     def __init__(self):
         self.unix_server = UnixServer(self.SERVER_ADDRESS)
         self.unix_server.start()
