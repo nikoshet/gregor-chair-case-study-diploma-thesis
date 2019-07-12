@@ -12,22 +12,28 @@ public class Robot3CoordinatorApplication {
 
 	public static Robot robot3;
 	public static void main(String[] args) {
-		SpringApplication.run(Robot3CoordinatorApplication.class, args);
-    	Robot3Coordinator robot3controller = new Robot3Coordinator();
+		if(args.length==1){
+			ConfigurationUtils.W1_COAP_SERVER = args[0];
+			SpringApplication.run(Robot3CoordinatorApplication.class, args);
+			Robot3Coordinator robot3controller = new Robot3Coordinator();
 
-    		
-    	robot3 = new Robot("Robot3", robot3controller, args);
-    	robot3.init();
-    	try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+
+			robot3 = new Robot("Robot3", robot3controller, args);
+			robot3.init();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			new Thread(RobotInstance.robot3Ctrl).start();
+			/*try {
+				robot3controller.workOnW1();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}*/
 		}
-    	new Thread(RobotInstance.robot3Ctrl).start();
-		/*try {
-			robot3controller.workOnW1();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}*/
+		else{
+			System.out.println("Please insert 1 parameters for w1server,w2server");
+		}
 	}
 }

@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/leshanWrapper/LeshanPort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/target/" />
     <ignored path="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/target/" />
@@ -27,28 +30,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java">
+        <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixClient.java">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="465">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java">
+        <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+            <state relative-caret-position="225">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -61,9 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/driver/R2Driver.java" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/SignalDetector.java" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/pom.xml" />
         <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotObject.java" />
@@ -100,18 +100,21 @@
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" />
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/WorkerTask3/at3_MS/AT3Controller.py" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" />
         <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" />
         <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" />
-        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" />
       </list>
     </option>
   </component>
@@ -127,7 +130,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,12 +140,114 @@
             <path>
               <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,26 +339,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49627793" visible="true" weight="0.29229608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49627793" visible="true" weight="0.2960725" />
       <window_info id="Structure" order="1" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32986626" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27488855" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32986626" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32986626" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22882615" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007553" side_tool="true" weight="0.32986626" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32986626" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.4011887" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="12" sideWeight="0.49924472" weight="0.32986626" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="13" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32986626" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.27488855" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32986626" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32986626" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22882615" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007553" side_tool="true" weight="0.32986626" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32986626" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.4011887" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="13" sideWeight="0.49924472" weight="0.32986626" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -264,22 +370,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2CoordinatorState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1_2_Rbt.java" />
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1Event.java" />
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot1Port.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ports/Robot2Port.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -336,13 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -477,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -502,13 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -589,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -610,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -624,10 +679,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
