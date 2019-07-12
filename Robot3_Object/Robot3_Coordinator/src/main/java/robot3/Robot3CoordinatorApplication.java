@@ -21,9 +21,13 @@ public class Robot3CoordinatorApplication {
     	try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     	new Thread(RobotInstance.robot3Ctrl).start();
+		/*try {
+			robot3controller.workOnW1();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}*/
 	}
 }

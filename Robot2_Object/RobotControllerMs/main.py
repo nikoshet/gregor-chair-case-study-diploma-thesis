@@ -1,7 +1,7 @@
 import os
-from unix_sockets.unix_client import UnixClient
-from Controller.RobotController import RobotController
-import eureka.eureka_client as eureka_client
+from unix_client import UnixClient
+from RobotController import RobotController
+import eureka_client as eureka_client
 
 
 if __name__ == "__main__":

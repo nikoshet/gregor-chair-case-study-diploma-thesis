@@ -53,7 +53,7 @@ public class W2_LwM2mServer {
 			setSecurelocalAddress(ConfigurationUtils.W2_HOSTNAME);
 			setSecurelocalPort(ConfigurationUtils.W2_COAPS_PORT);
 			initServer();
-			addRegistationService();
+			//addRegistationService();
 			setW2Application(new W2Application(W2_LwM2mServer.lwServer, null));
 			getW2Application().start();
 		}

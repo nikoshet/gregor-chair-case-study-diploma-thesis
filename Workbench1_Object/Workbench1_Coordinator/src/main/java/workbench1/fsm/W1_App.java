@@ -14,8 +14,8 @@ public class W1_App extends Thread{
 	public static String[] args;
 	 
 	public W1_App(LeshanServer server,String[] args) {
-		this.server=server;
-		this.args=args;
+		W1_App.server =server;
+		W1_App.args =args;
 		registrationManager = new RegistrationManager(W1_LwM2mServer.lwServer);
 
 	}
@@ -26,7 +26,7 @@ public class W1_App extends Thread{
 		 w1controller = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
 
 			 try {
-				 registrationManager.waitDevices("Robot1");//,"Robot2","Robot3");
+				 RegistrationManager.waitDevices("Robot1");//,"Robot2","Robot3");
 			 } catch (InterruptedException e) {
 				 e.printStackTrace();
 			 }

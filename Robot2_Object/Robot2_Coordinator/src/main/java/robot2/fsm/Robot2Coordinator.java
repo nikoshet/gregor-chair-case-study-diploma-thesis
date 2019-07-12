@@ -97,7 +97,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS2;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
-            callMoveMs("pos2");
+          //  callMoveMs("pos2");
         }
 
         @Override
@@ -147,7 +147,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS1;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
-            callMoveMs("pos1");
+           // callMoveMs("pos1");
         }
 
         @Override
@@ -370,33 +370,27 @@ public class Robot2Coordinator extends StateMachine{
         Robot2Coordinator.LOGGER.warning("SubAss2OnW1 started.."+"\n");
         pos2avail=true;
         //RobotInstance.fireResourcesChange(0);
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        callAT3();
+
         Robot2Coordinator.LOGGER.warning("SubAss2OnW1 completed.."+"\n");
         SignalDetector.msgQ.add(new SubAss2_1Completed());
     }
 
     private void doSubAss2OnW2(){
         Robot2Coordinator.LOGGER.warning("SubAss2OnW2 started.."+"\n");
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        callAT4();
+
         Robot2Coordinator.LOGGER.warning("SubAss2OnW2 completed.."+"\n");
         SignalDetector.msgQ.add(new SubAssW2Completed());
     }
 
     private void completeSubAss2OnW1(){
         Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 started.."+"\n");
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        callAT5();
+
         Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 completed.."+"\n");
         SignalDetector.msgQ.add(new SubAss2_2Completed());
     }
@@ -421,6 +415,17 @@ public class Robot2Coordinator extends StateMachine{
         unixClient.communicateWithAT(ConfigurationUtils.AT4SocketFile,sendText);
     }
 
+    private void callAT5(){
+        UnixServer server = new UnixServer();
+        server.start();
+        String sendText = new JSONObject()
+                .put("AT5", "START")
+                .put("sender","coordinator")
+                .toString();
+        unixClient.communicateWithAT(ConfigurationUtils.AT5SocketFile,sendText);
+    }
+
+
     private void callMoveMs(String toPosition){
         UnixServer server = new UnixServer();
         server.start();
@@ -431,7 +436,7 @@ public class Robot2Coordinator extends StateMachine{
         unixClient.communicateWithAT(ConfigurationUtils.Robot2CtrlrSocketFile,sendText);
     }
 
-
+}
     /*
 
     public void move2pos2() {
@@ -461,4 +466,3 @@ public class Robot2Coordinator extends StateMachine{
 */
 
 
-}

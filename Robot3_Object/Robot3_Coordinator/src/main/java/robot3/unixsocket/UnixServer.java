@@ -6,6 +6,7 @@ package robot3.unixsocket;
 import org.newsclub.net.unix.AFUNIXServerSocket;
 import org.newsclub.net.unix.AFUNIXSocketAddress;
 import robot3.ConfigurationUtils;
+import robot3.fsm.Robot3Coordinator;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +22,7 @@ public class UnixServer extends Thread{
         try (AFUNIXServerSocket server = AFUNIXServerSocket.newInstance()) {
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
-
+            outerloop:
             while (true) {
                 System.out.println("Waiting for connection...");
                 try (Socket sock = server.accept()) {
@@ -35,17 +36,22 @@ public class UnixServer extends Thread{
                         if(!response.equals("")){
                             System.out.println("Client's response: " + response);
                             switch (response){
-                                case "AT5_FINISHED":
-                                    System.out.println("AT5 finished.");
-                                    break;
                                 case "AT6_FINISHED":
                                     System.out.println("AT6 finished.");
-                                    break;
-
+                                    Robot3Coordinator.atQueue.put("AT6_FINISHED");
+                                    break outerloop;
+                                case "AT7_FINISHED":
+                                    System.out.println("AT7 finished.");
+                                    Robot3Coordinator.atQueue.put("AT7_FINISHED");
+                                    break outerloop;
+                                case "AT8_FINISHED":
+                                    System.out.println("AT8 finished.");
+                                    Robot3Coordinator.atQueue.put("AT8_FINISHED");
+                                    break outerloop;
                             }
                         }
                     }
-                }catch (IOException e) {
+                }catch (IOException | InterruptedException e) {
                     if (server.isClosed()) {
                         throw e;
                     } else {
@@ -53,7 +59,7 @@ public class UnixServer extends Thread{
                     }
                 }
             }
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
 
