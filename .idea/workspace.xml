@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ecwid_consul_consul_api_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_core_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_discovery_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_discovery_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration_server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration_server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration_server/registration_server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration_server/src/main/java/main/ConsulServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration_server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/docker-compose.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench1_Object/Workbench1_CPMS/target/" />
+    <ignored path="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/target/" />
+    <ignored path="$PROJECT_DIR$/registration_server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Gregor_Chair_FINAL" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPlace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2486#2487#0" expanded="true" />
+                <element signature="e#2515#2516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Ctrl.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Coordinator.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P2StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P3StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Controller.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/W1_2_Rbt.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/events/Rbt_2_W1_Event.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" />
+        <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/WorkerTask3/at3_MS/AT3Controller.py" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/java/SampleProperties.java" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/java/ConsulServer.java" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/registration_server/Dockerfile" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/registration_server/pom.xml" />
+        <option value="$PROJECT_DIR$/registration_server/src/main/java/main/ConsulServer.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="117" />
+    <option name="width" value="1026" />
+    <option name="height" value="558" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkerTask2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
+              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkerTask2" type="462c0819:PsiDirectoryNode" />
+              <item name="at2_MS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="VisualVMLauncher" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3" />
+      <recent name="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Robot1CoordinatorApplication">
+    <configuration name="ConsulServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ConsulServer" />
+      <module name="registration_server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsulServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConsulServer" />
+      <module name="registration_server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Robot1CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot1.Robot1CoordinatorApplication" />
+      <module name="Robot1_Coordinator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Robot3CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot3.Robot3CoordinatorApplication" />
+      <module name="Robot3_Coordinator" />
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="2474887471892" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Workbench1CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="workbench1.Workbench1CoordinatorApplication" />
+      <module name="Workbench1_Coordinator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Robot1CoordinatorApplication" />
+        <item itemvalue="Application.ConsulServer (1)" />
+        <item itemvalue="Application.ConsulServer" />
+        <item itemvalue="Application.Robot3CoordinatorApplication" />
+        <item itemvalue="Application.Workbench1CoordinatorApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="" />
+      <created>1562070754441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562070754441</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49627793" visible="true" weight="0.2907855" />
+      <window_info id="Structure" order="1" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32986626" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.46062407" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32986626" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32986626" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.51560175" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007553" side_tool="true" weight="0.32986626" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838038" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.4011887" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="13" sideWeight="0.49924472" weight="0.32986626" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49627793" weight="0.29154077" />
+      <window_info id="Structure" order="1" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.5037221" side_tool="true" weight="0.28021148" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32986626" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.46062407" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32986626" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32986626" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.51560175" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007553" side_tool="true" weight="0.32986626" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838038" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.4011887" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="13" sideWeight="0.49924472" weight="0.32986626" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2370">
+          <caret line="178" column="22" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/P1StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="34" column="69" selection-start-line="34" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/Robot3CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/Robot2CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/ConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/AbstractDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/src/main/java/SampleProperties.java" />
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.2.173.0.1/payara-embedded-all-4.1.2.173.0.1.jar!/com/sun/corba/ee/impl/transport/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/AbstractDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/src/main/java/ConsulServer.java" />
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/src/main/java/main/ConsulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration_server/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="10" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask1/unix_sockets/unix_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45" />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="198" column="12" lean-forward="true" selection-start-line="198" selection-start-column="12" selection-end-line="198" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/SignalDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/uml4iot/GenericStateMachine/1.0-SNAPSHOT/GenericStateMachine-1.0-SNAPSHOT.jar!/uml4iot/GenericStateMachine/core/StateMachine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPlace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1013">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/Robot1CoordinatorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/WorkerTask2/at2_MS/AT2Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>registration_server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Blood Pressure Device",
+    "id": 20000,
+    "instancetype": "multiple",
+    "mandatory": true,
+    "description": "",
+    "resourcedefs": [
+      {
+        "id": 0,
+        "name": "Sensor Value",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "float",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+       {
+        "id": 2,
+        "name": "Blink Led 4",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "Switch Off Led 4",
+        "operations": "E",
+        "instancetype": "single",
+        "mandatory": true,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": ""
+      },
+      {
+        "id": 5701,
+        "name": "Sensor Units",
+        "operations": "R",
+        "instancetype": "single",
+        "mandatory": false,
+        "type": "string",
+        "range": "",
+        "units": "",
+        "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius."
+      }
+    ]
+  }
+]

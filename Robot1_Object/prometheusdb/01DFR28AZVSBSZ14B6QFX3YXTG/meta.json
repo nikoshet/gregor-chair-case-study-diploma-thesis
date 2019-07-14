@@ -1,0 +1,17 @@
+{
+	"ulid": "01DFR28AZVSBSZ14B6QFX3YXTG",
+	"minTime": 1563091200000,
+	"maxTime": 1563098400000,
+	"stats": {
+		"numSamples": 867288,
+		"numSeries": 858,
+		"numChunks": 7228
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01DFR28AZVSBSZ14B6QFX3YXTG"
+		]
+	},
+	"version": 1
+}
