@@ -6,6 +6,10 @@ package robot1.unixsocket;
 import org.newsclub.net.unix.AFUNIXServerSocket;
 import org.newsclub.net.unix.AFUNIXSocketAddress;
 import robot1.ConfigurationUtils;
+import robot1.fsm.Robot1Coordinator;
+import robot1.fsm.SignalDetector;
+import robot1.fsm.signals.SubAss1Completed;
+import robot1.fsm.signals.SubAssW2Completed;
 
 import java.io.*;
 import java.net.Socket;
@@ -35,9 +39,13 @@ public class UnixServer extends Thread{
                             switch (response){
                                 case "AT1_FINISHED":
                                     System.out.println("AT1 finished.");
+                                    Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
+                                    Robot1Coordinator.notificationQueue.add(new SubAss1Completed());
                                     break outerloop;
                                 case "AT2_FINISHED":
                                     System.out.println("AT2 finished.");
+                                    Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
+                                    Robot1Coordinator.notificationQueue.add(new SubAssW2Completed());
                                     break outerloop;
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");

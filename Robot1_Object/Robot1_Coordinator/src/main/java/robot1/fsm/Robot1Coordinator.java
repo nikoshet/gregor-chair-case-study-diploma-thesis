@@ -49,7 +49,6 @@ public class Robot1Coordinator extends StateMachine{
         LOGGER.info("Robot1 starting");
 
         setInitState(waiting4w1pos1);
-        Robot1Coordinator.LOGGER.info("R1: Controller State = " + robot1State +"\n");
     }
 
     //-----------------States----------------
@@ -95,6 +94,7 @@ public class Robot1Coordinator extends StateMachine{
             robot1State = Robot1CoordinatorState.MOVING2POS2;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
            // callMoveMs("pos2");
+            SignalDetector.msgQ.add(new Pos2Reached());
         }
 
         @Override
@@ -146,6 +146,7 @@ public class Robot1Coordinator extends StateMachine{
             robot1State = Robot1CoordinatorState.MOVING2POS1;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
            // callMoveMs("pos1");
+            SignalDetector.msgQ.add(new Pos1Reached());
         }
 
         @Override
@@ -324,8 +325,6 @@ public class Robot1Coordinator extends StateMachine{
         callAT1();
 
 
-        Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAss1Completed());
     }
 
     private void doSubAssW2(){
@@ -342,8 +341,7 @@ public class Robot1Coordinator extends StateMachine{
         }
 
         callAT2();
-        Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAssW2Completed());
+
     }
 
     private void wait4w1pos1() {

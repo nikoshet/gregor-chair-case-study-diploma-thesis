@@ -13,7 +13,7 @@ class AT2Controller:
     def __init__(self):
         self.unix_server = UnixServer(self.SERVER_ADDRESS)
         self.unix_server.start()
-        print("\n \n Unix Server of Assembly task1 has just started \n \n")
+        print("\n \n Unix Server of Assembly task2 has just started \n \n")
 
 
     def start_working(self):

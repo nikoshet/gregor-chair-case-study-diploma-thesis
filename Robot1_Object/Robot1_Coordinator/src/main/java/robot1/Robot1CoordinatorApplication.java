@@ -32,7 +32,7 @@ public class Robot1CoordinatorApplication {
 			}
 			new Thread(RobotInstance.robot1Coordinator).start();
 
-//			robot1coordinator.callAT1();
+		//	robot1coordinator.callAT1();
 		}
 		else{
 			System.out.println("Please insert 2 parameters for w1server,w2server");

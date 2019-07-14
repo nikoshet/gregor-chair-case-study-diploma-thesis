@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    #consul:
+    #  host: localhost
+    #  port: 8500
+    #  discovery:
+        #prefer-ip-address: true
+     #   instanceid: test
+    consul:
+      port: 8500
+      host: 172.17.0.2
+      enabled: true
+      discovery:
+        enabled: true
+        register: true
+        instanceid: test
+        service-name: consul #--registers in consul as server instead of config-server

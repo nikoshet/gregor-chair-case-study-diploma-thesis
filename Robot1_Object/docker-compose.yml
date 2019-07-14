@@ -13,10 +13,14 @@ volumes:
     driver: "local"
   Workertask1socket:
     driver: "local"
+  Workertask2socket:
+    driver: "local"
+  RobotControllersocket:
+    driver: "local"
 services:
   robot1:
     build:
-      context: ./Robot1_CPMS
+      context: ./Robot1_Coordinator
       dockerfile: Dockerfile
     networks:
       gregor-chair-network-r1:
@@ -35,23 +39,26 @@ services:
     volumes_from:
       - robot1
     mem_limit: 700m
-  pickandplace:
+  workertask2:
     build:
-      context: ./PickAndPlace
+      context: ./Worker_Task2
       dockerfile: Dockerfile
+    volumes:
+      - Workertask2socket:/tmp
     links:
-      - workertask1
+      - robot1
     volumes_from:
-      - workertask1
-#    cpus: 0.6
+      - robot1
     mem_limit: 700m
-  pickandinsert:
+  robotcontroller:
     build:
-      context: ./PickAndInsert
+      context: ./RobotControllerMs
       dockerfile: Dockerfile
+    volumes:
+      - RobotControllersocket:/tmp
     links:
-      - workertask1
+      - robot1
     volumes_from:
-      - workertask1
-#    cpus: 0.6
+      - robot1
     mem_limit: 700m
+

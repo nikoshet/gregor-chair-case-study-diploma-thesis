@@ -91,7 +91,6 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-                        print("\n \n \n \n paparas")
                 if "PickAndInsert" in message_received:
                     response = self.call_pick_and_insert()
                     if "FINISHED" in response:
@@ -109,7 +108,6 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-                        print("\n \n \n \n paparas")
                 if "PickAndFlipAndPress" in message_received:
                     response = self.call_pick_and_flip_press()
                     if "FINISHED" in response:

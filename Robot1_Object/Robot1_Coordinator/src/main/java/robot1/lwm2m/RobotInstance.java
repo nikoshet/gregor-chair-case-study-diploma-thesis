@@ -58,7 +58,6 @@ public class RobotInstance extends BaseInstanceEnabler {
         case 2:    //setW2Available
       	 return addSignal(params, Pos2Reached.class);
         case 3:    //setPos1Available
-        	System.out.println("\n \n \n \n \n \n pos1available reached \n \n \n \n \n \n \n ");
         	 return addSignal(params, Pos1AvailSignal.class);
         case 4:    //setW2Available
        	 return addSignal(params, W2Available.class);
@@ -104,7 +103,6 @@ public class RobotInstance extends BaseInstanceEnabler {
 	            	return ExecuteResponse.success();
 	            
 	            case "Pos1Reached":    //setPos1Available
-	            	System.out.println("\n \n \n \n \n \n pos1available reached \n \n \n \n \n \n \n ");
 	            	signaldetect.msgQ.add( new Pos1Reached());
 	            	 return ExecuteResponse.success();
 				  
