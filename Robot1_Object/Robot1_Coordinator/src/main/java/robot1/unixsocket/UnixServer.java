@@ -1,6 +1,3 @@
-/**
- * @author Achilleas Triantafyllou
- */
 package robot1.unixsocket;
 
 import org.newsclub.net.unix.AFUNIXServerSocket;
@@ -23,7 +20,7 @@ public class UnixServer extends Thread{
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
 
-            outerloop:
+            //outerloop:
             while (true) {
                 System.out.println("Waiting for connection...");
                 try (Socket sock = server.accept()) {
@@ -40,19 +37,19 @@ public class UnixServer extends Thread{
                                 case "AT1_FINISHED":
                                     System.out.println("AT1 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
-                                    Robot1Coordinator.notificationQueue.add(new SubAss1Completed());
-                                    break outerloop;
+                                    SignalDetector.msgQ.add(new SubAss1Completed());
+                                    //break outerloop;
                                 case "AT2_FINISHED":
                                     System.out.println("AT2 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
-                                    Robot1Coordinator.notificationQueue.add(new SubAssW2Completed());
-                                    break outerloop;
+                                    SignalDetector.msgQ.add(new SubAssW2Completed());
+                                    //break outerloop;
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");
-                                    break outerloop;
+                                    //break outerloop;
                                 case "POS2_REACHED":
                                     System.out.println("POS2_REACHED.");
-                                    break outerloop;
+                                    //break outerloop;
                             }
                         }
                     }

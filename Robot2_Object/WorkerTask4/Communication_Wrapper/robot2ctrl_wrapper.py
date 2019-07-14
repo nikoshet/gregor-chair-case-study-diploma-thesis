@@ -1,8 +1,8 @@
-from unix_client import UnixClient
+from unix_sockets.unix_client import UnixClient
 import json
 
 
-class Robot1Ctrl_Wrapper:
+class Robot2Ctrl_Wrapper:
 
     unix_client: UnixClient = ""
     START_MESSAGE_PickAndPlace = '{"PickAndPlace": "STARTED","sender": "/tmp/at4.sock"}'

@@ -1,4 +1,4 @@
-from unix_client import UnixClient
+from unix_sockets.unix_client import UnixClient
 import json
 
 

@@ -24,6 +24,7 @@ public class W1_App extends Thread{
 
 
 		 w1controller = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
+		 new ObservationManager(W1_LwM2mServer.lwServer, W1Coordinator.eventQueue);
 
 			 try {
 				 RegistrationManager.waitDevices("Robot1","Robot2","Robot3");
@@ -31,7 +32,6 @@ public class W1_App extends Thread{
 				 e.printStackTrace();
 			 }
 
-			 new ObservationManager(W1_LwM2mServer.lwServer, W1Coordinator.eventQueue);
 
 			try { Thread.sleep(2000); }
 			catch (InterruptedException e) { e.printStackTrace(); }

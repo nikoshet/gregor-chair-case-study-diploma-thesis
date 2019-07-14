@@ -26,7 +26,7 @@ public class Robot3Coordinator extends StateMachine{
     public static BlockingQueue<String> atQueue = new LinkedBlockingDeque<>();
     State waiting4w1pos3,subAss3;
     private UnixClient unixClient = new UnixClient();
-
+    UnixServer server = new UnixServer();
     public Robot3Coordinator(){
         super(null);
         notificationQueue = new ArrayBlockingQueue<SMReception>(10);
@@ -41,6 +41,7 @@ public class Robot3Coordinator extends StateMachine{
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot3 starting");
         setInitState(waiting4w1pos3);
+        server.start();
         LOGGER.info("R3: Controller State = " + robot3State +"\n");
     }
 
@@ -180,8 +181,8 @@ public class Robot3Coordinator extends StateMachine{
 
     private void callAT8(){
         System.out.println(" \n \n \n AT8 \n \n \n ");
-        UnixServer server = new UnixServer();
-        server.start();
+/*        UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT8", "START")
                 .put("sender","coordinator")
@@ -191,8 +192,8 @@ public class Robot3Coordinator extends StateMachine{
 
     private void callAT7(){
         System.out.println(" \n \n \n AT7 \n \n \n ");
-        UnixServer server = new UnixServer();
-        server.start();
+/*        UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT7", "START")
                 .put("sender","coordinator")
@@ -202,8 +203,8 @@ public class Robot3Coordinator extends StateMachine{
 
     private void callAT6(){
         System.out.println(" \n \n \n AT6 \n \n \n ");
-        UnixServer server = new UnixServer();
-        server.start();
+/*        UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT6", "START")
                 .put("sender","coordinator")
