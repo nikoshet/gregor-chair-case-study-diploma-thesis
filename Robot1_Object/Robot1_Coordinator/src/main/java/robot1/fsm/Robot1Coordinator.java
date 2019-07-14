@@ -4,9 +4,8 @@ import robot1.ConfigurationUtils;
 import robot1.Robot1CoordinatorApplication;
 import robot1.lwm2m.RobotInstance;
 import robot1.unixsocket.UnixClient;
-import robot1.unixsocket.UnixServer;
 import uml4iot.GenericStateMachine.core.*;
-
+import robot1.unixsocket.UnixServer;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.Level;
@@ -21,12 +20,13 @@ public class Robot1Coordinator extends StateMachine{
     public static Logger LOGGER;
     public static boolean pos1avail=false;
     public static boolean w2avail=false;
-	public static BlockingQueue<SMReception> notificationQueue;
+	public static BlockingQueue<SMReception> notificationQueue = new ArrayBlockingQueue<SMReception>(10);
     private State waiting4w1pos1,subass1,moving2pos2,waiting4w2,subassw2,moving2pos1;
     private static UnixClient unixClient = new UnixClient();
+    UnixServer server = new UnixServer();
+
     public Robot1Coordinator(){
         super(null);
-        notificationQueue = new ArrayBlockingQueue<SMReception>(10);
         waiting4w1pos1 = new Waiting4W1Pos1();
         subass1 = new SubAss1();
         moving2pos2 = new Moving2Pos2();
@@ -47,7 +47,7 @@ public class Robot1Coordinator extends StateMachine{
         LOGGER.info("\n ");
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot1 starting");
-
+        server.start();
         setInitState(waiting4w1pos1);
     }
 
@@ -370,8 +370,8 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     public void callAT1(){
-        UnixServer server = new UnixServer();
-        server.start();
+        /*UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT1", "START")
                 .put("sender","coordinator")
@@ -382,8 +382,8 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     private void callAT2(){
-        UnixServer server = new UnixServer();
-        server.start();
+       /* UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT2", "START")
                 .put("sender","coordinator")
@@ -394,8 +394,8 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     private void callMoveMs(String toPosition){
-        UnixServer server = new UnixServer();
-        server.start();
+       /* UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("MOVE_MS", "GOTO : " +toPosition)
                 .put("sender","coordinator")

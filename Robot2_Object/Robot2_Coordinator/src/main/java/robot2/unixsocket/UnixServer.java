@@ -1,6 +1,3 @@
-/**
- * @author Achilleas Triantafyllou
- */
 package robot2.unixsocket;
 
 import org.newsclub.net.unix.AFUNIXServerSocket;
@@ -27,7 +24,7 @@ public class UnixServer extends Thread{
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
 
-            outerloop:
+            //outerloop:
             while (true) {
                 System.out.println("Waiting for connection...");
                 try (Socket sock = server.accept()) {
@@ -44,24 +41,24 @@ public class UnixServer extends Thread{
                                 case "AT3_FINISHED":
                                     System.out.println("AT3 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW1 completed.."+"\n");
-                                    Robot2Coordinator.notificationQueue.add(new SubAss2_1Completed());
-                                    break outerloop;
+                                    SignalDetector.msgQ.add(new SubAss2_1Completed());
+                                    //break outerloop;
                                 case "AT4_FINISHED":
                                     System.out.println("AT4 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW2 completed.."+"\n");
-                                    Robot2Coordinator.notificationQueue.add(new SubAssW2Completed());
-                                    break outerloop;
+                                    SignalDetector.msgQ.add(new SubAssW2Completed());
+                                    //break outerloop;
                                 case "AT5_FINISHED":
                                     System.out.println("AT5 finished.");
                                     Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 completed.."+"\n");
-                                    Robot2Coordinator.notificationQueue.add(new SubAss2_2Completed());
-                                    break outerloop;
+                                    SignalDetector.msgQ.add(new SubAss2_2Completed());
+                                    //break outerloop;
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");
-                                    break outerloop;
+                                   //break outerloop;
                                 case "POS2_REACHED":
                                     System.out.println("POS2_REACHED.");
-                                    break outerloop;
+                                    //break outerloop;
                             }
                         }
                     }

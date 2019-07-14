@@ -26,7 +26,9 @@ public class W2Application extends Thread {
 	 @Override
 	    public void run() {
 
-			 // Wait for clients to connect
+			 w2controller = new W2Coordinator();
+			 new ObservationManager(W2_LwM2mServer.lwServer, w2controller.itsMsgQ);
+				 // Wait for clients to connect
 			 try {
 				registrations.waitDevices("Robot1" , "Robot2");
 			 } catch (InterruptedException e) {
@@ -35,9 +37,8 @@ public class W2Application extends Thread {
 
 		 	System.out.println("All robots have been connected");
 
-	        w2controller = new W2Coordinator();
+
 	        new Thread (w2controller).start();
-	        new ObservationManager(W2_LwM2mServer.lwServer, w2controller.itsMsgQ);
 	        
 	        try {
 				Thread.sleep(2000);

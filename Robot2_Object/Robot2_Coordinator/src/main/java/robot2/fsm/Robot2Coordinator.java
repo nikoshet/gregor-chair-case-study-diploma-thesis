@@ -28,7 +28,7 @@ public class Robot2Coordinator extends StateMachine{
     public static BlockingQueue<SMReception> notificationQueue;
     State waiting4w1pos2,subass2,moving2pos2,waiting4w2,subassw2,moving2pos1,completingSubAss2;
     private static UnixClient unixClient = new UnixClient();
-
+    UnixServer server = new UnixServer();
     public Robot2Coordinator(){
         super(null);
         notificationQueue = new ArrayBlockingQueue<SMReception>(10);
@@ -52,7 +52,7 @@ public class Robot2Coordinator extends StateMachine{
         LOGGER.info("\n");
         LOGGER.setLevel(Level.WARNING); // Request that every detail gets logged.
         LOGGER.info("Robot2 starting");
-
+        server.start();
         setInitState(waiting4w1pos2);
         Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
     }
@@ -394,8 +394,8 @@ public class Robot2Coordinator extends StateMachine{
     }
 
     public void callAT3(){
-        UnixServer server = new UnixServer();
-        server.start();
+        /*UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT3", "START")
                 .put("sender","coordinator")
@@ -404,8 +404,8 @@ public class Robot2Coordinator extends StateMachine{
     }
 
     private void callAT4(){
-        UnixServer server = new UnixServer();
-        server.start();
+        /*UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT4", "START")
                 .put("sender","coordinator")
@@ -414,8 +414,8 @@ public class Robot2Coordinator extends StateMachine{
     }
 
     private void callAT5(){
-        UnixServer server = new UnixServer();
-        server.start();
+        /*UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("AT5", "START")
                 .put("sender","coordinator")
@@ -425,8 +425,8 @@ public class Robot2Coordinator extends StateMachine{
 
 
     private void callMoveMs(String toPosition){
-        UnixServer server = new UnixServer();
-        server.start();
+        /*UnixServer server = new UnixServer();
+        server.start();*/
         String sendText = new JSONObject()
                 .put("MOVE_MS", "GOTO : " +toPosition)
                 .put("sender","coordinator")

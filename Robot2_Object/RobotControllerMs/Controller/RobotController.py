@@ -1,11 +1,12 @@
 
-from unix_server import UnixServer
-from unix_client import UnixClient
+from unix_sockets.unix_server import UnixServer
+from unix_sockets.unix_client import UnixClient
 from multiprocessing import Queue
-from MoveMs import MoveMs
-from PickAndPlace import PickAndPlace
-from PickAndInsert import PickAndInsert
-from ScrewPickAndFasten import ScrewPickAndFasten
+from Services.MoveMs import MoveMs
+from Services.PickAndPlace import PickAndPlace
+from Services.PickAndInsert import PickAndInsert
+from Services.ScrewPickAndFasten import ScrewPickAndFasten
+from Services.PickAndFlipAndPress import PickAndFlipAndPress
 import json
 
 
@@ -41,8 +42,9 @@ class RobotController:
     def call_move(self):
         return MoveMs.MoveMs.run_moveMs()
 
-    def call_pick_and_flip_press(self):
-        return "pick and flip and press service "
+    def call_pick_and_flip_and_press(self):
+        pickandflipandpress = PickAndFlipAndPress()
+        return pickandflipandpress.start_working()  #"pick and flip anf press service "
 
     def stop_controller(self):
         return " ad"
@@ -70,8 +72,7 @@ class RobotController:
             try:
                 message_received = self.unix_server.read_data()
                 print(message_received)
-                message = json.loads(message_received)
-                sender_address = message['sender']
+                sender_address = message_received["sender"]
                 print(sender_address)
            #     q.put(message_received)
          #       sem.acquire()
@@ -94,6 +95,14 @@ class RobotController:
                         self.unix_client.close_client()
                 if "ScrewPickAndFasten" in message_received:
                     response = self.call_screw_pick_and_fasten()
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
+                if "PickAndFlipAndPress" in message_received:
+                    response = self.call_pick_and_flip_and_press()
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.unix_client = UnixClient(str(sender_address))

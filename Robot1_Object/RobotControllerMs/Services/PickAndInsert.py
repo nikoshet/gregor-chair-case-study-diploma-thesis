@@ -10,7 +10,7 @@ class PickAndInsert:
     COMPLETED_MESSAGE = '{"PickAndInsert_MS": "FINISHED"}'
 
     def __init__(self):
-        print("\n \n Unix Server of PickAndPlace has just started \n \n")
+        print("\n \n Unix Server of PickAndInsert has just started \n \n")
 
     def start_working(self):
      #while True:
@@ -21,7 +21,7 @@ class PickAndInsert:
                     print('doing PickAndInsert')
                     time.sleep(5)
                     print('PickAndInsert finished..')
-                    print('Replying to WT1 server...')
+                    print('Replying to WT server...')
                     encoded_response = self.COMPLETED_MESSAGE
                     #self.unix_client.connect_client(self.WT1_ADDRESS)
                     #self.unix_client.send_data(encoded_response)

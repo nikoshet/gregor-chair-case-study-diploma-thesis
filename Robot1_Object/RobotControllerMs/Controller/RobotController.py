@@ -14,6 +14,7 @@ from multiprocessing import Queue
 from Services.MoveMs import MoveMs
 from Services.PickAndPlace import PickAndPlace
 from Services.PickAndInsert import PickAndInsert
+from Services.PickAndFlipAndPress import PickAndFlipAndPress
 
 import threading
 import json
@@ -51,7 +52,8 @@ class RobotController:
         return MoveMs.MoveMs.run_moveMs()
 
     def call_pick_and_flip_press(self):
-        return "pick and flip and press service "
+        pickandflipandpress = PickAndFlipAndPress()
+        return pickandflipandpress.start_working()  #"pick and flip anf press service "
 
     def stop_controller(self):
         return " ad"
@@ -81,8 +83,6 @@ class RobotController:
                 print(message_received)
                 sender_address = message_received["sender"]
                 print(sender_address)
-           #     q.put(message_received)
-         #       sem.acquire()
                 if "PickAndPlace" in message_received:
                     response = self.call_pick_and_place()
                     if "FINISHED" in response:

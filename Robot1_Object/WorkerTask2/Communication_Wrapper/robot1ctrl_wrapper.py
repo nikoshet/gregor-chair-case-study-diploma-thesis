@@ -4,14 +4,14 @@ import json
 
 class Robot1Ctrl_Wrapper:
 
-    START_MESSAGE_PickAndPlace = '{"PickAndPlace": "STARTED","sender": "/tmp/at1.sock"}'
-    COMPLETED_MESSAGE_PickAndPlace = '{"PickAndPlace": "FINISHED","sender": "/tmp/at1.sock"}'
-    START_MESSAGE_PickAndInsert = '{"PickAndInsert": "STARTED","sender": "/tmp/at1.sock"}'
-    COMPLETED_MESSAGE_PickAndInsert = '{"PickAndInsert": "FINISHED","sender": "/tmp/at1.sock"}'
-    START_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "STARTED","sender": "/tmp/at1.sock"}'
-    COMPLETED_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "FINISHED","sender": "/tmp/at1.sock"}'
-    START_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "STARTED","sender": "/tmp/at1.sock"}'
-    COMPLETED_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "FINISHED","sender": "/tmp/at1.sock"}'
+    START_MESSAGE_PickAndPlace = '{"PickAndPlace": "STARTED","sender": "/tmp/at2.sock"}'
+    COMPLETED_MESSAGE_PickAndPlace = '{"PickAndPlace": "FINISHED","sender": "/tmp/at2.sock"}'
+    START_MESSAGE_PickAndInsert = '{"PickAndInsert": "STARTED","sender": "/tmp/at2.sock"}'
+    COMPLETED_MESSAGE_PickAndInsert = '{"PickAndInsert": "FINISHED","sender": "/tmp/at2.sock"}'
+    START_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "STARTED","sender": "/tmp/at2.sock"}'
+    COMPLETED_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "FINISHED","sender": "/tmp/at2.sock"}'
+    START_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "STARTED","sender": "/tmp/at2.sock"}'
+    COMPLETED_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "FINISHED","sender": "/tmp/at2.sock"}'
     SERVER_ADDRESS = '/tmp/robot1ctrl.sock'
 
     def create_client(self):

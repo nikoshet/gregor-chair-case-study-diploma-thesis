@@ -1,9 +1,9 @@
-from unix_server import UnixServer
-from unix_client import UnixClient
-from robot2ctrl_wrapper import Robot2Ctrl_Wrapper
-from robot2Coordinator_Wrapper import Robot2Coordinator_Wrapper
+from unix_sockets.unix_server import  UnixServer
+from unix_sockets.unix_client import  UnixClient
+from Communication_Wrapper.robot2ctrl_wrapper import Robot2Ctrl_Wrapper
+from Communication_Wrapper.robot2Coordinator_Wrapper import Robot2Coordinator_Wrapper
 import json
-import eureka_client as eureka_client
+#import eureka_client as eureka_client
 
 class AT5Controller:
 

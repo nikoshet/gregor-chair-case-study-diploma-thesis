@@ -26,7 +26,7 @@ class PickAndPressController:
                 if json.loads(message_received) == self.START_MESSAGE: #"{\"PickAndPlace_MS\": \"STARTED\"}":
                     print('doing PickAndPlace')
                     print('PickAndPlace finished..')
-                    print('Replying to WT1 server...')
+                    print('Replying to WT server...')
                     encoded_response = json.dumps(self.COMPLETED_MESSAGE).encode()
                     self.unix_client.connect_client(self.AT1_ADDRESS)
                     self.unix_client.send_data(encoded_response)

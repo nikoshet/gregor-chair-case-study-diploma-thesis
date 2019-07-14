@@ -22,7 +22,7 @@ class PickAndPlace:
                     print('doing PickAndPlace')
                     time.sleep(5)
                     print('PickAndPlace finished..')
-                    print('Replying to WT1 server...')
+                    print('Replying to WT server...')
                     response = self.COMPLETED_MESSAGE
                     #self.unix_client.connect_client(self.WT1_ADDRESS)
                     #self.unix_client.send_data(encoded_response)

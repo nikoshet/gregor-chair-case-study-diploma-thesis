@@ -1,9 +1,9 @@
-from unix_server import  UnixServer
-from unix_client import  UnixClient
-from robot2ctrl_wrapper import Robot2Ctrl_Wrapper
-from robot2Coordinator_Wrapper import Robot2Coordinator_Wrapper
+from unix_sockets.unix_server import  UnixServer
+from unix_sockets.unix_client import  UnixClient
+from Communication_Wrapper.robot2ctrl_wrapper import Robot2Ctrl_Wrapper
+from Communication_Wrapper.robot2Coordinator_Wrapper import Robot2Coordinator_Wrapper
 import json
-import eureka_client as eureka_client
+#import eureka_client as eureka_client
 
 class AT4Controller:
 
@@ -32,7 +32,7 @@ class AT4Controller:
                         while True:
                             message = self.unix_server.read_data()
                             print(str(message))
-                            if message ==  '{"ScrewPickAndFasten": "FINISHED"}':
+                            if message ==  '{"ScrewPickAndFasten_MS": "FINISHED"}':
                                 print("\n \n \n \n screw pick and fasten has completed \n \n \n \n")
                                 self.robot2ctrl_wrapper.unix_client.close_client()
                                 break

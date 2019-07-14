@@ -13,7 +13,7 @@ class PickAndInsert:
                     print('doing PickAndInsert')
                     time.sleep(5)
                     print('PickAndInsert finished..')
-                    print('Replying to WT1 server...')
+                    print('Replying to WT server...')
                     encoded_response = self.COMPLETED_MESSAGE
                     return encoded_response
             except (ConnectionResetError, OSError) as e:

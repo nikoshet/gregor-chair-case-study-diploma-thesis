@@ -50,38 +50,39 @@ public class RegistrationManager implements RegistrationListener{
 
 	@Override
 	public  void registered(Registration reg, Registration previousReg, Collection<Observation> previousObsersations) {
-		
+
 		System.out.println("new registration : " + reg.getEndpoint());
-	      registrations.put(reg.getEndpoint(), reg);
-	      if(reg.getEndpoint().equals("Robot1")) {
-	    	  ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
-				 
-				 try {
-					
-					LwM2mResponse response1= W2Application.server.send(reg, observe1);
+		synchronized (registrations) {
+			registrations.put(reg.getEndpoint(), reg);
+			registrations.notifyAll();
+			if (reg.getEndpoint().equals("Robot1")) {
+				ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
+
+				try {
+
+					LwM2mResponse response1 = W2Application.server.send(reg, observe1);
 					System.out.println("device response: " + response1);
-				
+
 				} catch (InterruptedException e) {
-					
+
 					e.printStackTrace();
 				}
-	      }
-	      else if(reg.getEndpoint().equals("Robot2")) {
-			 ObserveRequest observe0 = new ObserveRequest("/20001/0/16");
-			 System.out.println(observe0.getPath());
-			
-			 try {
-				LwM2mResponse response0= W2Application.server.send(reg, observe0);
-				System.out.println("device response: " + response0);
-				
-			
-			} catch (InterruptedException e) {
-				
-				e.printStackTrace();
+			} else if (reg.getEndpoint().equals("Robot2")) {
+				ObserveRequest observe0 = new ObserveRequest("/20001/0/16");
+				System.out.println(observe0.getPath());
+
+				try {
+					LwM2mResponse response0 = W2Application.server.send(reg, observe0);
+					System.out.println("device response: " + response0);
+
+
+				} catch (InterruptedException e) {
+
+					e.printStackTrace();
+				}
 			}
+
 		}
-	     
-		
 	}
 
 	@Override
