@@ -1,64 +1,154 @@
-version: "2.2"
-
+#version: "2.2"
+version: '3.2'
 networks:
   gregor-chair-network-r1:
     driver: bridge
     ipam:
       driver: default
       config:
-        - subnet: 172.16.240.0/24
-          gateway: 172.16.240.11
+        - subnet: 192.168.0.0/24
+#        - gateway: 172.16.240.11
+  main:
+
 volumes:
-  Robot1socket:
+  Robot1CoordinatorSocket:
     driver: "local"
-  Workertask1socket:
+  Robot1ControllerSocket:
     driver: "local"
-  Workertask2socket:
+  Workertask1Socket:
     driver: "local"
-  RobotControllersocket:
+  Workertask2Socket:
     driver: "local"
 services:
-  robot1:
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-piechart-panel,jdbranham-diagram-panel
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=gocas
+    depends_on:
+      - prometheus
+  prometheus:
+#    build:
+#      context: ./Prometheus
+#      dockerfile: Dockerfile
+#    ports:
+#      - "9090:9090/tcp"
+#    volumes:
+#      - ./prometheus-data:/prometheus
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: always
+    ports:
+      - 9090:9090
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheusdb:/prometheus/data:rw  #needs command 'sudo chmod -R 777 prometheusdb'
+    depends_on:
+      - cadvisor
+      - node-exporter
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    restart: always
+  cadvisor:
+    image: google/cadvisor:latest
+    container_name: cadvisor
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    depends_on:
+      - w1
+      - robot1coordinator
+      - workertask1
+      - workertask2
+      - robot1controller
+    privileged: true
+  robot1coordinator:
     build:
       context: ./Robot1_Coordinator
+#      network: host
       dockerfile: Dockerfile
+    container_name: r1coordinator
     networks:
       gregor-chair-network-r1:
-        ipv4_address: 172.16.240.30
+        ipv4_address: 192.168.0.10
     volumes:
-      - Robot1socket:/tmp
-    mem_limit: 700m
+      - /tmp:/tmp
+#      - Workertask1Socket
   workertask1:
     build:
-      context: ./Worker_Task1
+      context: ./WorkerTask1
       dockerfile: Dockerfile
+    container_name: workertask1
     volumes:
-      - Workertask1socket:/tmp
+#      - Robot1CoordinatorSocket
+#      - Workertask1Socket:/tmp
+      - /tmp:/tmp
     links:
-      - robot1
-    volumes_from:
-      - robot1
-    mem_limit: 700m
+      - robot1coordinator
+    environment:
+      - PYTHONUNBUFFERED=1
+#    volumes_from:
+#      - robot1coordinator
+#      - robot1controller
+    networks:
+      main:
+        aliases:
+          - workertask1
   workertask2:
     build:
-      context: ./Worker_Task2
+      context: ./WorkerTask2
       dockerfile: Dockerfile
+    container_name: workertask2
     volumes:
-      - Workertask2socket:/tmp
+#      - Robot1CoordinatorSocket
+#      - Workertask2Socket:/tmp
+      - /tmp:/tmp
     links:
-      - robot1
-    volumes_from:
-      - robot1
-    mem_limit: 700m
-  robotcontroller:
+      - robot1coordinator
+    environment:
+      - PYTHONUNBUFFERED=1
+#    volumes_from:
+#      - robot1coordinator
+#      - robot1controller
+    networks:
+      main:
+        aliases:
+          - workertask2
+#    cpus: 0.6
+#    mem_limit: 700m
+  robot1controller:
     build:
       context: ./RobotControllerMs
       dockerfile: Dockerfile
+    container_name: robot1controller
     volumes:
-      - RobotControllersocket:/tmp
+#      - Robot1CoordinatorSocket
+#      - Robot1ControllerSocket:/tmp
+      - /tmp:/tmp
+#    volumes_from:
+#      - robot1coordinator
+#      - workertask1
+#      - workertask2
     links:
-      - robot1
-    volumes_from:
-      - robot1
-    mem_limit: 700m
-
+      - robot1coordinator
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      main:
+        aliases:
+          - robot1controller

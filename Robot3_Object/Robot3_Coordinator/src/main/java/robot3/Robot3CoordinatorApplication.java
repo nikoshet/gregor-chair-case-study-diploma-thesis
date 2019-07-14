@@ -33,7 +33,7 @@ public class Robot3CoordinatorApplication {
 			}*/
 		}
 		else{
-			System.out.println("Please insert 1 parameters for w1server,w2server");
+			System.out.println("Please insert 1 parameter for w1server");
 		}
 	}
 }

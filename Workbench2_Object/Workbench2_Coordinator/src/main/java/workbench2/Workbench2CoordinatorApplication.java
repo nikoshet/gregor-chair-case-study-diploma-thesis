@@ -16,7 +16,15 @@ public class Workbench2CoordinatorApplication implements CommandLineRunner {
 	
 	
 	public static void main(String[] args) {
-		SpringApplication.run(Workbench2CoordinatorApplication.class, args);
+
+		if(args.length==1){
+			ConfigurationUtils.W1_HOSTNAME = args[0];
+			SpringApplication.run(Workbench2CoordinatorApplication.class, args);
+		}
+		else{
+			System.out.println("Please insert 1 parameter for w1server");
+		}
+
 	}
 
 	@Override
