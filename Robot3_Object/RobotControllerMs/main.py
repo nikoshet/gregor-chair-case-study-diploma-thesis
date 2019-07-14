@@ -1,6 +1,6 @@
 import os
 from Controller.RobotController import RobotController
-
+#import eureka.eureka_client as eureka_client
 
 if __name__ == "__main__":
     # execute only if run as a script

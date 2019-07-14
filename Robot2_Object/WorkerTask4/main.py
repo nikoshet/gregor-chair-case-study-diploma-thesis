@@ -1,7 +1,6 @@
 import os
-from unix_client import UnixClient
-from AT4Controller import AT4Controller
-import eureka_client as eureka_client
+from at4_MS.AT4Controller import AT4Controller
+#import eureka.eureka_client as eureka_client
 
 
 if __name__ == "__main__":

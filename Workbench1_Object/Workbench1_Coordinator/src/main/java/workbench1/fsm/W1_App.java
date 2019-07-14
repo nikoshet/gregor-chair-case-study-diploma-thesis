@@ -26,7 +26,7 @@ public class W1_App extends Thread{
 		 w1controller = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
 
 			 try {
-				 RegistrationManager.waitDevices("Robot1");//,"Robot2","Robot3");
+				 RegistrationManager.waitDevices("Robot1","Robot2","Robot3");
 			 } catch (InterruptedException e) {
 				 e.printStackTrace();
 			 }
