@@ -98,6 +98,7 @@ public class Robot2Coordinator extends StateMachine{
             robot2State = Robot2CoordinatorState.MOVING_2_POS2;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
           //  callMoveMs("pos2");
+            SignalDetector.msgQ.add(new Pos2Reached());
         }
 
         @Override
@@ -148,6 +149,7 @@ public class Robot2Coordinator extends StateMachine{
             robot2State = Robot2CoordinatorState.MOVING_2_POS1;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
            // callMoveMs("pos1");
+            SignalDetector.msgQ.add(new Pos1Reached());
         }
 
         @Override
@@ -373,8 +375,7 @@ public class Robot2Coordinator extends StateMachine{
 
         callAT3();
 
-        Robot2Coordinator.LOGGER.warning("SubAss2OnW1 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAss2_1Completed());
+
     }
 
     private void doSubAss2OnW2(){
@@ -382,8 +383,7 @@ public class Robot2Coordinator extends StateMachine{
 
         callAT4();
 
-        Robot2Coordinator.LOGGER.warning("SubAss2OnW2 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAssW2Completed());
+
     }
 
     private void completeSubAss2OnW1(){
@@ -391,8 +391,6 @@ public class Robot2Coordinator extends StateMachine{
 
         callAT5();
 
-        Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAss2_2Completed());
     }
 
     public void callAT3(){

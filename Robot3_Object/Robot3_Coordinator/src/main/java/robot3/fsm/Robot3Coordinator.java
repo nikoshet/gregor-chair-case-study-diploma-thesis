@@ -171,12 +171,11 @@ public class Robot3Coordinator extends StateMachine{
                     callAT8();
                     break;
                 case "AT8_FINISHED":
+                    LOGGER.severe("SubAss3 completed.."+"\n");
+                    SignalDetector.msgQ.add(new SubAssR3Completed());
                     break outerloop;
             }
         }
-
-        LOGGER.severe("SubAss3 completed.."+"\n");
-        SignalDetector.msgQ.add(new SubAssR3Completed());
     }
 
     private void callAT8(){

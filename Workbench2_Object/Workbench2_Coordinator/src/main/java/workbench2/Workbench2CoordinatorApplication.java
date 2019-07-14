@@ -18,7 +18,7 @@ public class Workbench2CoordinatorApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 
 		if(args.length==1){
-			ConfigurationUtils.W1_HOSTNAME = args[0];
+			ConfigurationUtils.W2_HOSTNAME = args[0];
 			SpringApplication.run(Workbench2CoordinatorApplication.class, args);
 		}
 		else{
