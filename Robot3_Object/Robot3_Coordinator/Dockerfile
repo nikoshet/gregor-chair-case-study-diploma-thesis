@@ -1,7 +1,8 @@
-# FROM maven:alpine
+#FROM raspbian/stretch:latest
 FROM ubuntu:16.04
 LABEL MAINTAINER GOCAS
 
+#ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
 ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
 ENV LANG            	     en_US.UTF-8
 ENV LC_ALL          	     en_US.UTF-8
