@@ -4,7 +4,6 @@ import json
 
 class Robot1Coordinator_Wrapper:
 
-    unix_client: UnixClient = ""
     COMPLETED_MESSAGE = "AT2_FINISHED"
     SERVER_ADDRESS = '/tmp/robot1coordinator.sock'
 
