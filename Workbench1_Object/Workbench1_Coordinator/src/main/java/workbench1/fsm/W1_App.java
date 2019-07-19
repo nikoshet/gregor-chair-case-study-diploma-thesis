@@ -26,11 +26,11 @@ public class W1_App extends Thread{
 		 w1controller = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
 		 new ObservationManager(W1_LwM2mServer.lwServer, W1Coordinator.eventQueue);
 
-			 try {
+			/* try {
 				 RegistrationManager.waitDevices("Robot1","Robot2","Robot3");
 			 } catch (InterruptedException e) {
 				 e.printStackTrace();
-			 }
+			 }*/
 
 
 			try { Thread.sleep(2000); }

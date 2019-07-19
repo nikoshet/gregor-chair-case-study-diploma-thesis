@@ -1,9 +1,15 @@
 package workbench1.fsm;
+import org.json.JSONObject;
+import workbench1.ConfigurationUtils;
 import workbench1.events.Rbt_2_W1_Event;
+import workbench1.unixsocket.UnixClient;
+import workbench1.unixsocket.UnixServer;
 
 import java.lang.Thread;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.*;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,13 +28,16 @@ public class W1Coordinator extends Thread {
     private boolean tmt = false;
     static Logger LOGGER;
 
+    public static BlockingQueue<String> ctrlQueue = new LinkedBlockingDeque<>();
+    UnixServer unixServer = new UnixServer();
+    UnixClient unixclient = new UnixClient();
     W1Coordinator(P1StateMachine p1St, P2StateMachine p2St, P3StateMachine p3St){
         /*Create Logger file and make configurations */
     	System.out.println("controller started");
         LOGGER = Logger.getLogger(W1Coordinator.class.getName()+ "LOGGER");
 
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
-
+        unixServer.start();
         LOGGER.info("W1 starting");
         p1CurSt = p1St;
         p2CurSt = p2St;
@@ -46,7 +55,26 @@ public class W1Coordinator extends Thread {
 
             /*check if table must turn and make the appropriate actions*/
             if(tmt){
-                System.out.println("Table Must Turn");
+                System.out.println(" \n \n Table Must Turn \n \n ");
+                String sendText = new JSONObject()
+                        .put("ROTATE", "START")
+                        .toString();
+                unixclient.communicate(ConfigurationUtils.W1CCtrlrSocketFile,sendText);
+                outerloop:
+                while(true){
+                    String value = null;
+                    try {
+                        value = ctrlQueue.take();
+                        switch (value.toString()){
+                            case "ROTATE_FINISHED":
+                                System.out.println("\n \n ROTATE FINISHED \n \n ");
+                                break outerloop;
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
 
                 /*updatePosLfcs*/
                 updatePosLfcs();
