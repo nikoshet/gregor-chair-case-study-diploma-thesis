@@ -84,6 +84,11 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void exit() {
             SendRelease2W1Pos1();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -93,8 +98,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS2;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
-           // callMoveMs("pos2");
-            SignalDetector.msgQ.add(new Pos2Reached());
+            callMoveMs("right");
         }
 
         @Override
@@ -136,6 +140,11 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void exit() {
             SendRelease2W2();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -145,8 +154,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS1;
             Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
-           // callMoveMs("pos1");
-            SignalDetector.msgQ.add(new Pos1Reached());
+            callMoveMs("left");
         }
 
         @Override
@@ -370,8 +378,6 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     public void callAT1(){
-        /*UnixServer server = new UnixServer();
-        server.start();*/
         String sendText = new JSONObject()
                 .put("AT1", "START")
                 .put("sender","coordinator")
@@ -382,8 +388,6 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     private void callAT2(){
-       /* UnixServer server = new UnixServer();
-        server.start();*/
         String sendText = new JSONObject()
                 .put("AT2", "START")
                 .put("sender","coordinator")
@@ -394,8 +398,6 @@ public class Robot1Coordinator extends StateMachine{
     }
 
     private void callMoveMs(String toPosition){
-       /* UnixServer server = new UnixServer();
-        server.start();*/
         String sendText = new JSONObject()
                 .put("MOVE_MS", "GOTO : " +toPosition)
                 .put("sender","coordinator")

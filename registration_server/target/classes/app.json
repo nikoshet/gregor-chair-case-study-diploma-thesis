@@ -1,0 +1,6 @@
+{
+  "service": {
+    "name": "sample-app",
+    "tags": ["v1.0-SNAPSHOT"]
+  }
+}

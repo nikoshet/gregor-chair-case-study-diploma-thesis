@@ -88,6 +88,9 @@ public class W1Coordinator extends Thread {
             if(!tmt){
                 p1CurSt = p1TargSt;
             }
+            else{
+                //edw na ginei to rotate
+            }
         }
         else if(pos[nextEvent.eventSource][0]== 2){
             p2TargSt = p2CurSt.definePosStates(nextEvent, tmt, p1CurSt, p3CurSt);
@@ -102,6 +105,9 @@ public class W1Coordinator extends Thread {
             if(!tmt) {
                 p2CurSt = p2TargSt;
             }
+            else{
+                //edw na ginei to rotate
+            }
         }
         else if(pos[nextEvent.eventSource][0]== 3){
             p3TargSt =	p3CurSt.definePosStates(nextEvent, tmt, p1CurSt, p2CurSt);
@@ -112,8 +118,12 @@ public class W1Coordinator extends Thread {
                 System.out.println("DeferredEvent4P1: R3AcquireP3");
             }
 
-            if(!tmt)
+            if(!tmt){
                 p3CurSt = p3TargSt;
+            }
+            else{
+                //edw na ginei to rotate
+            }
         }
     }
 

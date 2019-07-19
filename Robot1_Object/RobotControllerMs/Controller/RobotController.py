@@ -10,14 +10,16 @@ actually is something like coordinator.
 
 from unix_sockets.unix_server import UnixServer
 from unix_sockets.unix_client import UnixClient
-from multiprocessing import Queue
-from Services.MoveMs import MoveMs
+#from multiprocessing import Queue
 from Services.PickAndPlace import PickAndPlace
 from Services.PickAndInsert import PickAndInsert
 from Services.PickAndFlipAndPress import PickAndFlipAndPress
+from Services.Move import Move
+from Services.ScrewPickAndFasten import ScrewPickAndFasten
+from Services.PickAndPress import PickAndPress
 
-import threading
-import json
+#import threading
+#import json
 
 
 class RobotController:
@@ -27,7 +29,6 @@ class RobotController:
     def __init__(self):
         self.unix_server = UnixServer(self.SERVER_ADDRESS)
         self.unix_server.start()
-       #self.unix_client = UnixClient(self.AT1_ADDRESS)
         print("\n \n Unix Server of Robot Controller has just started \n \n")
 
 #########################################################
@@ -43,23 +44,27 @@ class RobotController:
         return pickandinsert.start_working() #"pick and insert service "
 
     def call_screw_pick_and_fasten(self):
-        return "screw pick and fasten service "
+        screwpickandfasten = ScrewPickAndFasten()
+        return screwpickandfasten.start_working()
 
     def call_pick_and_press(self):
-        return "screw pick and press service "
+        pickandpress = PickAndPress()
+        return pickandpress.start_working()
 
-    def call_move(self):
-        return MoveMs.MoveMs.run_moveMs()
+    def call_move(self, toPosition):
+        move = Move()
+        return move.start_working(toPosition)
 
     def call_pick_and_flip_press(self):
         pickandflipandpress = PickAndFlipAndPress()
-        return pickandflipandpress.start_working()  #"pick and flip anf press service "
+        return pickandflipandpress.start_working()
 
     def stop_controller(self):
         return " ad"
 
     def wrong_message_response(self):
         return "wrong messsage received"
+
 
     @staticmethod
     def call_microservice(self,service):
@@ -72,6 +77,7 @@ class RobotController:
             "pick_and_flip_press": self.call_pick_and_flip_press(),
         }
         return switcher.get(service , self.wrong_message_response())
+
 
 
     def start_controller(self):
@@ -99,7 +105,6 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-          #          sem.release()
                 if "PickAndPress" in message_received:
                     response = self.call_pick_and_press()
                     if "FINISHED" in response:
@@ -116,7 +121,14 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-            #          sem.release()
+                if "Move" in message_received:
+                    response = self.call_move(message_received)
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.unix_client = UnixClient(str(sender_address))
+                        self.unix_client.connect_client(str(sender_address))
+                        self.unix_client.send_data(response)
+                        self.unix_client.close_client()
 
             except (ConnectionResetError, OSError) as e:
                 print(e)

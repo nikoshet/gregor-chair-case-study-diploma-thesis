@@ -39,8 +39,9 @@ class RobotController:
     def call_pick_and_press(self):
         return "screw pick and press service "
 
-    def call_move(self):
-        return MoveMs.MoveMs.run_moveMs()
+    def call_move(self,message):
+ 	move = MoveMs()
+        return move.start_working(message) #"move service "
 
     def call_pick_and_flip_and_press(self):
         pickandflipandpress = PickAndFlipAndPress()
@@ -110,7 +111,7 @@ class RobotController:
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
                 if "Move" in message_received:
-                    response = self.call_move()
+                    response = self.call_move(message_received)
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.unix_client = UnixClient(str(sender_address))

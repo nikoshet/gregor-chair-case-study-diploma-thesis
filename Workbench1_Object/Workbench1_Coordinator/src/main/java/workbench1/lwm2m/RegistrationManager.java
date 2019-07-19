@@ -81,6 +81,9 @@ public class RegistrationManager implements RegistrationListener{
 
 	@Override
 	public void unregistered(Registration reg, Collection<Observation> observations, boolean expired, Registration newReg) {
+	  	LOG.warn("\n \n SOS \n \n " +
+					"\n \n "+ reg.getEndpoint() +" unregistered \n \n"+
+					"\n \n SOS \n \n");
 		registrations.remove(reg.getEndpoint());
 	}
 

@@ -2,41 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83484d7b-65c6-4be3-9993-1d93bb065c19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gregor Chair - FINAL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/Move.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/MoveMs.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1Coordinator_Wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1Coordinator_Wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/WorkerTask2/Communication_Wrapper/robot1ctrl_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1_Object/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/Communication_Wrapper/robot2Coordinator_Wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/Communication_Wrapper/robot2Coordinator_Wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/Communication_Wrapper/robot2ctrl_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/Communication_Wrapper/robot2ctrl_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/at3_MS/AT3Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask3/at3_MS/AT3Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/Communication_Wrapper/robot2Coordinator_Wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/Communication_Wrapper/robot2Coordinator_Wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/Communication_Wrapper/robot2ctrl_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/Communication_Wrapper/robot2ctrl_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/at4_MS/AT4Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask4/at4_MS/AT4Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/Communication_Wrapper/robot2Coordinator_Wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/Communication_Wrapper/robot2Coordinator_Wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/Communication_Wrapper/robot2ctrl_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/Communication_Wrapper/robot2ctrl_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/at5_MS/AT5Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/WorkerTask5/at5_MS/AT5Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2_Object/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3_Object/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Services/MoveMs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Services/MoveMs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/Services/MoveMs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3_Object/RobotControllerMs/Services/MoveMs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/target/" />
     <ignored path="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/target/" />
@@ -60,92 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1110">
-              <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1636">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
             </state>
           </provider>
         </entry>
@@ -176,9 +83,7 @@
       <list>
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/pom.xml" />
         <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java" />
-        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" />
         <option value="$PROJECT_DIR$/Robot1_Object/WorkerTask1/at1_MS/AT1Controller.py" />
-        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" />
         <option value="$PROJECT_DIR$/Robot2_Object/WorkerTask3/at3_MS/AT3Controller.py" />
         <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/Dockerfile" />
@@ -216,15 +121,17 @@
         <option value="$PROJECT_DIR$/Robot2_Object/WorkerTask4/at4_MS/AT4Controller.py" />
         <option value="$PROJECT_DIR$/Robot1_Object/RobotControllerMs/Controller/RobotController.py" />
         <option value="$PROJECT_DIR$/Robot2_Object/RobotControllerMs/Controller/RobotController.py" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" />
         <option value="$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" />
-        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" />
-        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" />
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" />
         <option value="$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/fsm/W2Application.java" />
         <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" />
+        <option value="$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" />
+        <option value="$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" />
+        <option value="$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java" />
       </list>
     </option>
   </component>
@@ -235,7 +142,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="472" />
     <option name="y" value="-4" />
     <option name="width" value="1300" />
@@ -246,245 +159,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot1" type="462c0819:PsiDirectoryNode" />
-              <item name="unixsocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot2" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot2" type="462c0819:PsiDirectoryNode" />
-              <item name="unixsocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot3" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Robot3_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot3" type="462c0819:PsiDirectoryNode" />
-              <item name="unixsocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -492,8 +202,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -502,8 +212,8 @@
               <item name="workbench1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="Gregor_Chair_FINAL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gregor_Chair_FINAL" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
               <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -511,89 +221,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="workbench1" type="462c0819:PsiDirectoryNode" />
               <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench1_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench1_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workbench1" type="462c0819:PsiDirectoryNode" />
-              <item name="lwm2m" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workbench2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workbench2" type="462c0819:PsiDirectoryNode" />
-              <item name="fsm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gregor-chair-case-study-diploma-thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gregor-chair-case-study-diploma-thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Object" type="462c0819:PsiDirectoryNode" />
-              <item name="Workbench2_Coordinator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workbench2" type="462c0819:PsiDirectoryNode" />
-              <item name="lwm2m" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -695,10 +329,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49627793" visible="true" weight="0.24599226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49627793" visible="true" weight="0.25302115" />
       <window_info id="Structure" order="1" sideWeight="0.50520056" side_tool="true" weight="0.2907855" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -724,20 +357,13 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32930514" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -970,66 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1110">
-          <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3001#3002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1037,24 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1636">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        <state relative-caret-position="195">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1065,13 +617,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/Workbench1CoordinatorApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench2_Object/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="58" column="72" lean-forward="true" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="54" column="54" lean-forward="true" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot3_Object/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="127" column="17" lean-forward="true" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot1_Object/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Robot2_Object/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4515">
+          <caret line="334" column="68" selection-start-line="334" selection-start-column="68" selection-end-line="334" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/ObservationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="89" column="76" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Workbench1_Object/Workbench1_Coordinator/src/main/java/workbench1/fsm/W1Coordinator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>

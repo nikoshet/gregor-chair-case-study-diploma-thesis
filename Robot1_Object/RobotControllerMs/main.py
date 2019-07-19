@@ -10,6 +10,7 @@ if __name__ == "__main__":
 
         #eureka_client.start()
         robot = RobotController()
+        #robot.call_move("right")
         robot.start_controller()
     except Exception as e:
         print("Error: unable to start thread")

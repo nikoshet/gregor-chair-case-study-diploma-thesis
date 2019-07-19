@@ -5,6 +5,8 @@ import org.newsclub.net.unix.AFUNIXSocketAddress;
 import robot1.ConfigurationUtils;
 import robot1.fsm.Robot1Coordinator;
 import robot1.fsm.SignalDetector;
+import robot1.fsm.signals.Pos1Reached;
+import robot1.fsm.signals.Pos2Reached;
 import robot1.fsm.signals.SubAss1Completed;
 import robot1.fsm.signals.SubAssW2Completed;
 
@@ -46,9 +48,10 @@ public class UnixServer extends Thread{
                                     //break outerloop;
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");
-                                    //break outerloop;
+                                    SignalDetector.msgQ.add(new Pos1Reached());
                                 case "POS2_REACHED":
                                     System.out.println("POS2_REACHED.");
+                                    SignalDetector.msgQ.add(new Pos2Reached());
                                     //break outerloop;
                             }
                         }

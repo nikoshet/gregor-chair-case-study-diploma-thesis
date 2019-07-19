@@ -97,8 +97,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS2;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
-          //  callMoveMs("pos2");
-            SignalDetector.msgQ.add(new Pos2Reached());
+            callMoveMs("left");
         }
 
         @Override
@@ -139,6 +138,11 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void exit() {
             SendRelease2W2();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -148,8 +152,8 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS1;
             Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
-           // callMoveMs("pos1");
-            SignalDetector.msgQ.add(new Pos1Reached());
+            callMoveMs("right");
+
         }
 
         @Override
@@ -425,12 +429,11 @@ public class Robot2Coordinator extends StateMachine{
 
 
     private void callMoveMs(String toPosition){
-        /*UnixServer server = new UnixServer();
-        server.start();*/
         String sendText = new JSONObject()
                 .put("MOVE_MS", "GOTO : " +toPosition)
                 .put("sender","coordinator")
                 .toString();
+
         unixClient.communicateWithAT(ConfigurationUtils.Robot2CtrlrSocketFile,sendText);
     }
 
