@@ -110,15 +110,16 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-                if "Move" in message_received:
-                    response = self.call_move(message_received)
-                    if "FINISHED" in response:
+                 if "Move" in message_received:
+                    position = message_received["Move"]
+                    response = self.call_move(position)
+                    print("\n \n \n \n \n " + str(position) + "\n \n \n \n \n ")
+                    if "REACHED" in response:
                         print("controller free to service another call")
                         self.unix_client = UnixClient(str(sender_address))
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-          #          sem.release()
 
             except (ConnectionResetError, OSError) as e:
                 print(e)

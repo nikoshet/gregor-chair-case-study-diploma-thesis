@@ -1,5 +1,5 @@
 import time
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 
 out1 = 13
 out2 = 11
@@ -16,8 +16,8 @@ class Rotate:
     def start_working(self):
         try:
             print('doing Rotate')
-            initPins()
-            rotate()
+            #initPins()
+            #rotate()
             print('Rotate finished..')
             print('Replying to server...')
             encoded_response = self.COMPLETED_MESSAGE
@@ -113,4 +113,4 @@ class Rotate:
                     continue
                 Direction=Direction-1
 
-    GPIO.cleanup()
+    #GPIO.cleanup()

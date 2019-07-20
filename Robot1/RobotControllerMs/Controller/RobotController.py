@@ -50,7 +50,7 @@ class RobotController:
 
     def call_move(self, toPosition):
         move = Move()
-        return move.startWorking(toPosition)
+        return move.start_working(toPosition)
 
     def call_pick_and_flip_press(self):
         pickandflipandpress = PickAndFlipAndPress()
