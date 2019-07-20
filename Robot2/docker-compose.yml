@@ -1,0 +1,138 @@
+version: "2"
+#version: '3.2'
+networks:
+  gregor-chair-network-r2:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.1.0/24
+#        - gateway: 172.16.240.11
+#  main:
+
+#volumes:
+#  Robot2CoordinatorSocket:
+#    driver: "local"
+#  Robot2ControllerSocket:
+#    driver: "local"
+#  Workertask3Socket:
+#    driver: "local"
+#  Workertask4Socket:
+#    driver: "local"
+#  Workertask5Socket:
+#    driver: "local"
+services:
+#  grafana:
+#    image: grafana/grafana:latest
+#    container_name: grafana
+#    restart: always
+#    ports:
+#      - "3000:3000"
+#    environment:
+#      - GF_INSTALL_PLUGINS=grafana-piechart-panel,jdbranham-diagram-panel
+#      - GF_SECURITY_ADMIN_USER=admin
+#      - GF_SECURITY_ADMIN_PASSWORD=gocas
+#    depends_on:
+#      - prometheus
+#  prometheus:
+#    image: prom/prometheus:latest
+#    container_name: prometheus
+#    restart: always
+#    ports:
+#      - 9090:9090
+#    command:
+#      - --config.file=/etc/prometheus/prometheus.yml
+#    volumes:
+#      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+#      - ./prometheusdb:/prometheus/data:rw  #needs command 'sudo chmod -R 777 prometheusdb'
+#    depends_on:
+#      - cadvisor
+#      - node-exporter
+#  node-exporter:
+#    image: prom/node-exporter:latest
+#    container_name: node-exporter
+#    ports:
+#      - "9100:9100"
+#    restart: always
+#  cadvisor:
+#    image: google/cadvisor:latest
+#    container_name: cadvisor
+#    restart: always
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - /:/rootfs:ro
+#      - /var/run:/var/run:rw
+#      - /sys:/sys:ro
+#      - /var/lib/docker/:/var/lib/docker:ro
+#    depends_on:
+#      - w1
+#      - robot1coordinator
+#      - workertask1
+#      - workertask2
+#      - robot1controller
+#    privileged: true
+  robot2coordinator:
+    build:
+      context: ./Robot2_Coordinator
+      dockerfile: Dockerfile
+    container_name: r2coordinator
+    networks:
+      gregor-chair-network-r2:
+        ipv4_address: 192.168.1.20
+    volumes:
+      - /tmp:/tmp
+    links:
+      - workertask3
+      - workertask4
+      - workertask5
+  workertask3:
+    build:
+      context: ./WorkerTask3
+      dockerfile: Dockerfile
+    container_name: workertask3
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robot2controller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask4:
+    build:
+      context: ./WorkerTask4
+      dockerfile: Dockerfile
+    container_name: workertask4
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robot2controller
+    environment:
+      - PYTHONUNBUFFERED=1
+#    cpus: 0.6
+#    mem_limit: 700m
+  workertask5:
+    build:
+      context: ./WorkerTask5
+      dockerfile: Dockerfile
+    container_name: workertask5
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robot2controller
+    environment:
+      - PYTHONUNBUFFERED=1
+#    cpus: 0.6
+#    mem_limit: 700m
+  robot2controller:
+    build:
+      context: ./RobotControllerMs
+      dockerfile: Dockerfile
+    container_name: robot2controller
+    volumes:
+      - /tmp:/tmp
+      - /dev/gpiomem:/dev/gpiomem
+    privileged: true
+    environment:
+      - PYTHONUNBUFFERED=1
+
+
