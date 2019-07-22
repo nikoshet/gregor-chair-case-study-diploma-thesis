@@ -87,7 +87,7 @@ public class Robot3Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W1Pos3();
             try {
-				Thread.sleep(250);
+				Thread.sleep(750);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

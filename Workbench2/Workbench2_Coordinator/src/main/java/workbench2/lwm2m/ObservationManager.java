@@ -13,6 +13,8 @@ import org.eclipse.leshan.server.observation.ObservationListener;
 import org.eclipse.leshan.server.registration.Registration;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import uml4iot.GenericStateMachine.core.MessageQueue;
 import uml4iot.GenericStateMachine.core.SMReception;
 import workbench2.fsm.SignalDetector;
@@ -23,6 +25,8 @@ import workbench2.lwm2m.resources.RResources;
 
 
 public class ObservationManager implements ObservationListener{
+
+	private static final Logger LOG = LoggerFactory.getLogger(ObservationManager.class);
 
 	public static SignalDetector signaldetect;
 
@@ -48,13 +52,16 @@ public class ObservationManager implements ObservationListener{
 	}
 
 	@Override
-	public void onResponse(Observation observation, Registration registration, ObserveResponse response) {
+	public synchronized void onResponse(Observation observation, Registration registration, ObserveResponse response) {
 		// TODO Auto-generated method stub
-		 System.out.println("New notification from client " + observation.getRegistrationId()+ ": "
-	                + response.getContent() + response.getObservation().getPath().toString());
+		 //System.out.println("New notification from client " + observation.getRegistrationId()+ ": "
+	     //           + response.getContent() + response.getObservation().getPath().toString());
 		// System.out.println( observation.getContext());
-		 
-		 if (registration != null) {
+		LOG.info("\n \n \n \n New notification from client " + observation.getRegistrationId()+ ": "
+				+ response.getContent() + response.getObservation().getPath().toString()+"\n \n \n \n ");
+
+
+		if (registration != null) {
 	            String path = response.getObservation().getPath().toString();
 
 	            LwM2mNode node = response.getContent();
@@ -108,6 +115,7 @@ public class ObservationManager implements ObservationListener{
                         }*/
 	            }
 	        }
+		 notifyAll();
 	}
 
 	@Override
@@ -128,46 +136,46 @@ public class ObservationManager implements ObservationListener{
         String endpointName = data.getEndpoint();
         String path = data.getPath();
 
-        //W2 R1 events
-        if (endpointName.equals("Robot1")) {
-            if (RResources.EVENTofR1.getPath().equals(path)) {
-                JSONObject json = new JSONObject(data.getValue(String.class));
-                String event = json.getString("event");
-                System.out.println(event);
-				W2Coordinator.LOGGER.severe(json.toString());
-				if(event.equals("R1acquireW2")) {
-					//W2Coordinator.eventQueue.add(W2Event.R1AcquireW2);
-					
-					System.out.println("\n \n \n \n \n \n robot1 send acquire to w2 \n \n \n \n \n \n ");
-                	this.queue.add(W2SMEvent.R1ACQUIREW2 );
-					//SignalDetector.msgQ.add(new R1ACQUIREW2());
-                }
-                else if(event.equals("R1releaseW2")) {
-					this.queue.add(W2SMEvent.R1RELEASEW2 );
-					//SignalDetector.msgQ.add(new R1RELEASEW2());
-                }
-               
-            }
-        }
+			//W2 R1 events
+			if (endpointName.equals("Robot1")) {
+				if (RResources.EVENTofR1.getPath().equals(path)) {
+					JSONObject json = new JSONObject(data.getValue(String.class));
+					String event = json.getString("event");
+					System.out.println(event);
+					W2Coordinator.LOGGER.severe(json.toString());
+					if(event.equals("R1acquireW2")) {
+						//W2Coordinator.eventQueue.add(W2Event.R1AcquireW2);
 
-       //W2 R2 events
-        if (endpointName.equals("Robot2")) {
-        	 if (RResources.EVENTofR2.getPath().equals(path)) {
-                 JSONObject json = new JSONObject(data.getValue(String.class));
-                 String event = json.getString("event");
-                 System.out.println(event);
-				 W2Coordinator.LOGGER.severe(json.toString());
-                 if(event.equals("R2acquireW2")) {
-					 this.queue.add(W2SMEvent.R2ACQUIREW2 );
-					 //SignalDetector.msgQ.add(new R2ACQUIREW2());
-                 }
-                 else if(event.equals("R2releaseW2")) {
-					 this.queue.add(W2SMEvent.R2RELEASEW2 );
-					 //SignalDetector.msgQ.add(new R2RELEASEW2());
-                 }
-                
-             }
-        }
+						System.out.println("\n \n \n \n \n \n robot1 send acquire to w2 \n \n \n \n \n \n ");
+						this.queue.add(W2SMEvent.R1ACQUIREW2 );
+						//SignalDetector.msgQ.add(new R1ACQUIREW2());
+					}
+					else if(event.equals("R1releaseW2")) {
+						this.queue.add(W2SMEvent.R1RELEASEW2 );
+						//SignalDetector.msgQ.add(new R1RELEASEW2());
+					}
+
+				}
+			}
+
+			//W2 R2 events
+			if (endpointName.equals("Robot2")) {
+				if (RResources.EVENTofR2.getPath().equals(path)) {
+					JSONObject json = new JSONObject(data.getValue(String.class));
+					String event = json.getString("event");
+					System.out.println(event);
+					W2Coordinator.LOGGER.severe(json.toString());
+					if(event.equals("R2acquireW2")) {
+						this.queue.add(W2SMEvent.R2ACQUIREW2 );
+						//SignalDetector.msgQ.add(new R2ACQUIREW2());
+					}
+					else if(event.equals("R2releaseW2")) {
+						this.queue.add(W2SMEvent.R2RELEASEW2 );
+						//SignalDetector.msgQ.add(new R2RELEASEW2());
+					}
+
+				}
+			}
 
         return null;
     }

@@ -85,7 +85,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W1Pos1();
             try {
-                Thread.sleep(200);
+                Thread.sleep(750);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -141,7 +141,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W2();
             try {
-                Thread.sleep(200);
+                Thread.sleep(750);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -140,7 +140,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W2();
             try {
-                                Thread.sleep(200);
+                                Thread.sleep(750);
                         } catch (InterruptedException e) {
                                 // TODO Auto-generated catch block
                                 e.printStackTrace();
@@ -182,7 +182,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W1Pos2();
             try {
-				Thread.sleep(200);
+				Thread.sleep(750);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -431,7 +431,7 @@ public class Robot2Coordinator extends StateMachine{
                 .put("sender","/tmp/robot2coordinator.sock")
                 .toString();
 
-        unixClient.communicateWithAT(ConfigurationUtils.Robot1CtrlrSocketFile,sendText);
+        unixClient.communicateWithAT(ConfigurationUtils.Robot2CtrlrSocketFile,sendText);
     }
 
 }

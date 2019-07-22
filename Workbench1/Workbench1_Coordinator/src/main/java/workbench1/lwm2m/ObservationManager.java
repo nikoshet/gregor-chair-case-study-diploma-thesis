@@ -13,11 +13,15 @@ import org.eclipse.leshan.server.observation.ObservationListener;
 import org.eclipse.leshan.server.registration.Registration;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import workbench1.events.Rbt_2_W1_Event;
 import workbench1.fsm.W1Coordinator;
 import workbench1.lwm2m.resources.RResources;
 
 public class ObservationManager implements ObservationListener{
+
+	private static final Logger LOG = LoggerFactory.getLogger(ObservationManager.class);
 
 	public ObservationManager(LeshanServer server , ArrayBlockingQueue<Rbt_2_W1_Event> eventQueue) {
 		  server.getObservationService().addListener(this);
@@ -32,11 +36,13 @@ public class ObservationManager implements ObservationListener{
 	public void cancelled(Observation observation) { }
 
 	@Override
-	public void onResponse(Observation observation, Registration registration, ObserveResponse response) {
-		System.out.println("New notification from client " + observation.getRegistrationId()+ ": "
-	                + response.getContent() + response.getObservation().getPath().toString());
-		 
-		 if (registration != null) {
+	public synchronized void onResponse(Observation observation, Registration registration, ObserveResponse response) {
+		//System.out.println("New notification from client " + observation.getRegistrationId()+ ": "
+	    //            + response.getContent() + response.getObservation().getPath().toString());
+		LOG.info("\n \n \n \n New notification from client " + observation.getRegistrationId()+ ": "
+				+ response.getContent() + response.getObservation().getPath().toString()+"\n \n \n \n ");
+
+		if (registration != null) {
 	            String path = response.getObservation().getPath().toString();
 
 	            LwM2mNode node = response.getContent();
@@ -46,16 +52,21 @@ public class ObservationManager implements ObservationListener{
 	                for (Map.Entry<Integer, LwM2mResource> entry : resources.entrySet()) {
 	                    LwM2mSingleResource value = (LwM2mSingleResource) entry.getValue();
 	                    String fullPath = path + '/' + value.getId();
-	                    try { mapEvent2Queue(new ObservationData(registration, value, fullPath)); }
+	                    try {
+	                    	mapEvent2Queue(new ObservationData(registration, value, fullPath));
+	                    }
 	                    catch (JSONException e) { e.printStackTrace(); }
 	                }
 	            }
 	            else if (node instanceof LwM2mSingleResource) {
 	                LwM2mSingleResource value = (LwM2mSingleResource) node;
-	                try { mapEvent2Queue(new ObservationData(registration, value, path)); }
+	                try {
+	                	mapEvent2Queue(new ObservationData(registration, value, path));
+	                }
 	                catch (JSONException e) { e.printStackTrace(); }
 	            }
-	        }
+		}
+		notifyAll();
 	}
 
 	@Override
@@ -65,53 +76,55 @@ public class ObservationManager implements ObservationListener{
     private Rbt_2_W1_Event mapEvent2Queue(ObservationData data) throws JSONException {
         String endpointName = data.getEndpoint();
         String path = data.getPath();
+		//synchronized (this){
+			//Robot 1 events
+			if (endpointName.equals("Robot1")) {
+				if (RResources.EVENTofR1.getPath().equals(path)) {
+					System.out.println("event from robot1 \n \n \n \n \n"+data.getValue()+" \n \n \n \n \n \n \n \n ");
+					JSONObject json = new JSONObject(data.getValue(String.class));
+					String event = json.getString("event");
+					if(event.equals("R1acquireW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R1AcquireP1);
+					}
+					else if(event.equals("R1releaseW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R1ReleaseP1);
+					}
+				}
+			}
 
-        //Robot 1 events
-        if (endpointName.equals("Robot1")) {
-            if (RResources.EVENTofR1.getPath().equals(path)) {
-            	 System.out.println("event from robot1 \n \n \n \n \n"+data.getValue()+" \n \n \n \n \n \n \n \n ");
-                JSONObject json = new JSONObject(data.getValue(String.class));
-                String event = json.getString("event");
-                if(event.equals("R1acquireW1")) {
-                	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R1AcquireP1);
-                }
-                else if(event.equals("R1releaseW1")) {
-                	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R1ReleaseP1);
-                }
-            }
-        }
+			//Robot 2 events
+			if (endpointName.equals("Robot2")) {
+				if (RResources.EVENTofR2.getPath().equals(path)) {
+					System.out.println("event from robot2 \n"+data.getValue()+" \n ");
+					JSONObject json = new JSONObject(data.getValue(String.class));
+					String event = json.getString("event");
+					System.out.println("event from robot2 \n " +event + "\n ");
 
-       //Robot 2 events
-        if (endpointName.equals("Robot2")) {
-        	 if (RResources.EVENTofR2.getPath().equals(path)) {
-        		 System.out.println("event from robot2 \n"+data.getValue()+" \n ");
-                 JSONObject json = new JSONObject(data.getValue(String.class));
-                 String event = json.getString("event");
-                 System.out.println("event from robot2 \n " +event + "\n ");
+					if(event.equals("R2acquireW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R2AcquireP2);
+					}
+					else if(event.equals("R2releaseW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R2ReleaseP2);
+					}
+				}
+			}
 
-                 if(event.equals("R2acquireW1")) {
-                 	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R2AcquireP2);
-                 }
-                 else if(event.equals("R2releaseW1")) {
-                 	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R2ReleaseP2);
-                 }
-             }
-        }
+			//Robot 3 events
+			if (endpointName.equals("Robot3")) {
+				if (RResources.EVENTofR3.getPath().equals(path)) {
+					JSONObject json = new JSONObject(data.getValue(String.class));
+					String event = json.getString("event");
 
-      //Robot 3 events
-        if (endpointName.equals("Robot3")) {
-        	 if (RResources.EVENTofR3.getPath().equals(path)) {
-                 JSONObject json = new JSONObject(data.getValue(String.class));
-                 String event = json.getString("event");
-               
-                 if(event.equals("R3acquireW1")) {
-                 	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R3AcquireP3);
-                 }
-                 else if(event.equals("R3releaseW1")) {
-                 	W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R3ReleaseP3);
-                 }
-             }
-        }
+					if(event.equals("R3acquireW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R3AcquireP3);
+					}
+					else if(event.equals("R3releaseW1")) {
+						W1Coordinator.eventQueue.add(Rbt_2_W1_Event.R3ReleaseP3);
+					}
+				}
+			}
+		//}
+
         return null;
     }
 }

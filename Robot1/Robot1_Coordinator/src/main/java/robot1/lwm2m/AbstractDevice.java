@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Random;
 
+import org.eclipse.californium.core.network.config.NetworkConfig;
 import org.eclipse.leshan.client.californium.LeshanClient;
 import org.eclipse.leshan.client.californium.LeshanClientBuilder;
 import org.eclipse.leshan.client.object.Server;
@@ -40,24 +41,30 @@ public abstract class AbstractDevice {
     public void init() {
     	  List<LwM2mObjectEnabler> enablersW1 = this.createObjectsW1();
     	  List<LwM2mObjectEnabler> enablersW2 = this.createObjectsW2();
-    	  
-          // Create client
-          LeshanClientBuilder builderW1 = new LeshanClientBuilder(endpoint);
-          builderW1.setObjects(enablersW1);
-          final LeshanClient client2W1 = builderW1.build();
 
 
-          // Start the client
+        NetworkConfig coapConfig;
+        coapConfig = LeshanClientBuilder.createDefaultNetworkConfig();
+        coapConfig.set(NetworkConfig.Keys.NOTIFICATION_CHECK_INTERVAL_COUNT,1000);
+
+        // Create client
+        LeshanClientBuilder builderW1 = new LeshanClientBuilder(endpoint);
+        builderW1.setObjects(enablersW1);
+        builderW1.setCoapConfig(coapConfig);
+
+        final LeshanClient client2W1 = builderW1.build();
+
+        // Start the client
           client2W1.start();
           
           // Create client
           LeshanClientBuilder builderW2 = new LeshanClientBuilder(endpoint);
           builderW2.setObjects(enablersW2);
+          builderW2.setCoapConfig(coapConfig);
           final LeshanClient client2W2 = builderW2.build();
           // Start the client
           client2W2.start();
-          
-         
+
           // De-register on shutdown and stop client.
           Runtime.getRuntime().addShutdownHook(new Thread() {
               @Override

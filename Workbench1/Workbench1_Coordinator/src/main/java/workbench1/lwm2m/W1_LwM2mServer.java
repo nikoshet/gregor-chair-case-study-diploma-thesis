@@ -1,8 +1,10 @@
 package workbench1.lwm2m;
 
+import java.io.File;
 import java.io.InputStream;
 import java.util.List;
 
+import org.eclipse.californium.core.network.config.NetworkConfig;
 import org.eclipse.leshan.core.model.LwM2mModel;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
@@ -91,6 +93,13 @@ public class W1_LwM2mServer {
 	        };
 
 	        serverBuilder.setObjectModelProvider(modelProvider);
+
+			// Create CoAP Config
+		//	NetworkConfig coapConfig;
+		//	coapConfig = LeshanServerBuilder.createDefaultNetworkConfig();
+		//	coapConfig.set(NetworkConfig.Keys.NOTIFICATION_CHECK_INTERVAL_COUNT,1000);
+		//	serverBuilder.setCoapConfig(coapConfig);
+
 	        lwServer = serverBuilder.build();
 	        lwServer.start();
 	        robot1port= new Robot1Port(lwServer, "Robot1");
