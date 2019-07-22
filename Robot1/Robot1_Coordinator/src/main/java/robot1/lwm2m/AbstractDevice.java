@@ -43,14 +43,14 @@ public abstract class AbstractDevice {
     	  List<LwM2mObjectEnabler> enablersW2 = this.createObjectsW2();
 
 
-        NetworkConfig coapConfig;
-        coapConfig = LeshanClientBuilder.createDefaultNetworkConfig();
-        coapConfig.set(NetworkConfig.Keys.NOTIFICATION_CHECK_INTERVAL_COUNT,1000);
+        //NetworkConfig coapConfig;
+        //coapConfig = LeshanClientBuilder.createDefaultNetworkConfig();
+        //coapConfig.set(NetworkConfig.Keys.NOTIFICATION_CHECK_INTERVAL_COUNT,1000);
 
         // Create client
         LeshanClientBuilder builderW1 = new LeshanClientBuilder(endpoint);
         builderW1.setObjects(enablersW1);
-        builderW1.setCoapConfig(coapConfig);
+       // builderW1.setCoapConfig(coapConfig);
 
         final LeshanClient client2W1 = builderW1.build();
 
@@ -60,7 +60,7 @@ public abstract class AbstractDevice {
           // Create client
           LeshanClientBuilder builderW2 = new LeshanClientBuilder(endpoint);
           builderW2.setObjects(enablersW2);
-          builderW2.setCoapConfig(coapConfig);
+         // builderW2.setCoapConfig(coapConfig);
           final LeshanClient client2W2 = builderW2.build();
           // Start the client
           client2W2.start();
