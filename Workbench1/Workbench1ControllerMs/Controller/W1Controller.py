@@ -17,20 +17,20 @@ class W1Controller:
 #                            CALL MICROSERVICES
 #########################################################
 
-    def call_rotate(self):
+    def call_rotate(self, device):
         rotate = Rotate()
-        return rotate.start_working()
+        return rotate.start_working(device)
 
 
 
-    def start_controller(self):
+    def start_controller(self, device):
         while True:
             try:
                 message_received = self.unix_server.read_data()
                 print(message_received)
 
                 if "ROTATE" in message_received:
-                    response = self.call_rotate()
+                    response = self.call_rotate(device)
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.w1_wrapper.create_client()

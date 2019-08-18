@@ -2,11 +2,11 @@
 FROM ubuntu:16.04
 LABEL MAINTAINER GOCAS
 
-ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
-#ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
+#ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
+ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
 ENV LANG            	     en_US.UTF-8
 ENV LC_ALL          	     en_US.UTF-8
-ENV W1_COAP_SERVER           coap://192.168.10.122:8563
+ENV W1_COAP_SERVER           coap://10.42.77.106:8563
 		
 COPY . /Robot3Coordinator
 WORKDIR /Robot3Coordinator

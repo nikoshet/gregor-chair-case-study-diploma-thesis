@@ -1,5 +1,5 @@
 import time
-#import RPi.GPIO as GPIO
+
 
 out1 = 13
 out2 = 11
@@ -13,11 +13,16 @@ class Rotate:
     def __init__(self):
         print("\n \n Rotate has just started \n \n")
 
-    def start_working(self):
+    def start_working(self,device):
         try:
             print('doing Rotate')
-            #initPins()
-            #rotate()
+            if device == "RPI":
+                import RPi.GPIO as GPIO
+                initPins()
+                rotate()
+            elif device == "LAPTOP":
+                time.sleep(1)
+
             print('Rotate finished..')
             print('Replying to server...')
             encoded_response = self.COMPLETED_MESSAGE

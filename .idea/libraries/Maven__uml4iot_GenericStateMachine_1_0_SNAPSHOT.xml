@@ -3,9 +3,6 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/uml4iot/GenericStateMachine/1.0-SNAPSHOT/GenericStateMachine-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/uml4iot/GenericStateMachine/1.0-SNAPSHOT/GenericStateMachine-1.0-SNAPSHOT-javadoc.jar!/" />
-    </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/uml4iot/GenericStateMachine/1.0-SNAPSHOT/GenericStateMachine-1.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>

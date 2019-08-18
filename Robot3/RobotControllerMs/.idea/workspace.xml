@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1041fc70-d503-43db-9f74-20e72f35d17e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/RobotControllerMs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_common_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_common_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_core_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_core_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_native_common_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_kohlschutter_junixsocket_junixsocket_native_common_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_californium_core_2_0_0_M12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_californium_core_2_0_0_M12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_element_connector_2_0_0_M12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_element_connector_2_0_0_M12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_element_connector_test_jar_tests_2_0_0_M12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_element_connector_test_jar_tests_2_0_0_M12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_scandium_2_0_0_M12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_californium_scandium_2_0_0_M12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_client_cf_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_client_cf_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_client_core_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_client_core_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_core_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_core_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_core_cf_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_core_cf_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_server_cf_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_eclipse_leshan_leshan_server_core_1_0_0_M9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_json_json_20160810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_json_json_20160810.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/rpi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/rpi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/Robot1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/Robot1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Controller/GpioController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/Move.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/unix_sockets/unix_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/RobotControllerMs/unix_sockets/unix_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/WorkerTask1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/WorkerTask1/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/WorkerTask2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/WorkerTask2/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot1/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/Robot2_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/Robot2_Coordinator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/Robot2_Coordinator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Controller/GpioController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/.Move.py.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/.PickAndFlipAndPress.py.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/Move.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/unix_sockets/unix_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/RobotControllerMs/unix_sockets/unix_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/WorkerTask3/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/WorkerTask3/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/WorkerTask4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/WorkerTask4/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/WorkerTask5/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/WorkerTask5/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Robot2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Robot2/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Robot3_Coordinator/Robot3_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Robot3_Coordinator/Robot3_Coordinator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/GpioController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/RobotController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Move.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PickAndFlipAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PickAndInsert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PickAndPlace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PickAndPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ScrewPickAndFasten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/unix_sockets/unix_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/unix_sockets/unix_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Worker_Task6/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Worker_Task7/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Worker_Task8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Worker_Task8/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench1/Workbench1ControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench1/Workbench1ControllerMs/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench1/Workbench1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench1/Workbench1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench1/Workbench1_Coordinator/Workbench1_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench1/Workbench1_Coordinator/Workbench1_Coordinator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench1/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench2/Workbench2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench2/Workbench2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench2/Workbench2_Coordinator/Workbench2_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench2/Workbench2_Coordinator/Workbench2_Coordinator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbench2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbench2/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1PZYS9J21KbSWbBRTFsiuJkpf4B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Robot2/RobotControllerMs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1041fc70-d503-43db-9f74-20e72f35d17e" name="Default Changelist" comment="" />
+      <created>1566083082739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566083082739</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

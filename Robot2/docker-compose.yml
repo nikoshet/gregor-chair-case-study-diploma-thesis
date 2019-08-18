@@ -6,7 +6,7 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 192.168.1.0/24
+        - subnet: 192.168.2.0/24
 #        - gateway: 172.16.240.11
 #  main:
 
@@ -79,7 +79,7 @@ services:
     container_name: r2coordinator
     networks:
       gregor-chair-network-r2:
-        ipv4_address: 192.168.1.20
+        ipv4_address: 192.168.2.20
     volumes:
       - /tmp:/tmp
     links:

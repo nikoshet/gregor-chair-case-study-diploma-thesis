@@ -13,7 +13,6 @@ class UnixClient:
     def __init__(self, server_address):
         self.server_address = server_address
         self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-        #UnixClient.connect_client(self, str(self.server_address))
 
     def send_data(self, message):
         self.sock.sendall(message.encode())

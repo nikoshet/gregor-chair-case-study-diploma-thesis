@@ -4,6 +4,7 @@ import os
 import threading
 import json
 
+
 class UnixServer (threading.Thread):
 
     server_address = ""
@@ -26,9 +27,6 @@ class UnixServer (threading.Thread):
 
         # Listen for incoming connections
         self.sock.listen(1)
-
-   # def run(self):
-        #self.start_server()
 
     # Bind the socket to the port
     def bind(self, server_address):

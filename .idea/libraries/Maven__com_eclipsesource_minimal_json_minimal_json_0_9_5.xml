@@ -3,9 +3,6 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/eclipsesource/minimal-json/minimal-json/0.9.5/minimal-json-0.9.5.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/eclipsesource/minimal-json/minimal-json/0.9.5/minimal-json-0.9.5-javadoc.jar!/" />
-    </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/eclipsesource/minimal-json/minimal-json/0.9.5/minimal-json-0.9.5-sources.jar!/" />
     </SOURCES>

@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-class GpioController:
 
+class GpioController:
 
     gpioDict = {'elbow_f':20,'elbow_b':21,'wrist_f':12,'wrist_b':16,
                 'grip_f':8,'grip_b':7,'rotate_l':26,'rotate_r':19,

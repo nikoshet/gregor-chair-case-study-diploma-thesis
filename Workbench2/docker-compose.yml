@@ -6,7 +6,7 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 192.168.1.0/24
+        - subnet: 192.168.5.0/24
 #        - gateway: 172.16.240.11
 
 volumes:
@@ -72,7 +72,7 @@ services:
       - "8565:8565/udp"
     networks:
       gregor-chair-network-w2:
-        ipv4_address: 192.168.1.50
+        ipv4_address: 192.168.5.50
     volumes:
       - /tmp:/tmp
 #  w1controller:
