@@ -18,17 +18,6 @@
         "description": ""
       },
       {
-        "id": 1,
-        "name": "pos3 available",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
         "id": 3,
         "name": "set W1_Pos3 available",
         "operations": "E",
@@ -41,7 +30,7 @@
       },
       {
         "id": 16,
-        "name": "event",
+        "name": "R3event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,

@@ -7,7 +7,6 @@ import org.eclipse.leshan.core.response.ReadResponse;
 import org.eclipse.leshan.core.response.WriteResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import robot3.fsm.Robot3Coordinator;
 import robot3.fsm.SignalDetector;
 import robot3.fsm.signals.W1Pos3Available;
@@ -24,26 +23,20 @@ public class RobotInstance extends BaseInstanceEnabler {
     public RobotInstance(final Robot3Coordinator robot3Ctrl, String endpoint) {
     	this.robot3Ctrl = robot3Ctrl;
     	signaldetect = new SignalDetector(robot3Ctrl.itsMsgQ);
-
     	event="";
     	event2sim="";
-
-    	
     }
 
     @Override
     public ReadResponse read(int resourceid) {
         LOG.info("Read on Device Resource " + resourceid);
         switch (resourceid) {
-        case 0:
+        case 0:     //get Status of Robot3Coordinator
             return ReadResponse.success(resourceid, getStatus());
-        case 1:
-            return ReadResponse.success(resourceid, getpos3available());
         case 16:
             return ReadResponse.success(resourceid,event);
         case 20:
             return ReadResponse.success(resourceid,event2sim);
-
         default:
             return super.read(resourceid);
         }
@@ -58,26 +51,21 @@ public class RobotInstance extends BaseInstanceEnabler {
         default:
             return execute(resourceid, params);
         }
-		
-      
     }
 
     @Override
     public WriteResponse write(int resourceid, LwM2mResource value) {
 		return null;
-       
     }
 
     private String getStatus() {
-        return " test";
+        return Robot3Coordinator.robot3State.toString();
     }
 
     private Boolean getpos3available() {
         return Robot3Coordinator.pos3avail;
     }
 
-    
-    
     private <T extends BaseSignal> ExecuteResponse addSignal(String args, Class<T> clazz){
        /* if (args == null){
             return ExecuteResponse.badRequest("Arguments not correct");

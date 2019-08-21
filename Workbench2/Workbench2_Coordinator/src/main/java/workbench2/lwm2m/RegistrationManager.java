@@ -3,7 +3,6 @@ package workbench2.lwm2m;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.eclipse.leshan.core.observation.Observation;
 import org.eclipse.leshan.core.request.ObserveRequest;
 import org.eclipse.leshan.core.response.LwM2mResponse;
@@ -13,9 +12,7 @@ import org.eclipse.leshan.server.registration.RegistrationListener;
 import org.eclipse.leshan.server.registration.RegistrationUpdate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import workbench2.fsm.W2Application;
-
 
 public class RegistrationManager implements RegistrationListener{
 
@@ -46,7 +43,6 @@ public class RegistrationManager implements RegistrationListener{
 	    }
 	  }
 
-	
 
 	@Override
 	public  void registered(Registration reg, Registration previousReg, Collection<Observation> previousObsersations) {
@@ -81,7 +77,6 @@ public class RegistrationManager implements RegistrationListener{
 					e.printStackTrace();
 				}
 			}
-
 		}
 	}
 
@@ -98,5 +93,3 @@ public class RegistrationManager implements RegistrationListener{
 		
 	}
 }
-	
-

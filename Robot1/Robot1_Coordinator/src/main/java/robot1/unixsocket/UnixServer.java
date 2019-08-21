@@ -9,7 +9,6 @@ import robot1.fsm.signals.Pos1Reached;
 import robot1.fsm.signals.Pos2Reached;
 import robot1.fsm.signals.SubAss1Completed;
 import robot1.fsm.signals.SubAssW2Completed;
-
 import java.io.*;
 import java.net.Socket;
 
@@ -40,7 +39,7 @@ public class UnixServer extends Thread{
                                     System.out.println("AT1 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss1Completed());
-				    break;
+				                    break;
                                     //break outerloop;
                                 case "AT2_FINISHED":
                                     System.out.println("AT2 finished.");
@@ -50,8 +49,8 @@ public class UnixServer extends Thread{
                                 case "POS1_REACHED":
                                     System.out.println("POS1_REACHED");
                                     SignalDetector.msgQ.add(new Pos1Reached());
-				    break;                                
-				case "POS2_REACHED":
+				                    break;
+				                case "POS2_REACHED":
                                     System.out.println("POS2_REACHED.");
                                     SignalDetector.msgQ.add(new Pos2Reached());
                                     break;
@@ -70,7 +69,6 @@ public class UnixServer extends Thread{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

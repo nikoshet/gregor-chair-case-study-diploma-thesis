@@ -2,7 +2,6 @@ package workbench2.lwm2m;
 
 import java.io.InputStream;
 import java.util.List;
-
 import org.eclipse.leshan.core.model.LwM2mModel;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
@@ -14,12 +13,10 @@ import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.model.LwM2mModelProvider;
 import org.eclipse.leshan.server.registration.Registration;
 import org.springframework.stereotype.Component;
-
 import workbench2.ConfigurationUtils;
 import workbench2.fsm.W2Application;
 import workbench2.lwm2m.ports.Robot1Port;
 import workbench2.lwm2m.ports.Robot2Port;
-
 
 @Component
 public class W2_LwM2mServer {
@@ -79,20 +76,15 @@ public class W2_LwM2mServer {
 		        };
 
 		        serverBuilder.setObjectModelProvider(modelProvider);
-		       
 		        lwServer = serverBuilder.build();
-		        
 		        lwServer.start();
-		        
 		        robot1port= new Robot1Port(lwServer, "Robot1");
 				robot2port = new Robot2Port(lwServer, "Robot2");
-				
 				
 		}
 		
 		public RegistrationManager addRegistationService() {
 			return new RegistrationManager(W2_LwM2mServer.lwServer);
-			
 		}
 		
 		

@@ -33,7 +33,6 @@ public class Robot extends AbstractDevice{
         robot2instance = new RobotInstance(controller, endpoint);
     }
 	
-	
 	 @Override
 	    public void init() {
 	        super.init();

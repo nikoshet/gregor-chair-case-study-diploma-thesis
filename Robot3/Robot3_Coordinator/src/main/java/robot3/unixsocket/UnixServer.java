@@ -1,6 +1,3 @@
-/**
- * @author Achilleas Triantafyllou
- */
 package robot3.unixsocket;
 
 import org.newsclub.net.unix.AFUNIXServerSocket;
@@ -62,7 +59,6 @@ public class UnixServer extends Thread{
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

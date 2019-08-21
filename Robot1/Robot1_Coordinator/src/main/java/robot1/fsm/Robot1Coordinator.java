@@ -331,8 +331,6 @@ public class Robot1Coordinator extends StateMachine{
         }
 
         callAT1();
-
-
     }
 
     private void doSubAssW2(){
@@ -349,7 +347,6 @@ public class Robot1Coordinator extends StateMachine{
         }
 
         callAT2();
-
     }
 
     private void wait4w1pos1() {
@@ -384,7 +381,6 @@ public class Robot1Coordinator extends StateMachine{
                 .toString();
 
        unixClient.communicateWithAT(ConfigurationUtils.AT1SocketFile,sendText);
-
     }
 
     private void callAT2(){
@@ -394,7 +390,6 @@ public class Robot1Coordinator extends StateMachine{
                 .toString();
 
         unixClient.communicateWithAT(ConfigurationUtils.AT2SocketFile,sendText);
-
     }
 
     private void callMoveMs(String toPosition){
@@ -405,5 +400,4 @@ public class Robot1Coordinator extends StateMachine{
 
         unixClient.communicateWithAT(ConfigurationUtils.Robot1CtrlrSocketFile,sendText);
     }
-
 }

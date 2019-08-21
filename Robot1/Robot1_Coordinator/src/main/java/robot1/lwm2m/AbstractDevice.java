@@ -4,7 +4,6 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Random;
 
-import org.eclipse.californium.core.network.config.NetworkConfig;
 import org.eclipse.leshan.client.californium.LeshanClient;
 import org.eclipse.leshan.client.californium.LeshanClientBuilder;
 import org.eclipse.leshan.client.object.Server;
@@ -28,20 +27,17 @@ public abstract class AbstractDevice {
 
 
     public AbstractDevice(String endpoint, String[] args) {
-      
-       
+
         this.endpoint = endpoint;
         this.localPort = (new Random()).nextInt(60000 - 20000) + 20000;
         this.serverURI_W1 = ConfigurationUtils.W1_COAP_SERVER;
         this.serverURI_W2 = ConfigurationUtils.W2_COAP_SERVER;
-      
-       
+
     }
 
     public void init() {
-    	  List<LwM2mObjectEnabler> enablersW1 = this.createObjectsW1();
-    	  List<LwM2mObjectEnabler> enablersW2 = this.createObjectsW2();
-
+        List<LwM2mObjectEnabler> enablersW1 = this.createObjectsW1();
+        List<LwM2mObjectEnabler> enablersW2 = this.createObjectsW2();
 
         //NetworkConfig coapConfig;
         //coapConfig = LeshanClientBuilder.createDefaultNetworkConfig();
@@ -50,7 +46,7 @@ public abstract class AbstractDevice {
         // Create client
         LeshanClientBuilder builderW1 = new LeshanClientBuilder(endpoint);
         builderW1.setObjects(enablersW1);
-       // builderW1.setCoapConfig(coapConfig);
+        // builderW1.setCoapConfig(coapConfig);
 
         final LeshanClient client2W1 = builderW1.build();
 
@@ -74,93 +70,87 @@ public abstract class AbstractDevice {
                   
               }
           });
-      }
+    }
 
-      protected List<LwM2mObjectEnabler>  createObjectsW1() {
+    protected List<LwM2mObjectEnabler>  createObjectsW1() {
 
-          ObjectsInitializer initializer = getObjectInitializerW1();
-          return getEnablers(initializer);
-      }
+        ObjectsInitializer initializer = getObjectInitializerW1();
+        return getEnablers(initializer);
+    }
       
-      protected List<LwM2mObjectEnabler>  createObjectsW2() {
+    protected List<LwM2mObjectEnabler>  createObjectsW2() {
 
-          ObjectsInitializer initializer = getObjectInitializerW2();
-          return getEnablers(initializer);
-      }
+        ObjectsInitializer initializer = getObjectInitializerW2();
+        return getEnablers(initializer);
+    }
       
 
-      protected List<LwM2mObjectEnabler> getEnablers(ObjectsInitializer initializer) {
-          List<LwM2mObjectEnabler> enablers = initializer.create(SECURITY, SERVER);
-          return enablers;
-      }
+    protected List<LwM2mObjectEnabler> getEnablers(ObjectsInitializer initializer) {
+        List<LwM2mObjectEnabler> enablers = initializer.create(SECURITY, SERVER);
+        return enablers;
+    }
 
-      protected ObjectsInitializer getObjectInitializerW1(){
-          // Initialize object list
-          ObjectsInitializer initializer;
-          LwM2mModel model = getLwM2mModel();
-          if (model==null){
-              initializer = new ObjectsInitializer();
-          }
-          else {
-              initializer = new ObjectsInitializer(model);
-          }
+    protected ObjectsInitializer getObjectInitializerW1(){
+        // Initialize object list
+        ObjectsInitializer initializer;
+        LwM2mModel model = getLwM2mModel();
+        if (model==null){
+            initializer = new ObjectsInitializer();
+        }
+        else {
+            initializer = new ObjectsInitializer(model);
+        }
 
-          if (needBootstrap) {
-              if (pskIdentity == null)
-                  initializer.setInstancesForObject(SECURITY, noSecBootstap(serverURI_W1));
-              else
-                  initializer.setInstancesForObject(SECURITY, pskBootstrap(serverURI_W1, pskIdentity, pskKey));
-          } else {
-              if (pskIdentity == null) {
-                  initializer.setInstancesForObject(SECURITY, noSec(serverURI_W1, 123));
-                  initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
-              } else {
-                  initializer.setInstancesForObject(SECURITY, psk(serverURI_W1, 123, pskIdentity, pskKey));
-                  initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
-              }
-          }
-          
-          return initializer;
-      }
+        if (needBootstrap) {
+            if (pskIdentity == null)
+                initializer.setInstancesForObject(SECURITY, noSecBootstap(serverURI_W1));
+            else
+                initializer.setInstancesForObject(SECURITY, pskBootstrap(serverURI_W1, pskIdentity, pskKey));
+        } else {
+            if (pskIdentity == null) {
+                initializer.setInstancesForObject(SECURITY, noSec(serverURI_W1, 123));
+                initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
+            } else {
+                initializer.setInstancesForObject(SECURITY, psk(serverURI_W1, 123, pskIdentity, pskKey));
+                initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
+            }
+        }
+        return initializer;
+    }
       
-      protected ObjectsInitializer getObjectInitializerW2(){
-          // Initialize object list
-          ObjectsInitializer initializer;
-          LwM2mModel model = getLwM2mModel();
-          if (model==null){
-              initializer = new ObjectsInitializer();
-          }
-          else {
-              initializer = new ObjectsInitializer(model);
-          }
+    protected ObjectsInitializer getObjectInitializerW2(){
+        // Initialize object list
+        ObjectsInitializer initializer;
+        LwM2mModel model = getLwM2mModel();
+        if (model==null){
+            initializer = new ObjectsInitializer();
+        }
+        else {
+            initializer = new ObjectsInitializer(model);
+        }
 
-          if (needBootstrap) {
-              if (pskIdentity == null)
-                  initializer.setInstancesForObject(SECURITY, noSecBootstap(serverURI_W2));
-              else
-                  initializer.setInstancesForObject(SECURITY, pskBootstrap(serverURI_W2, pskIdentity, pskKey));
-          } else {
-              if (pskIdentity == null) {
-                  initializer.setInstancesForObject(SECURITY, noSec(serverURI_W2, 123));
-                  initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
-              } else {
-                  initializer.setInstancesForObject(SECURITY, psk(serverURI_W2, 123, pskIdentity, pskKey));
-                  initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
-              }
-          }
-         
-          return initializer;
-      }
-      
-     
+        if (needBootstrap) {
+            if (pskIdentity == null)
+                initializer.setInstancesForObject(SECURITY, noSecBootstap(serverURI_W2));
+            else
+                initializer.setInstancesForObject(SECURITY, pskBootstrap(serverURI_W2, pskIdentity, pskKey));
+        } else {
+            if (pskIdentity == null) {
+                initializer.setInstancesForObject(SECURITY, noSec(serverURI_W2, 123));
+                initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
+            } else {
+                initializer.setInstancesForObject(SECURITY, psk(serverURI_W2, 123, pskIdentity, pskKey));
+                initializer.setInstancesForObject(SERVER, new Server(123, 30, BindingMode.U, false));
+            }
+        }
+        return initializer;
+    }
 
-      protected LwM2mModel getLwM2mModel() {
-          InputStream defaultSpec = this.getClass().getResourceAsStream("/models/oma-objects-spec.json");
-          InputStream w1Spec = this.getClass().getResourceAsStream("/models/W1_Objects.json");
-          List<ObjectModel> models = ObjectLoader.loadJsonStream(defaultSpec);
-          models.addAll(ObjectLoader.loadJsonStream(w1Spec));
-          return new LwM2mModel(models);
-      }
-
-
-  }
+    protected LwM2mModel getLwM2mModel() {
+        InputStream defaultSpec = this.getClass().getResourceAsStream("/models/oma-objects-spec.json");
+        InputStream r1Spec = this.getClass().getResourceAsStream("/models/R1_Objects.json");
+        List<ObjectModel> models = ObjectLoader.loadJsonStream(defaultSpec);
+        models.addAll(ObjectLoader.loadJsonStream(r1Spec));
+        return new LwM2mModel(models);
+    }
+}

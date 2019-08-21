@@ -76,7 +76,6 @@ public class UnixServer extends Thread{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

@@ -19,7 +19,7 @@ import robot3.fsm.signals.W1Pos3Available;
 
 public class Robot3Coordinator extends StateMachine{
 
-    Robot3CoordinatorState robot3State;
+    public static Robot3CoordinatorState robot3State;
     public static Logger LOGGER;
     public static boolean pos3avail =false;
     public static BlockingQueue<SMReception> notificationQueue;
@@ -205,5 +205,4 @@ public class Robot3Coordinator extends StateMachine{
                 .toString();
         unixClient.communicateWithAT(ConfigurationUtils.AT6SocketFile,sendText);
     }
-
 }

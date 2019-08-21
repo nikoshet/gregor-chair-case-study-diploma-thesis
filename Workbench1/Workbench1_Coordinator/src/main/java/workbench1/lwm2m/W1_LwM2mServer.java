@@ -1,30 +1,23 @@
 package workbench1.lwm2m;
 
-import java.io.File;
 import java.io.InputStream;
 import java.util.List;
-
-import org.eclipse.californium.core.network.config.NetworkConfig;
 import org.eclipse.leshan.core.model.LwM2mModel;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
 import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeDecoder;
 import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeEncoder;
 import org.eclipse.leshan.core.node.codec.LwM2mNodeDecoder;
-import org.eclipse.leshan.core.request.ExecuteRequest;
-import org.eclipse.leshan.core.response.ExecuteResponse;
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.model.LwM2mModelProvider;
 import org.eclipse.leshan.server.registration.Registration;
 import org.springframework.stereotype.Component;
-
 import workbench1.ConfigurationUtils;
 import workbench1.fsm.W1_App;
 import workbench1.lwm2m.ports.Robot1Port;
 import workbench1.lwm2m.ports.Robot2Port;
 import workbench1.lwm2m.ports.Robot3Port;
-
 
 @Component
 public class W1_LwM2mServer {
@@ -63,7 +56,6 @@ public class W1_LwM2mServer {
 		setW1_App(new W1_App(W1_LwM2mServer.lwServer, null));
 		getW1_App().start();
 		//addRegistationService();
-
 	}
 	
 	public static W1_App getW1_App() {

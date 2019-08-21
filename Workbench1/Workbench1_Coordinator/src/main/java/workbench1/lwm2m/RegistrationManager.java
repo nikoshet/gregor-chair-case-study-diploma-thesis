@@ -1,6 +1,5 @@
 package workbench1.lwm2m;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;

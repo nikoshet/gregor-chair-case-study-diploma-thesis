@@ -18,28 +18,6 @@
         "description": ""
       },
       {
-        "id": 1,
-        "name": "pos1 available",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 2,
-        "name": "W2 available",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
         "id": 3,
         "name": "set W1_Pos1 available",
         "operations": "E",
@@ -63,18 +41,7 @@
       },
       {
         "id": 16,
-        "name": "R1event2W1",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": true,
-        "type": "string",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 17,
-        "name": "R1event2W2",
+        "name": "R1event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,
@@ -103,28 +70,6 @@
         "units": "",
         "description": ""
       },
-      {
-        "id": 1,
-        "name": "pos2 available",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 2,
-        "name": "W2 available",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
        {
         "id": 3,
         "name": "set W1_Pos2 available",
@@ -149,18 +94,7 @@
       },
       {
         "id": 16,
-        "name": "R2event2W1",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": true,
-        "type": "string",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 17,
-        "name": "R2event2W2",
+        "name": "R2event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,
@@ -202,7 +136,7 @@
       },
       {
         "id": 16,
-        "name": "event",
+        "name": "R3event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,

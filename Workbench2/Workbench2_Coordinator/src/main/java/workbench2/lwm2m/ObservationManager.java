@@ -23,7 +23,6 @@ import workbench2.fsm.W2SMEvent;
 import workbench2.fsm.events.W2Event;
 import workbench2.lwm2m.resources.RResources;
 
-
 public class ObservationManager implements ObservationListener{
 
 	private static final Logger LOG = LoggerFactory.getLogger(ObservationManager.class);
@@ -36,8 +35,6 @@ public class ObservationManager implements ObservationListener{
 		queue = eventQueue;
 	}
 
-	
-	
 	@Override
 	public void newObservation(Observation observation, Registration registration) {
 		// TODO Auto-generated method stub
@@ -154,7 +151,6 @@ public class ObservationManager implements ObservationListener{
 						this.queue.add(W2SMEvent.R1RELEASEW2 );
 						//SignalDetector.msgQ.add(new R1RELEASEW2());
 					}
-
 				}
 			}
 
@@ -173,13 +169,8 @@ public class ObservationManager implements ObservationListener{
 						this.queue.add(W2SMEvent.R2RELEASEW2 );
 						//SignalDetector.msgQ.add(new R2RELEASEW2());
 					}
-
 				}
 			}
-
         return null;
     }
-    
-
 }
-

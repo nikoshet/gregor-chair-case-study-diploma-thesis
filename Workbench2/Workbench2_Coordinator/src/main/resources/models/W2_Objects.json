@@ -18,28 +18,6 @@
         "description": ""
       },
       {
-        "id": 1,
-        "name": "pos1 reached",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 2,
-        "name": "pos2 reached",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
         "id": 3,
         "name": "set W1_Pos1 available",
         "operations": "E",
@@ -63,7 +41,7 @@
       },
       {
         "id": 16,
-        "name": "R1event2W2",
+        "name": "R1event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,
@@ -93,28 +71,6 @@
         "description": ""
       },
       {
-        "id": 1,
-        "name": "pos1 reached",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
-        "id": 2,
-        "name": "pos2 reached",
-        "operations": "R",
-        "instancetype": "single",
-        "mandatory": false,
-        "type": "boolean",
-        "range": "",
-        "units": "",
-        "description": ""
-      },
-      {
         "id": 3,
         "name": "set W1_Pos1 available",
         "operations": "E",
@@ -138,7 +94,7 @@
       },
       {
         "id": 16,
-        "name": "event",
+        "name": "R2event2W",
         "operations": "R",
         "instancetype": "single",
         "mandatory": true,

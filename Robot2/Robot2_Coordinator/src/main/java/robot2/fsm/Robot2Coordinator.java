@@ -22,7 +22,7 @@ import robot2.lwm2m.RobotInstance;
 
 
 public class Robot2Coordinator extends StateMachine{
-    Robot2CoordinatorState robot2State;
+    public static Robot2CoordinatorState robot2State;
     public static Logger LOGGER;
     public static boolean pos2avail=false;
     public static BlockingQueue<SMReception> notificationQueue;
@@ -140,11 +140,11 @@ public class Robot2Coordinator extends StateMachine{
         protected void exit() {
             SendRelease2W2();
             try {
-                                Thread.sleep(750);
-                        } catch (InterruptedException e) {
-                                // TODO Auto-generated catch block
-                                e.printStackTrace();
-                        }
+                Thread.sleep(750);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
 
         }
     }
@@ -356,7 +356,6 @@ public class Robot2Coordinator extends StateMachine{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-     
     }
 
     private void SendRelease2W2(){
@@ -372,7 +371,6 @@ public class Robot2Coordinator extends StateMachine{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    
     }
 
     private void doSubAss2OnW1(){
@@ -381,23 +379,18 @@ public class Robot2Coordinator extends StateMachine{
         //RobotInstance.fireResourcesChange(0);
 
         callAT3();
-
-
     }
 
     private void doSubAss2OnW2(){
         Robot2Coordinator.LOGGER.warning("SubAss2OnW2 started.."+"\n");
 
         callAT4();
-
-
     }
 
     private void completeSubAss2OnW1(){
         Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 started.."+"\n");
 
         callAT5();
-
     }
 
     public void callAT3(){

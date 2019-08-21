@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15d6dabe-8f67-4a82-b2fe-bf36d09c81d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_eclipsesource_minimal_json_minimal_json_0_9_5.xml" afterDir="false" />
@@ -58,71 +57,44 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__uml4iot_GenericStateMachine_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rpi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rpi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Controller/GpioController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/Move.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/unix_sockets/unix_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/RobotControllerMs/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/RobotControllerMs/unix_sockets/unix_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/WorkerTask1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/WorkerTask1/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/WorkerTask2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/WorkerTask2/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/resources/models/W1_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/resources/models/R1_Objects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/Robot2_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/Robot2_Coordinator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Controller/GpioController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/.Move.py.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/.PickAndFlipAndPress.py.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/Move.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/unix_sockets/unix_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/RobotControllerMs/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/RobotControllerMs/unix_sockets/unix_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/WorkerTask3/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/WorkerTask3/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/WorkerTask4/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/WorkerTask4/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/WorkerTask5/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/WorkerTask5/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/resources/models/R2_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/resources/models/R2_Objects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/Robot3_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/Robot3_Coordinator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Controller/GpioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Controller/GpioController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Controller/RobotController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Controller/RobotController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/Move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/Move.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndFlipAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndFlipAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndInsert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndInsert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndPlace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndPlace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/PickAndPress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/ScrewPickAndFasten.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/Services/ScrewPickAndFasten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/unix_sockets/unix_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/unix_sockets/unix_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/RobotControllerMs/unix_sockets/unix_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/RobotControllerMs/unix_sockets/unix_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/Worker_Task6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Worker_Task6/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/Worker_Task7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Worker_Task7/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/Worker_Task8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Worker_Task8/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robot3/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1ControllerMs/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1ControllerMs/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/fsm/Robot3Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/fsm/SignalDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/fsm/SignalDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/AbstractDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/AbstractDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/lwm2m/RobotObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/resources/models/R3_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/resources/models/R3_Objects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/Workbench1_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/Workbench1_Coordinator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench1/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/java/workbench1/lwm2m/W1_LwM2mServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/resources/models/W1_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/resources/models/W1_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench1/Workbench1_Coordinator/src/main/resources/models/rpi-device.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/Workbench2_Coordinator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/Workbench2_Coordinator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workbench2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/ObservationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/RegistrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/java/workbench2/lwm2m/W2_LwM2mServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/resources/models/W2_Objects.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/resources/models/W2_Objects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workbench2/Workbench2_Coordinator/src/main/resources/models/rpi-device.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +109,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Robot3/RobotControllerMs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -152,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Workbench1CoordinatorApplication">
     <configuration name="Robot2CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="robot2.Robot2CoordinatorApplication" />
       <module name="Robot2_Coordinator" />
@@ -160,6 +135,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Workbench1CoordinatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="workbench1.Workbench1CoordinatorApplication" />
+      <module name="Workbench1_Coordinator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Workbench1CoordinatorApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -186,21 +173,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

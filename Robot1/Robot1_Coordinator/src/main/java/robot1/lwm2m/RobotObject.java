@@ -1,7 +1,6 @@
 package robot1.lwm2m;
 
 import java.util.Map;
-
 import org.eclipse.leshan.client.request.ServerIdentity;
 import org.eclipse.leshan.client.resource.LwM2mInstanceEnabler;
 import org.eclipse.leshan.client.resource.LwM2mInstanceEnablerFactory;

@@ -3,7 +3,6 @@ package robot3.fsm;
 
 import uml4iot.GenericStateMachine.core.MessageQueue;
 import uml4iot.GenericStateMachine.core.SMReception;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

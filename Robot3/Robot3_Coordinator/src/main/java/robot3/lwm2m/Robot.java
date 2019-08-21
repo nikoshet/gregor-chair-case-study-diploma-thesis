@@ -3,7 +3,6 @@ package robot3.lwm2m;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.eclipse.leshan.client.resource.LwM2mInstanceEnabler;
 import org.eclipse.leshan.client.resource.LwM2mInstanceEnablerFactory;
 import org.eclipse.leshan.client.resource.LwM2mObjectEnabler;
@@ -33,7 +32,6 @@ public class Robot extends AbstractDevice{
         robot2instance = new RobotInstance(controller, endpoint);
     }
 
-
 	 @Override
 	    public void init() {
 	        super.init();
@@ -43,7 +41,6 @@ public class Robot extends AbstractDevice{
 	    protected List<LwM2mObjectEnabler> getEnablers(ObjectsInitializer initializer) {
 	        List<LwM2mObjectEnabler> superEnablers = super.getEnablers(initializer );
 
-
 	        Map<Integer, LwM2mInstanceEnabler> instances = new HashMap<>();
 	        instances.put(0, robot2instance);
 	        ObjectModel robot1Model = getLwM2mModel().getObjectModel(RobotInstance.modelId);
@@ -52,9 +49,4 @@ public class Robot extends AbstractDevice{
 	        superEnablers.add(robot1Object);
 	        return superEnablers;
 	    }
-
-	   
-
-	
-
 }
