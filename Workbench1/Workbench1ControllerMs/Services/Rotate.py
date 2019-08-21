@@ -6,6 +6,7 @@ out2 = 11
 out3 = 15
 out4 = 12
 
+
 class Rotate:
 
     COMPLETED_MESSAGE = 'ROTATE_FINISHED'
@@ -18,8 +19,8 @@ class Rotate:
             print('doing Rotate')
             if device == "RPI":
                 import RPi.GPIO as GPIO
-                initPins()
-                rotate()
+                self.initPins(GPIO)
+                self.rotate(GPIO)
             elif device == "LAPTOP":
                 time.sleep(1)
 
@@ -31,7 +32,7 @@ class Rotate:
             print(e)
 
 
-    def initPins():
+    def initPins(self,GPIO):
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(out1, GPIO.OUT)
@@ -40,7 +41,7 @@ class Rotate:
         GPIO.setup(out4, GPIO.OUT)
 
 
-    def rotate():
+    def rotate(self,GPIO):
         Direction=0
         Step=0
         NoTurns=0

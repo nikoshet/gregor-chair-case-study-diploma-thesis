@@ -6,8 +6,8 @@ LABEL MAINTAINER GOCAS
 ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
 ENV LANG            	     en_US.UTF-8
 ENV LC_ALL          	     en_US.UTF-8
-ENV W1_COAP_SERVER           coap://10.42.77.106:8563
-ENV W2_COAP_SERVER           coap://10.42.77.106:8565
+ENV W1_COAP_SERVER           coap://10.42.77.144:8563
+ENV W2_COAP_SERVER           coap://10.42.77.144:8565
 			
 		
 COPY . /Robot1Coordinator
