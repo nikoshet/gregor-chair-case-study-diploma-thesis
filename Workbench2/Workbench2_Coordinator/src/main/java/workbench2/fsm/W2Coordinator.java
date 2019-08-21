@@ -1,14 +1,11 @@
 package workbench2.fsm;
 
 import uml4iot.GenericStateMachine.core.*;
-import workbench2.fsm.driver.W2Driver;
 import workbench2.lwm2m.W2_LwM2mServer;
-
 import java.sql.Timestamp;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.eclipse.leshan.core.request.ExecuteRequest;
 import org.eclipse.leshan.core.response.ExecuteResponse;
 import org.eclipse.leshan.server.registration.Registration;
@@ -66,7 +63,6 @@ public class W2Coordinator extends StateMachine{
         protected void entry() {
             w2State = W2CoordinatorState.FREE;
             W2Coordinator.LOGGER.severe("W2: Controller State = " + w2State +"\n");
-            W2Driver.free();
         }
 
         @Override
@@ -83,7 +79,6 @@ public class W2Coordinator extends StateMachine{
             w2State = W2CoordinatorState.SUBASSR1_W2;
             W2Coordinator.LOGGER.severe("W2: Controller State = " + w2State +"\n");
             sendAvailableToR1();
-            W2Driver.doingSubAssR1W2();
         }
 
         @Override
@@ -99,7 +94,6 @@ public class W2Coordinator extends StateMachine{
         protected void entry() {
             w2State = W2CoordinatorState.SUBASSR1_W2_COMPLETED;
             W2Coordinator.LOGGER.severe("W2: Controller State = " + w2State +"\n");
-            W2Driver.SubAssR1W2Completed();
         }
 
         @Override
@@ -116,7 +110,6 @@ public class W2Coordinator extends StateMachine{
             w2State = W2CoordinatorState.SUBASSR2_W2;
             W2Coordinator.LOGGER.severe("W2: Controller State = " + w2State +"\n");
             sendAvailableToR2();
-            W2Driver.doingSubAssR2W2();
         }
 
         @Override
