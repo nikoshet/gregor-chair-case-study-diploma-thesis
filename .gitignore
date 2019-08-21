@@ -1,13 +1,33 @@
 ## Don't track content of these folders ##
 
-# Byte-compiled / optimized / DLL files
+##########################
+## Byte-compiled / optimized files
+##########################
 __pycache__/
 
-# Distribution / packaging
+##########################
+## Distribution / packaging
+##########################
 bin/
 lib/
 var/
 
-# Other
+##########################
+## Other
+##########################
 .project
 
+##########################
+## IntelliJ
+##########################
+*.iml
+#.idea/
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+##########################
+## Java
+##########################
+.class
