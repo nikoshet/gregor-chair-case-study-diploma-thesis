@@ -40,26 +40,26 @@ public class UnixServer extends Thread{
                             System.out.println("Client's response: " + response);
                             switch (response.toString()){
                                 case "AT3_FINISHED":
-                                    System.out.println("AT3 finished.");
+                                    Robot2Coordinator.LOGGER.info("AT3 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss2_1Completed());
                                     break;
                                 case "AT4_FINISHED":
-                                    System.out.println("AT4 finished.");
+                                    Robot2Coordinator.LOGGER.info("AT4 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW2 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAssW2Completed());
                                     break;
                                 case "AT5_FINISHED":
-                                    System.out.println("AT5 finished.");
+                                    Robot2Coordinator.LOGGER.info("AT5 finished.");
                                     Robot2Coordinator.LOGGER.warning("CompletingSubAss2OnW1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss2_2Completed());
                                     break;
                                 case "POS1_REACHED":
-                                    System.out.println("POS1_REACHED");
+                                    Robot2Coordinator.LOGGER.info("POS1_REACHED");
                                     SignalDetector.msgQ.add(new Pos1Reached());
                                     break;
                                 case "POS2_REACHED":
-                                    System.out.println("POS2_REACHED.");
+                                    Robot2Coordinator.LOGGER.info("POS2_REACHED.");
                                     SignalDetector.msgQ.add(new Pos2Reached());
                                     break;
                             }

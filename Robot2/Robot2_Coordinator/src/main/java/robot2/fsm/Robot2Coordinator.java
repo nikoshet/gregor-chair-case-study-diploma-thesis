@@ -50,7 +50,7 @@ public class Robot2Coordinator extends StateMachine{
 
         LOGGER = Logger.getLogger(Robot2Coordinator.class.getName() + " LOGGER");
         LOGGER.info("\n");
-        LOGGER.setLevel(Level.WARNING); // Request that every detail gets logged.
+        LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot2 starting");
         server.start();
         setInitState(waiting4w1pos2);

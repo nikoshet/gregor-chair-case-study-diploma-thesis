@@ -34,15 +34,15 @@ public class UnixServer extends Thread{
                             System.out.println("Client's response: " + response);
                             switch (response){
                                 case "AT6_FINISHED":
-                                    System.out.println("AT6 finished.");
+                                    Robot3Coordinator.LOGGER.info("AT6 finished.");
                                     Robot3Coordinator.atQueue.put("AT6_FINISHED");
                                     //break outerloop;
                                 case "AT7_FINISHED":
-                                    System.out.println("AT7 finished.");
+                                    Robot3Coordinator.LOGGER.info("AT7 finished.");
                                     Robot3Coordinator.atQueue.put("AT7_FINISHED");
                                     //break outerloop;
                                 case "AT8_FINISHED":
-                                    System.out.println("AT8 finished.");
+                                    Robot3Coordinator.LOGGER.info("AT8 finished.");
                                     Robot3Coordinator.atQueue.put("AT8_FINISHED");
                                     //break outerloop;
                             }

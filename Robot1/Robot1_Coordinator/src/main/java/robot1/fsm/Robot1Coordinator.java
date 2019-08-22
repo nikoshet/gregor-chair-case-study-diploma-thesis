@@ -42,8 +42,6 @@ public class Robot1Coordinator extends StateMachine{
         new Moving2P1_2_Waiting4W1POS1(moving2pos1,waiting4w1pos1);
         
         LOGGER = Logger.getLogger(Robot1Coordinator.class.getName() + " LOGGER");
-        LOGGER.setLevel(Level.WARNING);
-
         LOGGER.info("\n ");
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot1 starting");

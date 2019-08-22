@@ -36,22 +36,22 @@ public class UnixServer extends Thread{
                             System.out.println("Client's response: " + response);
                             switch (response){
                                 case "AT1_FINISHED":
-                                    System.out.println("AT1 finished.");
+                                    Robot1Coordinator.LOGGER.info("AT1 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss1Completed());
 				                    break;
                                     //break outerloop;
                                 case "AT2_FINISHED":
-                                    System.out.println("AT2 finished.");
+                                    Robot1Coordinator.LOGGER.info("AT2 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAssW2Completed());
                                     break; //outerloop;
                                 case "POS1_REACHED":
-                                    System.out.println("POS1_REACHED");
+                                    Robot1Coordinator.LOGGER.info("POS1_REACHED");
                                     SignalDetector.msgQ.add(new Pos1Reached());
 				                    break;
 				                case "POS2_REACHED":
-                                    System.out.println("POS2_REACHED.");
+                                    Robot1Coordinator.LOGGER.info("POS2_REACHED.");
                                     SignalDetector.msgQ.add(new Pos2Reached());
                                     break;
                                     //break outerloop;

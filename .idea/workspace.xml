@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="15d6dabe-8f67-4a82-b2fe-bf36d09c81d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/fsm/Robot1Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot1/Robot1_Coordinator/src/main/java/robot1/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/fsm/Robot2Coordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot2/Robot2_Coordinator/src/main/java/robot2/unixsocket/UnixServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Robot3/Robot3_Coordinator/src/main/java/robot3/unixsocket/UnixServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LIQUEUR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
