@@ -1,0 +1,40 @@
+## Don't track content of these folders ##
+
+##########################
+## Byte-compiled / optimized files
+##########################
+__pycache__/
+
+##########################
+## Distribution / packaging
+##########################
+bin/
+lib/
+var/
+
+##########################
+## Other
+##########################
+.classpath
+.project
+.settings
+
+##########################
+## IntelliJ
+##########################
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+##########################
+## Java
+##########################
+.class
+
+##########################
+## Maven build files
+##########################
+target
