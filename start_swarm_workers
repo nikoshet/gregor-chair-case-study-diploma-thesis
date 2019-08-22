@@ -1,0 +1,28 @@
+#!/bin/bash
+
+hosts=(
+pi@192.168.10.123
+#pi@192.168.2.8
+#user@83.212.106.163
+#node2
+#node3
+#node4
+)
+
+
+exec_cmd() {
+ sudo ufw allow from $3 to any port 2377
+ echo "[$1] $2"
+ echo ""
+ #sudo usermod -aG docker $USER
+ sshpass -p raspberry ssh $1 $2
+ echo ""
+}
+
+for host in "${hosts[@]}"
+do
+        ip=$(cut -d "@" -f 2 <<< "$host")
+        echo $ip
+	exec_cmd $host "$@" $ip
+done
+

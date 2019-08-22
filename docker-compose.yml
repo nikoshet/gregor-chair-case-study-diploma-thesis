@@ -1,0 +1,304 @@
+version: "2"
+
+networks:
+  my-network:
+    external: true
+#  gregor-chair-network:
+#   driver: overlay
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 172.16.239.0/24
+
+services:
+### W1 SERVICES ####    
+  w1coordinator:
+    image: 10.42.77.144:5000/Workbench1_Coordinator:v1
+    ports:
+      - "8563:8563/udp"
+    container_name: w1coordinator
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.10 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == w1 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - w1controller
+  w1controller:
+    image: 10.42.77.144:5000/Workbench1ControllerMs:v1
+    container_name: w1controller
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.10 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == w1 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+      - /dev/gpiomem:/dev/gpiomem
+    privileged: true
+    environment:
+      - PYTHONUNBUFFERED=1
+### W2 SERVICES ####    
+  w2coordinator:
+    image: 10.42.77.144:5000/Workbench2_Coordinator:v1
+    ports:
+      - "8565:8565/udp"
+    container_name: w2coordinator
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.10 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == w2 ]
+      restart_policy:
+        condition: on-failure 
+### R SERVICES ####    
+  robotcontroller:
+    image: 10.42.77.144:5000/RobotControllerMs:v1
+    container_name: robotcontroller
+    deploy:
+      replicas: 3
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r1 ]
+#        constraints: [node.labels.gocas == r2 ]
+#        constraints: [node.labels.gocas == r3 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+      - /dev/gpiomem:/dev/gpiomem
+    privileged: true
+    environment:
+      - PYTHONUNBUFFERED=1
+### R1 SERVICES ####
+  workertask1:
+    image: 10.42.77.144:5000/WorkerTask1:v1
+    container_name: workertask1
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r1 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask2:
+    image: 10.42.77.144:5000/WorkerTask2:v1
+    container_name: workertask2
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r1 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  r1coordinator:
+    image: 10.42.77.144:5000/Robot1_Coordinator:v1
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.20 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r1 ]
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - /tmp:/tmp
+    links:
+      - workertask1
+      - workertask2
+#  r1controller:
+#    image: 192.168.10.100:5000/robotcontrollerms:v1
+##    networks:
+##      - my-network
+#      #- gregor-chair-network
+##      gregor-chair-network:
+##        ipv4_address: 172.16.239.20 
+##    mem_limit: 700m
+#    deploy:
+#      placement:
+#        constraints: [node.role == worker]
+##        constraints: [node.hostname == raspberrypi]
+##        constraints: [node.labels.gocas == r1controller ]
+#      restart_policy:
+#        condition: on-failure
+### R2 SERVICES ####
+  workertask3:
+    image: 10.42.77.144:5000/WorkerTask3:v1
+    container_name: workertask3
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r2 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask4:
+    image: 10.42.77.144:5000/WorkerTask4:v1
+    container_name: workertask4
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r2 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask5:
+    image: 10.42.77.144:5000/WorkerTask5:v1
+    container_name: workertask5
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r2 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  r2coordinator:
+    image: 10.42.77.144:5000/Robot2_Coordinator:v1
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.20 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r2 ]
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - /tmp:/tmp
+    links:
+      - workertask3
+      - workertask4
+      - workertask5
+### R3 SERVICES ####
+  workertask6:
+    image: 10.42.77.144:5000/WorkerTask6:v1
+    container_name: workertask6
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r3 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask7:
+    image: 10.42.77.144:5000/WorkerTask7:v1
+    container_name: workertask7
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r3 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  workertask8:
+    image: 10.42.77.144:5000/WorkerTask8:v1
+    container_name: workertask8
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r3 ]
+      restart_policy:
+        condition: on-failure 
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robotcontroller
+    environment:
+      - PYTHONUNBUFFERED=1
+  r2coordinator:
+    image: 10.42.77.144:5000/Robot3_Coordinator:v1
+#    networks:
+#      - my-network
+      #- gregor-chair-network
+#      gregor-chair-network:
+#        ipv4_address: 172.16.239.20 
+#    mem_limit: 700m
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.hostname == raspberrypi]
+#        constraints: [node.labels.gocas == r3 ]
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - /tmp:/tmp
+    links:
+      - workertask6
+      - workertask7
+      - workertask8
