@@ -13,7 +13,7 @@ networks:
 services:
 ### W1 SERVICES ####    
   w1coordinator:
-    image: 10.42.77.144:5000/Workbench1_Coordinator:v1
+    image: 10.42.77.144:5000/workbench1_coordinator:v1
     ports:
       - "8563:8563/udp"
     container_name: w1coordinator
@@ -35,7 +35,7 @@ services:
     links:
       - w1controller
   w1controller:
-    image: 10.42.77.144:5000/Workbench1ControllerMs:v1
+    image: 10.42.77.144:5000/workbench1controllerms:v1
     container_name: w1controller
 #    networks:
 #      - my-network
@@ -58,7 +58,7 @@ services:
       - PYTHONUNBUFFERED=1
 ### W2 SERVICES ####    
   w2coordinator:
-    image: 10.42.77.144:5000/Workbench2_Coordinator:v1
+    image: 10.42.77.144:5000/workbench2_coordinator:v1
     ports:
       - "8565:8565/udp"
     container_name: w2coordinator
@@ -77,7 +77,7 @@ services:
         condition: on-failure 
 ### R SERVICES ####    
   robotcontroller:
-    image: 10.42.77.144:5000/RobotControllerMs:v1
+    image: 10.42.77.144:5000/robotcontrollerms:v1
     container_name: robotcontroller
     deploy:
       replicas: 3
@@ -96,7 +96,7 @@ services:
       - PYTHONUNBUFFERED=1
 ### R1 SERVICES ####
   workertask1:
-    image: 10.42.77.144:5000/WorkerTask1:v1
+    image: 10.42.77.144:5000/workertask1:v1
     container_name: workertask1
     deploy:
       replicas: 1
@@ -112,7 +112,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   workertask2:
-    image: 10.42.77.144:5000/WorkerTask2:v1
+    image: 10.42.77.144:5000/workertask2:v1
     container_name: workertask2
     deploy:
       replicas: 1
@@ -128,7 +128,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   r1coordinator:
-    image: 10.42.77.144:5000/Robot1_Coordinator:v1
+    image: 10.42.77.144:5000/robot1_coordinator:v1
 #    networks:
 #      - my-network
       #- gregor-chair-network
@@ -164,7 +164,7 @@ services:
 #        condition: on-failure
 ### R2 SERVICES ####
   workertask3:
-    image: 10.42.77.144:5000/WorkerTask3:v1
+    image: 10.42.77.144:5000/workertask3:v1
     container_name: workertask3
     deploy:
       replicas: 1
@@ -180,7 +180,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   workertask4:
-    image: 10.42.77.144:5000/WorkerTask4:v1
+    image: 10.42.77.144:5000/workertask4:v1
     container_name: workertask4
     deploy:
       replicas: 1
@@ -196,7 +196,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   workertask5:
-    image: 10.42.77.144:5000/WorkerTask5:v1
+    image: 10.42.77.144:5000/workertask5:v1
     container_name: workertask5
     deploy:
       replicas: 1
@@ -212,7 +212,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   r2coordinator:
-    image: 10.42.77.144:5000/Robot2_Coordinator:v1
+    image: 10.42.77.144:5000/robot2_coordinator:v1
 #    networks:
 #      - my-network
       #- gregor-chair-network
@@ -234,7 +234,7 @@ services:
       - workertask5
 ### R3 SERVICES ####
   workertask6:
-    image: 10.42.77.144:5000/WorkerTask6:v1
+    image: 10.42.77.144:5000/workertask6:v1
     container_name: workertask6
     deploy:
       replicas: 1
@@ -250,7 +250,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   workertask7:
-    image: 10.42.77.144:5000/WorkerTask7:v1
+    image: 10.42.77.144:5000/workertask7:v1
     container_name: workertask7
     deploy:
       replicas: 1
@@ -266,7 +266,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   workertask8:
-    image: 10.42.77.144:5000/WorkerTask8:v1
+    image: 10.42.77.144:5000/workertask8:v1
     container_name: workertask8
     deploy:
       replicas: 1
@@ -282,7 +282,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
   r2coordinator:
-    image: 10.42.77.144:5000/Robot3_Coordinator:v1
+    image: 10.42.77.144:5000/robot3_coordinator:v1
 #    networks:
 #      - my-network
       #- gregor-chair-network
