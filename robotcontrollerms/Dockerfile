@@ -1,7 +1,7 @@
-FROM frolvlad/alpine-python3:latest
+#FROM frolvlad/alpine-python3:latest
 #FROM arm32v7/python:2.7.13-jessie
 #FROM arm32v7/python:3.5.7-stretch????
-#FROM arm32v6/python:3.5-alpine
+FROM arm32v6/python:3.5-alpine
 LABEL MAINTAINER GOCAS
 
 ENV DEVICE                   RPI
