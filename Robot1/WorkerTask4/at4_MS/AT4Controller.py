@@ -1,13 +1,13 @@
 from unix_sockets.unix_server import  UnixServer
 from unix_sockets.unix_client import  UnixClient
-from Communication_Wrapper.robot2ctrl_wrapper import Robot2Ctrl_Wrapper
-from Communication_Wrapper.robot2Coordinator_Wrapper import Robot2Coordinator_Wrapper
+from Communication_Wrapper.robotctrl_wrapper import RobotCtrl_Wrapper
+from Communication_Wrapper.robot1Coordinator_Wrapper import Robot2Coordinator_Wrapper
 import json
 #import eureka_client as eureka_client
 
 class AT4Controller:
 
-    robot2ctrl_wrapper= Robot2Ctrl_Wrapper()
+    robot2ctrl_wrapper= RobotCtrl_Wrapper()
     robot2coordinator_wrapper= Robot2Coordinator_Wrapper()
     SERVER_ADDRESS = "/tmp/at4.sock"
     def __init__(self):
@@ -27,7 +27,7 @@ class AT4Controller:
 
                     if sender_address == "coordinator":  # mono start mporei na steilei o coordinator
                         self.robot2ctrl_wrapper.create_client()
-                        self.robot2ctrl_wrapper.connect_2_unix_server(Robot2Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot2ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot2ctrl_wrapper.send_2_robotctrl(self.robot2ctrl_wrapper.START_MESSAGE_ScrewPickAndFasten)
                         while True:
                             message = self.unix_server.read_data()
@@ -39,7 +39,7 @@ class AT4Controller:
                         print("SCREW PICK AND FASTEN FINISHED .LETS START PICK AND PLACE NOW")
 
                         self.robot2ctrl_wrapper.create_client()
-                        self.robot2ctrl_wrapper.connect_2_unix_server(Robot2Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot2ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot2ctrl_wrapper.send_2_robotctrl(self.robot2ctrl_wrapper.START_MESSAGE_PickAndPlace)
                         while True:
                             message = self.unix_server.read_data()

@@ -90,7 +90,7 @@ services:
       - /tmp:/tmp
     links:
       - workertask1
-      - workertask2
+      - workertask4
 #      - Workertask1Socket
   workertask1:
     build:
@@ -112,11 +112,11 @@ services:
 #      main:
 #        aliases:
 #          - workertask1
-  workertask2:
+  workertask4:
     build:
-      context: ./WorkerTask2
+      context: ./WorkerTask4
       dockerfile: Dockerfile
-    container_name: workertask2
+    container_name: workertask4
     volumes:
 #      - Robot1CoordinatorSocket
 #      - Workertask2Socket:/tmp

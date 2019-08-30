@@ -344,7 +344,7 @@ public class Robot1Coordinator extends StateMachine{
             e.printStackTrace();
         }
 
-        callAT2();
+        callAT4();
     }
 
     private void wait4w1pos1() {
@@ -381,13 +381,13 @@ public class Robot1Coordinator extends StateMachine{
        unixClient.communicateWithAT(ConfigurationUtils.AT1SocketFile,sendText);
     }
 
-    private void callAT2(){
+    private void callAT4(){
         String sendText = new JSONObject()
-                .put("AT2", "START")
+                .put("AT4", "START")
                 .put("sender","coordinator")
                 .toString();
 
-        unixClient.communicateWithAT(ConfigurationUtils.AT2SocketFile,sendText);
+        unixClient.communicateWithAT(ConfigurationUtils.AT4SocketFile,sendText);
     }
 
     private void callMoveMs(String toPosition){

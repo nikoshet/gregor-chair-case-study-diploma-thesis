@@ -378,13 +378,13 @@ public class Robot2Coordinator extends StateMachine{
         pos2avail=true;
         //RobotInstance.fireResourcesChange(0);
 
-        callAT3();
+        callAT2();
     }
 
     private void doSubAss2OnW2(){
         Robot2Coordinator.LOGGER.warning("SubAss2OnW2 started.."+"\n");
 
-        callAT4();
+        callAT3();
     }
 
     private void completeSubAss2OnW1(){
@@ -393,20 +393,20 @@ public class Robot2Coordinator extends StateMachine{
         callAT5();
     }
 
-    public void callAT3(){
+    public void callAT2(){
+        String sendText = new JSONObject()
+                .put("AT2", "START")
+                .put("sender","coordinator")
+                .toString();
+        unixClient.communicateWithAT(ConfigurationUtils.AT2SocketFile,sendText);
+    }
+
+    private void callAT3(){
         String sendText = new JSONObject()
                 .put("AT3", "START")
                 .put("sender","coordinator")
                 .toString();
         unixClient.communicateWithAT(ConfigurationUtils.AT3SocketFile,sendText);
-    }
-
-    private void callAT4(){
-        String sendText = new JSONObject()
-                .put("AT4", "START")
-                .put("sender","coordinator")
-                .toString();
-        unixClient.communicateWithAT(ConfigurationUtils.AT4SocketFile,sendText);
     }
 
     private void callAT5(){

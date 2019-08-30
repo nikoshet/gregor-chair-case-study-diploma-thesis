@@ -41,8 +41,8 @@ public class UnixServer extends Thread{
                                     SignalDetector.msgQ.add(new SubAss1Completed());
 				                    break;
                                     //break outerloop;
-                                case "AT2_FINISHED":
-                                    Robot1Coordinator.LOGGER.info("AT2 finished.");
+                                case "AT4_FINISHED":
+                                    Robot1Coordinator.LOGGER.info("AT4 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAssW2Completed());
                                     break; //outerloop;

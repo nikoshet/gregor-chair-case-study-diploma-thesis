@@ -1,11 +1,11 @@
 from unix_sockets.unix_server import UnixServer
-from Communication_Wrapper.robot3ctrl_wrapper import Robot3Ctrl_Wrapper
+from Communication_Wrapper.robotctrl_wrapper import RobotCtrl_Wrapper
 from Communication_Wrapper.robot3Coordinator_Wrapper import Robot3Coordinator_Wrapper
 import json
 
 class AT6Controller:
 
-    robot3ctrl_wrapper= Robot3Ctrl_Wrapper()
+    robot3ctrl_wrapper= RobotCtrl_Wrapper()
     robot3coordinator_wrapper= Robot3Coordinator_Wrapper()
     SERVER_ADDRESS = "/tmp/at6.sock"
     def __init__(self):
@@ -25,7 +25,7 @@ class AT6Controller:
 
                     if sender_address == "coordinator":  # mono start mporei na steilei o coordinator
                         self.robot3ctrl_wrapper.create_client()
-                        self.robot3ctrl_wrapper.connect_2_unix_server(Robot3Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot3ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot3ctrl_wrapper.send_2_robotctrl(self.robot3ctrl_wrapper.START_MESSAGE_PickAndInsert)
                         while True:
                             message = self.unix_server.read_data()
@@ -37,7 +37,7 @@ class AT6Controller:
                         print(" PICK AND INSERT FINISHED . LETS START SCREW PICK AND FASTEN NOW")
 
                         self.robot3ctrl_wrapper.create_client()
-                        self.robot3ctrl_wrapper.connect_2_unix_server(Robot3Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot3ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot3ctrl_wrapper.send_2_robotctrl(self.robot3ctrl_wrapper.START_MESSAGE_ScrewPickAndFasten)
                         while True:
                             message = self.unix_server.read_data()

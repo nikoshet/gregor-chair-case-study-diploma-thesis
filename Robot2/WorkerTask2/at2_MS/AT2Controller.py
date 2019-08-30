@@ -1,13 +1,13 @@
 from unix_sockets.unix_server import  UnixServer
 from unix_sockets.unix_client import  UnixClient
-from Communication_Wrapper.robot1ctrl_wrapper import Robot1Ctrl_Wrapper
-from Communication_Wrapper.robot1Coordinator_Wrapper import Robot1Coordinator_Wrapper
+from Communication_Wrapper.robotctrl_wrapper import RobotCtrl_Wrapper
+from Communication_Wrapper.robot2Coordinator_Wrapper import Robot1Coordinator_Wrapper
 import json
 #import eureka.eureka_client as eureka_client
 
 class AT2Controller:
 
-    robot1ctrl_wrapper= Robot1Ctrl_Wrapper()
+    robot1ctrl_wrapper= RobotCtrl_Wrapper()
     robot1coordinator_wrapper= Robot1Coordinator_Wrapper()
     SERVER_ADDRESS = "/tmp/at2.sock"
     def __init__(self):
@@ -27,7 +27,7 @@ class AT2Controller:
 
                     if sender_address == "coordinator":  # mono start mporei na steilei o coordinator
                         self.robot1ctrl_wrapper.create_client()
-                        self.robot1ctrl_wrapper.connect_2_unix_server(Robot1Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot1ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot1ctrl_wrapper.send_2_robotctrl(self.robot1ctrl_wrapper.START_MESSAGE_PickAndPlace)
                         while True:
                             message = self.unix_server.read_data()
@@ -39,7 +39,7 @@ class AT2Controller:
                         print(" PICK AND PLACE FINISHED . LETS START PICK AND INSERT NOW")
 
                         self.robot1ctrl_wrapper.create_client()
-                        self.robot1ctrl_wrapper.connect_2_unix_server(Robot1Ctrl_Wrapper.SERVER_ADDRESS)
+                        self.robot1ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
                         self.robot1ctrl_wrapper.send_2_robotctrl(self.robot1ctrl_wrapper.START_MESSAGE_PickAndFlipAndPress)
                         while True:
                             message = self.unix_server.read_data()

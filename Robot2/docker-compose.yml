@@ -83,9 +83,22 @@ services:
     volumes:
       - /tmp:/tmp
     links:
+      - workertask2
       - workertask3
-      - workertask4
       - workertask5
+  workertask2:
+    build:
+      context: ./WorkerTask2
+      dockerfile: Dockerfile
+    container_name: workertask2
+    volumes:
+      - /tmp:/tmp
+    links:
+      - robot2controller
+    environment:
+      - PYTHONUNBUFFERED=1
+#    cpus: 0.6
+#    mem_limit: 700m
   workertask3:
     build:
       context: ./WorkerTask3
@@ -97,19 +110,6 @@ services:
       - robot2controller
     environment:
       - PYTHONUNBUFFERED=1
-  workertask4:
-    build:
-      context: ./WorkerTask4
-      dockerfile: Dockerfile
-    container_name: workertask4
-    volumes:
-      - /tmp:/tmp
-    links:
-      - robot2controller
-    environment:
-      - PYTHONUNBUFFERED=1
-#    cpus: 0.6
-#    mem_limit: 700m
   workertask5:
     build:
       context: ./WorkerTask5

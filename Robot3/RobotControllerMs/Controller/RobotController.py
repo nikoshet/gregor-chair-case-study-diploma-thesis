@@ -15,7 +15,7 @@ from Services.PickAndPress import PickAndPress
 
 
 class RobotController:
-    SERVER_ADDRESS = "/tmp/robot3ctrl.sock"
+    SERVER_ADDRESS = "/tmp/robotctrl.sock"
 
     def __init__(self):
         self.unix_server = UnixServer(self.SERVER_ADDRESS)

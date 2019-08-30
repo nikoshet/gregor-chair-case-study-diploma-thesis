@@ -39,12 +39,12 @@ public class UnixServer extends Thread{
                         if(!response.equals("")){
                             System.out.println("Client's response: " + response);
                             switch (response.toString()){
-                                case "AT3_FINISHED":
+                                case "AT2_FINISHED":
                                     Robot2Coordinator.LOGGER.info("AT3 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss2_1Completed());
                                     break;
-                                case "AT4_FINISHED":
+                                case "AT3_FINISHED":
                                     Robot2Coordinator.LOGGER.info("AT4 finished.");
                                     Robot2Coordinator.LOGGER.warning("SubAss2OnW2 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAssW2Completed());

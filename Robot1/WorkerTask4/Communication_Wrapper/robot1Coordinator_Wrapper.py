@@ -2,9 +2,9 @@ from unix_sockets.unix_client import UnixClient
 import json
 
 
-class Robot1Coordinator_Wrapper:
+class Robot2Coordinator_Wrapper:
 
-    COMPLETED_MESSAGE = "AT2_FINISHED"
+    COMPLETED_MESSAGE = "AT4_FINISHED"
     SERVER_ADDRESS = '/tmp/robot1coordinator.sock'
 
     def create_client(self):
