@@ -13,7 +13,7 @@ class RobotCtrl_Wrapper:
     START_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "STARTED","sender": "/tmp/at5.sock"}'
     COMPLETED_MESSAGE_PickAndFlipAndPress = '{"PickAndFlipAndPress": "FINISHED","sender": "/tmp/at5.sock"}'
 
-    SERVER_ADDRESS = '/tmp/robotctrl.sock'
+    SERVER_ADDRESS = '/tmp/robot2ctrl.sock'
 
     def create_client(self):
         self.unix_client = UnixClient(self.SERVER_ADDRESS)

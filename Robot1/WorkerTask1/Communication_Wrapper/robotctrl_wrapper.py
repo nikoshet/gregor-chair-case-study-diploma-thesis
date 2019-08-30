@@ -11,7 +11,7 @@ class RobotCtrl_Wrapper:
     COMPLETED_MESSAGE_PickAndInsert = '{"PickAndInsert": "FINISHED","sender": "/tmp/at1.sock"}'
     START_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "STARTED","sender": "/tmp/at1.sock"}'
     COMPLETED_MESSAGE_ScrewPickAndFasten = '{"ScrewPickAndFasten": "FINISHED","sender": "/tmp/at1.sock"}'
-    SERVER_ADDRESS = '/tmp/robotctrl.sock'
+    SERVER_ADDRESS = '/tmp/robot1ctrl.sock'
 
     def create_client(self):
         self.unix_client = UnixClient(self.SERVER_ADDRESS)

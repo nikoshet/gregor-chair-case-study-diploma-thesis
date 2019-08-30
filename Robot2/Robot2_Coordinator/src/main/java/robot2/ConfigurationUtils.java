@@ -10,7 +10,7 @@ public class ConfigurationUtils {
 	public static String W2_COAP_SERVER; //="coap://localhost:8565";
 
 	//UNIX Sockets
-	public static final File Robot2CtrlrSocketFile = new File("/tmp/robotctrl.sock");
+	public static final File Robot2CtrlrSocketFile = new File("/tmp/robot2ctrl.sock");
 	public static final File AT2SocketFile = new File("/tmp/at2.sock");
 	public static final File AT3SocketFile = new File("/tmp/at3.sock");
 	public static final File AT5SocketFile = new File("/tmp/at5.sock");
