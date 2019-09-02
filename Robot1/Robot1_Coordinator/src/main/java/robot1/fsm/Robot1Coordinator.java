@@ -4,8 +4,9 @@ import robot1.ConfigurationUtils;
 import robot1.Robot1CoordinatorApplication;
 import robot1.lwm2m.RobotInstance;
 import robot1.unixsocket.UnixClient;
-import uml4iot.GenericStateMachine.core.*;
 import robot1.unixsocket.UnixServer;
+import uml4iot.GenericStateMachine.core.*;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.Level;
