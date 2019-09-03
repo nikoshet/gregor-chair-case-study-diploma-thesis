@@ -18,6 +18,7 @@ var/
 .classpath
 .project
 .settings
+.swp
 
 ##########################
 ## IntelliJ
@@ -37,4 +38,5 @@ out/
 ##########################
 ## Maven build files
 ##########################
-target
+#target
+classes
