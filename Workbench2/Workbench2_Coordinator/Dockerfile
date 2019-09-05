@@ -1,31 +1,36 @@
-#FROM raspbian/stretch:latest
-FROM ubuntu:16.04
-LABEL MAINTAINER GOCAS
+# Debian 9(Stretch) base image
+#FROM ubuntu:16.04
+FROM debian:9-slim
 
+LABEL maintainer="GOCAS"
+
+# Environment Variables
 #ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
 ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
-ENV LANG            	     en_US.UTF-8
-ENV LC_ALL          	     en_US.UTF-8
+ENV LANG                     en_US.UTF-8
+ENV TZ                       Europe/Athens
 ENV W2_COAP_SERVER           192.168.5.50
-
-
-COPY . /Workbench2Coordinator
+# Copy files
+COPY target/Workbench2_Coordinator-0.0.1-SNAPSHOT.jar /Workbench2Coordinator/Workbench2_Coordinator-0.0.1-SNAPSHOT.jar
+# Set working directory
 WORKDIR /Workbench2Coordinator
 
-RUN apt-get update && \
-#  apt-get install -y --no-install-recommends locales && \
-#  locale-gen ${LANG} && dpkg-reconfigure locales && \
-  apt-get --purge remove openjdk* && \
-  apt-get update && \
-  apt-get install -y iputils-ping && \
-  apt-get install -y openjdk-8-jdk maven && \
-  apt-get clean all && \
-  export JAVA_HOME=${JAVA_HOME} && \
-  export PATH=$JAVA_HOME/jre/bin:$PATH && \
-  mvn install:install-file -Dfile=GenericStateMachine-1.0-SNAPSHOT.jar -DgroupId=uml4iot -DartifactId=GenericStateMachine -Dversion=1.0-SNAPSHOT -Dpackaging=jar -DgeneratePom=true && \
-  mvn clean install -DskipTests
+# Set locales,timezone
+RUN export LANGUAGE=${LANG} && export LANG=${LANG} && \ 
+     ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone && \
+# Bug fix for openjdk-8 on Debian
+     mkdir -p /usr/share/man/man1 && \
+# Updates and Installations
+     apt-get update && \
+     apt-get install -y \
+        iputils-ping \
+        openjdk-8-jdk-headless && \
+     apt-get clean all && \
+# Set java paths
+     export JAVA_HOME=${JAVA_HOME} && \
+     export PATH=$JAVA_HOME/jre/bin:$PATH
 
-
-ENTRYPOINT ["sh","-c","java -jar target/Workbench2_Coordinator-0.0.1-SNAPSHOT.jar ${W2_COAP_SERVER}"]
+# Final command
+ENTRYPOINT ["sh","-c","java -jar Workbench2_Coordinator-0.0.1-SNAPSHOT.jar ${W2_COAP_SERVER}"]
 
 

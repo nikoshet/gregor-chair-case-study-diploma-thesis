@@ -75,16 +75,19 @@ services:
         ipv4_address: 192.168.5.50
     volumes:
       - /tmp:/tmp
-#  w1controller:
-#    build:
-#      context: ./Workbench1ControllerMs
-#      dockerfile: Dockerfile
-#    container_name: w1controller
-#    volumes:
-#      - /tmp:/tmp
-#    links:
-#      - w1coordinator
-#    environment:
-#      - PYTHONUNBUFFERED=1
+    links:
+      - w2controller
+  w2controller:
+    build:
+      context: ./Workbench2ControllerMs
+      dockerfile: Dockerfile
+    container_name: w2controller
+    volumes:
+      - /tmp:/tmp
+      - /dev/gpiomem:/dev/gpiomem
+    privileged: true
+    environment:
+      - PYTHONUNBUFFERED=1
+
 
 

@@ -2,6 +2,9 @@ from Communication_Wrapper.W1Coordinator_Wrapper import W1Coordinator_Wrapper
 from unix_sockets.unix_server import UnixServer
 from unix_sockets.unix_client import UnixClient
 from Services.Rotate import Rotate
+from Services.Hold import Hold
+from Services.Release import Release
+
 
 class W1Controller:
 
@@ -21,7 +24,13 @@ class W1Controller:
         rotate = Rotate()
         return rotate.start_working(device)
 
+    def call_hold(self, device):
+        hold = Hold()
+        return hold.start_working(device)
 
+    def call_release(self, device):
+        release = Release()
+        return release.start_working(device)
 
     def start_controller(self, device):
         while True:
@@ -31,6 +40,22 @@ class W1Controller:
 
                 if "ROTATE" in message_received:
                     response = self.call_rotate(device)
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.w1_wrapper.create_client()
+                        self.w1_wrapper.connect_2_unix_server(W1Coordinator_Wrapper.SERVER_ADDRESS)
+                        self.w1_wrapper.send_2_coordinator(response)
+                        self.w1_wrapper.unix_client.close_client()
+                if "HOLD" in message_received:
+                    response = self.call_hold(device)
+                    if "FINISHED" in response:
+                        print("controller free to service another call")
+                        self.w1_wrapper.create_client()
+                        self.w1_wrapper.connect_2_unix_server(W1Coordinator_Wrapper.SERVER_ADDRESS)
+                        self.w1_wrapper.send_2_coordinator(response)
+                        self.w1_wrapper.unix_client.close_client()
+                if "RELEASE" in message_received:
+                    response = self.call_release(device)
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.w1_wrapper.create_client()

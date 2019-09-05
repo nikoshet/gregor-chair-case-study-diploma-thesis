@@ -49,12 +49,12 @@ class Rotate:
         NoTurns = 0
         for ItemNo in range(NoItems+1):
             for Step in range(133,0,-1):
-                if Step == 133: # edw einai ItemNo katastash tou Pos 1 prin kounhthei ItemNo trapeza gia prwth fora
+                if Step == 133:
                     if NoTurns == 0:
                         pass                        
                     elif NoTurns == 1:
                         pass
-                elif Step == 1: # stamataei na kounietai
+                elif Step == 1:
                     NoTurns+=1
                     if NoTurns == 1:
                         pass
