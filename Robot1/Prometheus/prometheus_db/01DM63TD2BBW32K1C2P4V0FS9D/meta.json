@@ -1,0 +1,17 @@
+{
+	"ulid": "01DM63TD2BBW32K1C2P4V0FS9D",
+	"minTime": 1567857600000,
+	"maxTime": 1567864800000,
+	"stats": {
+		"numSamples": 193795,
+		"numSeries": 4435,
+		"numChunks": 4435
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01DM63TD2BBW32K1C2P4V0FS9D"
+		]
+	},
+	"version": 1
+}

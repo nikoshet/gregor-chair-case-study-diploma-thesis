@@ -8,70 +8,67 @@ networks:
       config:
         - subnet: 192.168.1.0/24
 #        - gateway: 172.16.240.11
-#  main:
 
-#volumes:
-#  Robot2CoordinatorSocket:
-#    driver: "local"
-#  Robot2ControllerSocket:
-#    driver: "local"
-#  Workertask3Socket:
-#    driver: "local"
-#  Workertask4Socket:
-#    driver: "local"
-#  Workertask5Socket:
-#    driver: "local"
 services:
-#  grafana:
-#    image: grafana/grafana:latest
-#    container_name: grafana
-#    restart: always
-#    ports:
-#      - "3000:3000"
+  grafana:
+    image: grafana/grafana:5.4.3 #6.3.5 #5.4.3
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./Grafana/login_config
+    volumes:
+      - ./Grafana/grafana_db:/var/lib/grafana:rw #needs command 'sudo chmod -R 777 Grafana/grafana_db'
+#      - ./Grafana/datasource:/etc/grafana/datasource
+#      - ./Grafana/dashboards:/etc/grafana/dashboards
+      - ./Grafana/provisioning/datasource:/etc/grafana/provisioning/datasources
+      - ./Grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+#      - ./Grafana/preconfig.sh:/preconfig.sh #needs command 'sudo chmod -R 777 Grafana/preconfig.sh'
+#    entrypoint: /preconfig.sh
 #    environment:
-#      - GF_INSTALL_PLUGINS=grafana-piechart-panel,jdbranham-diagram-panel
-#      - GF_SECURITY_ADMIN_USER=admin
-#      - GF_SECURITY_ADMIN_PASSWORD=gocas
-#    depends_on:
-#      - prometheus
-#  prometheus:
-#    image: prom/prometheus:latest
-#    container_name: prometheus
-#    restart: always
-#    ports:
-#      - 9090:9090
-#    command:
-#      - --config.file=/etc/prometheus/prometheus.yml
-#    volumes:
-#      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
-#      - ./prometheusdb:/prometheus/data:rw  #needs command 'sudo chmod -R 777 prometheusdb'
-#    depends_on:
-#      - cadvisor
-#      - node-exporter
-#  node-exporter:
-#    image: prom/node-exporter:latest
-#    container_name: node-exporter
-#    ports:
-#      - "9100:9100"
-#    restart: always
-#  cadvisor:
-#    image: google/cadvisor:latest
-#    container_name: cadvisor
-#    restart: always
-#    ports:
-#      - "8080:8080"
-#    volumes:
-#      - /:/rootfs:ro
-#      - /var/run:/var/run:rw
-#      - /sys:/sys:ro
-#      - /var/lib/docker/:/var/lib/docker:ro
-#    depends_on:
-#      - w1
-#      - robot1coordinator
-#      - workertask1
-#      - workertask2
-#      - robot1controller
-#    privileged: true
+#      - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
+#      - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-gocas}
+#      - GF_USERS_ALLOW_SIGN_UP=false
+    depends_on:
+      - prometheus
+  prometheus:
+    image: prom/prometheus:v2.12.0
+    container_name: prometheus
+    restart: always
+    ports:
+      - 9090:9090
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./Prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./Prometheus/prometheus_db:/prometheus/data:rw #needs command 'sudo chmod -R 777 Prometheus/prometheus_db'
+    depends_on:
+      - cadvisor
+      - node-exporter
+  node-exporter:
+    image: prom/node-exporter:v0.18.1
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    restart: always
+  cadvisor:
+    image: google/cadvisor:v0.33.0
+    container_name: cadvisor
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    privileged: true
+    depends_on:
+      - robot1coordinator
+      - workertask1
+      - workertask4
+      - robot1controller
   robot1coordinator:
     build:
       context: ./Robot1_Coordinator
