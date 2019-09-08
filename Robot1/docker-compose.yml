@@ -7,45 +7,8 @@ networks:
       driver: default
       config:
         - subnet: 192.168.1.0/24
-#        - gateway: 172.16.240.11
 
 services:
-  grafana:
-    image: grafana/grafana:5.4.3 #6.3.5 #5.4.3
-    container_name: grafana
-    restart: always
-    ports:
-      - "3000:3000"
-    env_file:
-      - ./Grafana/login_config
-    volumes:
-      - ./Grafana/grafana_db:/var/lib/grafana:rw #needs command 'sudo chmod -R 777 Grafana/grafana_db'
-#      - ./Grafana/datasource:/etc/grafana/datasource
-#      - ./Grafana/dashboards:/etc/grafana/dashboards
-      - ./Grafana/provisioning/datasource:/etc/grafana/provisioning/datasources
-      - ./Grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
-#      - ./Grafana/preconfig.sh:/preconfig.sh #needs command 'sudo chmod -R 777 Grafana/preconfig.sh'
-#    entrypoint: /preconfig.sh
-#    environment:
-#      - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
-#      - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-gocas}
-#      - GF_USERS_ALLOW_SIGN_UP=false
-    depends_on:
-      - prometheus
-  prometheus:
-    image: prom/prometheus:v2.12.0
-    container_name: prometheus
-    restart: always
-    ports:
-      - 9090:9090
-    command:
-      - --config.file=/etc/prometheus/prometheus.yml
-    volumes:
-      - ./Prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
-      - ./Prometheus/prometheus_db:/prometheus/data:rw #needs command 'sudo chmod -R 777 Prometheus/prometheus_db'
-    depends_on:
-      - cadvisor
-      - node-exporter
   node-exporter:
     image: prom/node-exporter:v0.18.1
     container_name: node-exporter
@@ -53,7 +16,7 @@ services:
       - "9100:9100"
     restart: always
   cadvisor:
-    image: google/cadvisor:v0.33.0
+    image: budry/cadvisor-arm:latest  #google/cadvisor:v0.33.0
     container_name: cadvisor
     restart: always
     ports:
@@ -66,9 +29,6 @@ services:
     privileged: true
     depends_on:
       - robot1coordinator
-      - workertask1
-      - workertask4
-      - robot1controller
   robot1coordinator:
     build:
       context: ./Robot1_Coordinator
@@ -82,6 +42,8 @@ services:
     links:
       - workertask1
       - workertask4
+#    cpus: 0.6
+#    mem_limit: 400m
   workertask1:
     build:
       context: ./WorkerTask1
@@ -94,7 +56,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
 #    cpus: 0.6
-#    mem_limit: 700m
+#    mem_limit: 400m
   workertask4:
     build:
       context: ./WorkerTask4
@@ -106,6 +68,8 @@ services:
       - robot1controller
     environment:
       - PYTHONUNBUFFERED=1
+#    cpus: 0.6
+#    mem_limit: 400m
   robot1controller:
     build:
       context: ./RobotControllerMs
@@ -117,5 +81,5 @@ services:
     privileged: true
     environment:
       - PYTHONUNBUFFERED=1
-
-
+#    cpus: 0.6
+#    mem_limit: 400m

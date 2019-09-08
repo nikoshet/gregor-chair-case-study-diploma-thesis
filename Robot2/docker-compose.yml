@@ -9,68 +9,7 @@ networks:
         - subnet: 192.168.2.0/24
 #        - gateway: 172.16.240.11
 
-#volumes:
-#  Robot2CoordinatorSocket:
-#    driver: "local"
-#  Robot2ControllerSocket:
-#    driver: "local"
-#  Workertask3Socket:
-#    driver: "local"
-#  Workertask4Socket:
-#    driver: "local"
-#  Workertask5Socket:
-#    driver: "local"
 services:
-#  grafana:
-#    image: grafana/grafana:latest
-#    container_name: grafana
-#    restart: always
-#    ports:
-#      - "3000:3000"
-#    environment:
-#      - GF_INSTALL_PLUGINS=grafana-piechart-panel,jdbranham-diagram-panel
-#      - GF_SECURITY_ADMIN_USER=admin
-#      - GF_SECURITY_ADMIN_PASSWORD=gocas
-#    depends_on:
-#      - prometheus
-#  prometheus:
-#    image: prom/prometheus:latest
-#    container_name: prometheus
-#    restart: always
-#    ports:
-#      - 9090:9090
-#    command:
-#      - --config.file=/etc/prometheus/prometheus.yml
-#    volumes:
-#      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
-#      - ./prometheusdb:/prometheus/data:rw  #needs command 'sudo chmod -R 777 prometheusdb'
-#    depends_on:
-#      - cadvisor
-#      - node-exporter
-#  node-exporter:
-#    image: prom/node-exporter:latest
-#    container_name: node-exporter
-#    ports:
-#      - "9100:9100"
-#    restart: always
-#  cadvisor:
-#    image: google/cadvisor:latest
-#    container_name: cadvisor
-#    restart: always
-#    ports:
-#      - "8080:8080"
-#    volumes:
-#      - /:/rootfs:ro
-#      - /var/run:/var/run:rw
-#      - /sys:/sys:ro
-#      - /var/lib/docker/:/var/lib/docker:ro
-#    depends_on:
-#      - w1
-#      - robot1coordinator
-#      - workertask1
-#      - workertask2
-#      - robot1controller
-#    privileged: true
   robot2coordinator:
     build:
       context: ./Robot2_Coordinator
@@ -85,6 +24,8 @@ services:
       - workertask2
       - workertask3
       - workertask5
+#    cpus: 0.6
+#    mem_limit: 400m
   workertask2:
     build:
       context: ./WorkerTask2
@@ -97,7 +38,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
 #    cpus: 0.6
-#    mem_limit: 700m
+#    mem_limit: 400m
   workertask3:
     build:
       context: ./WorkerTask3
@@ -121,7 +62,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
 #    cpus: 0.6
-#    mem_limit: 700m
+#    mem_limit: 400m
   robot2controller:
     build:
       context: ./RobotControllerMs
@@ -133,5 +74,6 @@ services:
     privileged: true
     environment:
       - PYTHONUNBUFFERED=1
-
+#    cpus: 0.6
+#    mem_limit: 400m
 
