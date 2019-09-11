@@ -16,9 +16,9 @@ class ScrewPickAndFasten:
                 from Controller.GpioController import GpioController
                 gpio = GpioController()
                 gpio.initPins()
-                gpio.gpioControl('wrist_f', 1)
-                time.sleep(1)
-                gpio.gpioControl('grip_f', 0.3)
+                # gpio.gpioControl('wrist_f', 1)
+                # time.sleep(1)
+                # gpio.gpioControl('grip_f', 0.3)
                 gpio.gpioControl('led', 1)
                 time.sleep(0.5)
                 gpio.gpioControl('led', 1)
@@ -27,9 +27,9 @@ class ScrewPickAndFasten:
                 time.sleep(0.5)
                 gpio.gpioControl('led', 1)
                 time.sleep(0.5)
-                gpio.gpioControl('grip_b', 0.3)
-                time.sleep(1)
-                gpio.gpioControl('wrist_b', 1.2)
+                # gpio.gpioControl('grip_b', 0.3)
+                # time.sleep(1)
+                # gpio.gpioControl('wrist_b', 1.2)
             elif device == "LAPTOP":
                 time.sleep(1)
 
