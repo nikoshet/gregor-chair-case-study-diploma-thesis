@@ -26,27 +26,15 @@ class AT8Controller:
                     if sender_address == "coordinator":  # mono start mporei na steilei o coordinator
                         self.robot3ctrl_wrapper.create_client()
                         self.robot3ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
-                        self.robot3ctrl_wrapper.send_2_robotctrl(self.robot3ctrl_wrapper.START_MESSAGE_PickAndInsert)
+                        self.robot3ctrl_wrapper.send_2_robotctrl(self.robot3ctrl_wrapper.START_MESSAGE_PickAndFlipAndPress)
                         while True:
                             message = self.unix_server.read_data()
                             print(str(message))
-                            if message ==  '{"PickAndInsert_MS": "FINISHED"}':
-                                print("\n \n \n \n pick and insert has completed \n \n \n \n")
+                            if message ==  '{"PickAndFlipAndPress_MS": "FINISHED"}':
+                                print("\n \n \n \n pick and flip and press has completed \n \n \n \n")
                                 self.robot3ctrl_wrapper.unix_client.close_client()
                                 break
-                        print(" PICK AND INSERT FINISHED . LETS START SCREW PICK AND FASTEN NOW")
-
-                        self.robot3ctrl_wrapper.create_client()
-                        self.robot3ctrl_wrapper.connect_2_unix_server(RobotCtrl_Wrapper.SERVER_ADDRESS)
-                        self.robot3ctrl_wrapper.send_2_robotctrl(self.robot3ctrl_wrapper.START_MESSAGE_ScrewPickAndFasten)
-                        while True:
-                            message = self.unix_server.read_data()
-                            print(str(message))
-                            if message ==  '{"ScrewPickAndFasten_MS": "FINISHED"}':
-                                print("\n \n \n \n screw pick and fasten has completed \n \n \n \n")
-                                self.robot3ctrl_wrapper.unix_client.close_client()
-                                break
-                        print("SCREW PICK AND FASTEN FINISHED")
+                        print(" PICK AND FLIP AND PRESS FINISHED .")
                         print("controller free to service another call")
 
                         self.robot3coordinator_wrapper.create_client()

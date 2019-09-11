@@ -40,7 +40,7 @@ scrape_configs:
   - job_name: 'cadvisor'
     scrape_interval: 10s
     static_configs:
-      - targets: ['192.168.2.8:9080'] #['cadvisor:8080'] 
+      - targets: ['192.168.10.123:8080'] # ['cadvisor:8080'] #9080 
 #        - cadvisor:8080 
         labels:
           group:  'cAdvisor'
@@ -52,7 +52,7 @@ scrape_configs:
   - job_name: 'node-exporter'
     scrape_interval: 10s
     static_configs:
-      - targets: ['192.168.2.8:9100'] #['node-exporter:9100']
+      - targets: ['192.168.10.123:9100'] # ['node-exporter:9100']
         labels:
           group:  'node-exporter'
 

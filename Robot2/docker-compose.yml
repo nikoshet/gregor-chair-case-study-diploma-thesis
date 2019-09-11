@@ -1,5 +1,5 @@
 version: "2"
-#version: '3.2'
+
 networks:
   gregor-chair-network-r2:
     driver: bridge
@@ -24,8 +24,8 @@ services:
       - workertask2
       - workertask3
       - workertask5
-#    cpus: 0.6
-#    mem_limit: 400m
+    cpus: 0.7
+    mem_limit: 500m
   workertask2:
     build:
       context: ./WorkerTask2
@@ -37,8 +37,8 @@ services:
       - robot2controller
     environment:
       - PYTHONUNBUFFERED=1
-#    cpus: 0.6
-#    mem_limit: 400m
+    cpus: 0.7
+    mem_limit: 500m
   workertask3:
     build:
       context: ./WorkerTask3
@@ -61,8 +61,8 @@ services:
       - robot2controller
     environment:
       - PYTHONUNBUFFERED=1
-#    cpus: 0.6
-#    mem_limit: 400m
+    cpus: 0.7
+    mem_limit: 500m
   robot2controller:
     build:
       context: ./RobotControllerMs
@@ -74,6 +74,6 @@ services:
     privileged: true
     environment:
       - PYTHONUNBUFFERED=1
-#    cpus: 0.6
-#    mem_limit: 400m
+    cpus: 0.7
+    mem_limit: 500m
 

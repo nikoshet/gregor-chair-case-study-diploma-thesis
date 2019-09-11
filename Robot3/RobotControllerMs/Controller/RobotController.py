@@ -11,7 +11,7 @@ from Services.Move import Move
 from Services.PickAndPlace import PickAndPlace
 from Services.PickAndInsert import PickAndInsert
 from Services.ScrewPickAndFasten import ScrewPickAndFasten
-from Services.PickAndPress import PickAndPress
+from Services.PickAndFlipAndPress import PickAndFlipAndPress
 
 
 class RobotController:
@@ -38,9 +38,9 @@ class RobotController:
         screwpickandfasten = ScrewPickAndFasten()
         return screwpickandfasten.start_working(device)  # screw pick and fasten service
 
-    def call_pick_and_press(self, device):
-        pickandpress = PickAndPress()
-        return pickandpress.start_working(device)  # pick and press service
+    def call_pick_and_flip_and_press(self, device):
+        pickandflipandpress = PickAndFlipAndPress()
+        return pickandflipandpress.start_working(device)  # pick and flip and press service
 
     def call_move(self, message):
         move = Move()
@@ -83,8 +83,8 @@ class RobotController:
                         self.unix_client.connect_client(str(sender_address))
                         self.unix_client.send_data(response)
                         self.unix_client.close_client()
-                if "PickAndPress" in message_received:
-                    response = self.call_pick_and_press(device)
+                if "PickAndFlipAndPress" in message_received:
+                    response = self.call_pick_and_flip_and_press(device)
                     if "FINISHED" in response:
                         print("controller free to service another call")
                         self.unix_client = UnixClient(str(sender_address))

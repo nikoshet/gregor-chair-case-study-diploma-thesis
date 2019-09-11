@@ -1,12 +1,11 @@
 # Debian 9(Stretch) base image
-#FROM ubuntu:16.04
 FROM debian:9-slim
 
 LABEL maintainer="GOCAS"
 
 # Environment Variables
-#ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
-ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
+ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
+#ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
 ENV LANG                     en_US.UTF-8
 ENV TZ                       Europe/Athens
 ENV W1_COAP_SERVER           192.168.4.40
