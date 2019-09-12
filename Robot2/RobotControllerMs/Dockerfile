@@ -4,8 +4,8 @@ FROM python:3.5.7-alpine3.10
 LABEL maintainer="GOCAS"
 
 # Environment Variables
-ENV DEVICE                   RPI
-#ENV DEVICE                   LAPTOP
+#ENV DEVICE                   RPI
+ENV DEVICE                   LAPTOP
 
 # Copy files
 COPY . /Robot2ControllerMs

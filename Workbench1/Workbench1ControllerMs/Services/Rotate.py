@@ -48,8 +48,8 @@ class Rotate:
         NoItems = 1
         NoTurns = 0
         for ItemNo in range(NoItems+1):
-            for Step in range(133,0,-1):
-                if Step == 133:
+            for Step in range(132,0,-1):
+                if Step == 132:
                     if NoTurns == 0:
                         pass                        
                     elif NoTurns == 1:
@@ -119,4 +119,4 @@ class Rotate:
                     continue
                 Direction=Direction-1
 
-    #GPIO.cleanup()
+    GPIO.cleanup()

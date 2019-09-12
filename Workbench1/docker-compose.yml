@@ -8,7 +8,26 @@ networks:
         - subnet: 192.168.4.0/24
 
 services:
-
+  node-exporter:
+    image: prom/node-exporter:v0.18.1
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    restart: always
+  cadvisor:
+    image: budry/cadvisor-arm:latest #google/cadvisor:v0.33.0  #
+    container_name: cadvisor
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    privileged: true
+    depends_on:
+      - w1coordinator
   w1coordinator:
     build:
       context: ./Workbench1_Coordinator
@@ -23,7 +42,6 @@ services:
       - /tmp:/tmp
     links:
       - w1controller
-    cpus: 0.7
     mem_limit: 500m
   w1controller:
     build:
@@ -36,7 +54,6 @@ services:
     privileged: true
     environment:
       - PYTHONUNBUFFERED=1
-    cpus: 0.7
     mem_limit: 500m
 
 

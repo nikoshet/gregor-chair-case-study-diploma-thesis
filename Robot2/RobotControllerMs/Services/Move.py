@@ -20,7 +20,7 @@ class Move:
                     from Controller.GpioController import GpioController
                     gpio = GpioController()
                     gpio.initPins()
-                    gpio.gpioControl('rotate_l', 1.7)
+                    gpio.gpioControl('rotate_l', 2.6)
                     time.sleep(0.5)
                 elif device == "LAPTOP":
                     time.sleep(1)
@@ -33,7 +33,9 @@ class Move:
                 print(" \n \n \n move to right \n \n \n ")
                 if device == "RPI":
                     from Controller.GpioController import GpioController
-                    gpio.gpioControl('rotate_r', 1.7)
+                    gpio = GpioController()
+                    gpio.initPins()
+                    gpio.gpioControl('rotate_r', 2.4)
                     time.sleep(0.5)
                 elif device == "LAPTOP":
                     time.sleep(1)

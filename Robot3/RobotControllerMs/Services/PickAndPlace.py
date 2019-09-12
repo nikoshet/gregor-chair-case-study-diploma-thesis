@@ -17,12 +17,13 @@ class PickAndPlace:
                 from Controller.GpioController import GpioController
                 gpio = GpioController()
                 gpio.initPins()
-                gpio.gpioControl('elbow_f', 1)
+                gpio.gpioControl('elbow_f', 1.1)
                 time.sleep(0.5)
                 # gpio.gpioControl('grip_f', 0.3)
                 # gpio.gpioControl('grip_b', 0.3)
                 # time.sleep(0.5)
-                gpio.gpioControl('elbow_b', 1.35)
+                gpio.gpioControl('elbow_b', 1.5)
+                ime.sleep(0.5)
             elif device == "LAPTOP":
                 time.sleep(1)
 

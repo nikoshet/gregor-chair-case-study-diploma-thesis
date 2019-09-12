@@ -1,7 +1,7 @@
 # my global config
 global:
-  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
-  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  scrape_interval:     5s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 5s # Evaluate rules every 15 seconds. The default is every 1 minute.
   # scrape_timeout is set to the global default (10s).
   external_labels:
     monitor:  'GOCAS'
@@ -27,7 +27,7 @@ scrape_configs:
 # Prometheus #  
 ##############
   - job_name: 'prometheus'
-    scrape_interval: 10s
+    scrape_interval: 5s
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
@@ -38,9 +38,9 @@ scrape_configs:
 ############
 #Container Advisor: analyzes and exposes resource usage and performance data from running containers. cAdvisor exposes Prometheus metrics out of the box
   - job_name: 'cadvisor'
-    scrape_interval: 10s
+    scrape_interval: 5s
     static_configs:
-      - targets: ['192.168.10.123:8080'] # ['cadvisor:8080'] #9080 
+      - targets: ['192.168.10.123:8080'] # ['cadvisor:8080'] #
 #        - cadvisor:8080 
         labels:
           group:  'cAdvisor'
@@ -50,9 +50,9 @@ scrape_configs:
 #################
 #Node-exporter: collects system metrics like cpu/memory/storage usage and then it exports it for Prometheus to scrape. The beauty of this is that it can be run as a docker container while also reporting stats for the host system. It is therefore very easy to instrument any system that can run docker containers
   - job_name: 'node-exporter'
-    scrape_interval: 10s
+    scrape_interval: 5s
     static_configs:
-      - targets: ['192.168.10.123:9100'] # ['node-exporter:9100']
+      - targets: ['192.168.10.123:9100'] # ['node-exporter:9100'] # 
         labels:
           group:  'node-exporter'
 
