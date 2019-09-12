@@ -19,7 +19,7 @@ class Move:
                     from Controller.GpioController import GpioController
                     gpio = GpioController()
                     gpio.initPins()
-                    gpio.gpioControl('rotate_l', 2.6)
+                    gpio.gpioControl('rotate_l', 2.8)
                     time.sleep(1)
                 elif device == "LAPTOP":
                     time.sleep(1)

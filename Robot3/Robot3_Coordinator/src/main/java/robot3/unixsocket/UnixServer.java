@@ -36,14 +36,17 @@ public class UnixServer extends Thread{
                                 case "AT6_FINISHED":
                                     Robot3Coordinator.LOGGER.info("AT6 finished.");
                                     Robot3Coordinator.atQueue.put("AT6_FINISHED");
+				    break;
                                     //break outerloop;
                                 case "AT7_FINISHED":
                                     Robot3Coordinator.LOGGER.info("AT7 finished.");
                                     Robot3Coordinator.atQueue.put("AT7_FINISHED");
+				    break;
                                     //break outerloop;
                                 case "AT8_FINISHED":
                                     Robot3Coordinator.LOGGER.info("AT8 finished.");
                                     Robot3Coordinator.atQueue.put("AT8_FINISHED");
+				    break;
                                     //break outerloop;
                             }
                         }

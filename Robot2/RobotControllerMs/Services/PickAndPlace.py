@@ -23,7 +23,7 @@ class PickAndPlace:
                 # gpio.gpioControl('grip_b', 0.3)
                 # time.sleep(0.5)
                 gpio.gpioControl('elbow_b', 1.55)
-                ime.sleep(0.5)
+                time.sleep(0.5)
             elif device == "LAPTOP":
                 time.sleep(1)
 
