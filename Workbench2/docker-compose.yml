@@ -11,13 +11,13 @@ networks:
 services:
   node-exporter:
     image: prom/node-exporter:v0.18.1
-    container_name: node-exporter
+    container_name: w2_node-exporter
     ports:
       - "9100:9100"
     restart: always
   cadvisor:
     image: budry/cadvisor-arm:latest #google/cadvisor:v0.33.0  #
-    container_name: cadvisor
+    container_name: w2_cadvisor
     restart: always
     ports:
       - "8080:8080"
@@ -33,7 +33,7 @@ services:
     build:
       context: ./Workbench2_Coordinator
       dockerfile: Dockerfile
-    container_name: w2coordinator
+    container_name: w2_assembly_coordinator
     ports:
       - "8565:8565/udp"
     networks:

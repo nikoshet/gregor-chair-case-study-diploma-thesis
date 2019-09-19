@@ -1,0 +1,17 @@
+{
+	"ulid": "01DMRP00JJC97A4YD22FZZZKSR",
+	"minTime": 1568476800000,
+	"maxTime": 1568484000000,
+	"stats": {
+		"numSamples": 265559,
+		"numSeries": 450,
+		"numChunks": 2355
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01DMRP00JJC97A4YD22FZZZKSR"
+		]
+	},
+	"version": 1
+}

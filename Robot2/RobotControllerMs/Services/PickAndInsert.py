@@ -22,7 +22,7 @@ class PickAndInsert:
                 # gpio.gpioControl('led', 3)
                 # gpio.gpioControl('grip_b', 0.3)
                 # time.sleep(0.5)
-                gpio.gpioControl('wrist_b', 1.14)
+                gpio.gpioControl('wrist_b', 1.1)
             elif device == "LAPTOP":
                 time.sleep(1)
 

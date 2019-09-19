@@ -11,13 +11,13 @@ networks:
 services:
   node-exporter:
     image: prom/node-exporter:v0.18.1
-    container_name: node-exporter
+    container_name: r1_node-exporter
     ports:
       - "9100:9100"
     restart: always
   cadvisor:
     image: budry/cadvisor-arm:latest #google/cadvisor:v0.33.0  #
-    container_name: cadvisor
+    container_name: r1_cadvisor
     restart: always
     ports:
       - "8080:8080"
@@ -33,7 +33,7 @@ services:
     build:
       context: ./Robot1_Coordinator
       dockerfile: Dockerfile
-    container_name: r1coordinator
+    container_name: r1_assembly_coordinator
     networks:
       gregor-chair-network-r1:
         ipv4_address: 192.168.1.10
