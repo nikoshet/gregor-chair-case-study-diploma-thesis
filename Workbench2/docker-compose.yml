@@ -29,7 +29,7 @@ services:
     privileged: true
     depends_on:
       - w2coordinator
-  w2coordinator:
+  w2_assembly_coordinator:
     build:
       context: ./Workbench2_Coordinator
       dockerfile: Dockerfile
@@ -44,7 +44,7 @@ services:
     links:
       - w2controller
     mem_limit: 500m
-  w2controller:
+  w2_controller:
     build:
       context: ./Workbench2ControllerMs
       dockerfile: Dockerfile
