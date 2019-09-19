@@ -18,7 +18,7 @@ services:
     restart: always
   cadvisor:
     image: budry/cadvisor-arm:latest #google/cadvisor:v0.33.0  #
-    container_name: r2_cadvisor
+    container_name: r2_assembly_coordinator
     restart: always
     ports:
       - "8080:8080"

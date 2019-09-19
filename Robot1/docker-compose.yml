@@ -28,7 +28,7 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
     privileged: true
     depends_on:
-      - robot1coordinator
+      - r1_assembly_coordinator
   r1_assembly_coordinator:
     build:
       context: ./Robot1_Coordinator
