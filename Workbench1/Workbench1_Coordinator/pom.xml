@@ -42,7 +42,13 @@
 			<artifactId>leshan-server-cf</artifactId>
 			<version>1.0.0-M9</version>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>com.pi4j</groupId>
+			<artifactId>pi4j-core</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 		<dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>

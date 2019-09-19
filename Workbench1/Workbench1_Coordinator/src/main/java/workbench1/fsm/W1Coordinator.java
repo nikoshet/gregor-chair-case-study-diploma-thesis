@@ -2,6 +2,7 @@ package workbench1.fsm;
 import org.json.JSONObject;
 import workbench1.ConfigurationUtils;
 import workbench1.events.Rbt_2_W1_Event;
+import workbench1.gpio.GpioConfig;
 import workbench1.unixsocket.UnixClient;
 import workbench1.unixsocket.UnixServer;
 
@@ -27,13 +28,13 @@ public class W1Coordinator extends Thread {
     private P3StateMachine p3CurSt, p3TargSt;
     private boolean tmt = false;
     static Logger LOGGER;
-
+    public static GpioConfig gpioconfig = new GpioConfig();
     public static BlockingQueue<String> ctrlQueue = new LinkedBlockingDeque<>();
     UnixServer unixServer = new UnixServer();
     UnixClient unixclient = new UnixClient();
     W1Coordinator(P1StateMachine p1St, P2StateMachine p2St, P3StateMachine p3St){
         /*Create Logger file and make configurations */
-    	System.out.println("controller started");
+    	System.out.println("Assembly Coordinator started");
         LOGGER = Logger.getLogger(W1Coordinator.class.getName()+ "LOGGER");
 
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
@@ -42,6 +43,9 @@ public class W1Coordinator extends Thread {
         p1CurSt = p1St;
         p2CurSt = p2St;
         p3CurSt = p3St;
+        gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
+        gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+        gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
     }
 
     /*** run method ***/
@@ -106,6 +110,20 @@ public class W1Coordinator extends Thread {
         if(pos[nextEvent.eventSource][0] == 1){
 
             p1TargSt = p1CurSt.definePosStates(nextEvent, tmt, p2CurSt, p3CurSt);
+            switch (p1TargSt){
+                case Free:
+                    gpioconfig.W1working1_gpio.turnOffPin(gpioconfig.W1working1pin);
+                    gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
+                    gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
+                case SubAss1:
+                    gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
+                    gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
+                    gpioconfig.W1working1_gpio.turnOnPin(gpioconfig.W1working1pin);
+                case SubAss1Completed:
+                    gpioconfig.W1working1_gpio.turnOffPin(gpioconfig.W1working1pin);
+                    gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
+                    gpioconfig.W1completed1_gpio.turnOnPin(gpioconfig.W1completed1pin);
+            }
             tmt = p1CurSt.getTMTStatus(p2CurSt, p3CurSt); //edw tou allazw to tmt value!!!
 
             if((nextEvent == Rbt_2_W1_Event.R1AcquireP1) && (p1CurSt == P1StateMachine.SubAss1Completed)){
@@ -122,6 +140,28 @@ public class W1Coordinator extends Thread {
         }
         else if(pos[nextEvent.eventSource][0]== 2){
             p2TargSt = p2CurSt.definePosStates(nextEvent, tmt, p1CurSt, p3CurSt);
+            switch (p2TargSt){
+                case Free:
+                    gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                    gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                    gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                    gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+                case SubAss2:
+                    gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                    gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                    gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                    gpioconfig.W1working2_gpio.turnOnPin(gpioconfig.W1working2pin);
+                case Sub1Completed:
+                    gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                    gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                    gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                    gpioconfig.W1pending2_gpio.turnOnPin(gpioconfig.W1pending2pin);
+                case SubAss2Completed:
+                    gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                    gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                    gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                    gpioconfig.W1completed2_gpio.turnOnPin(gpioconfig.W1completed2pin);
+            }
             System.out.println("------------------- " +p2TargSt + p2CurSt);
             tmt = p2CurSt.getTMTStatus(p1CurSt, p3CurSt); //edw tou allazw to tmt value!!!
 
@@ -139,6 +179,20 @@ public class W1Coordinator extends Thread {
         }
         else if(pos[nextEvent.eventSource][0]== 3){
             p3TargSt =	p3CurSt.definePosStates(nextEvent, tmt, p1CurSt, p2CurSt);
+            switch (p3TargSt){
+                case Free:
+                    gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                    gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+                    gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
+                case SubAss3:
+                    gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                    gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+                    gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
+                case Sub2Completed:
+                    gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                    gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                    gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
+            }
             tmt = p3CurSt.getTMTStatus(p1CurSt, p2CurSt); //edw tou allazw to tmt value!!!
 
             if((nextEvent == Rbt_2_W1_Event.R3AcquireP3) && (p3CurSt == P3StateMachine.Free)){

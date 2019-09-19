@@ -58,7 +58,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             SendAcquire2W1Pos1();
             robot1State = Robot1CoordinatorState.WAITING4W1POS1;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             wait4w1pos1();
         }
         @Override
@@ -73,7 +73,7 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot1State = Robot1CoordinatorState.SUBASS1;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             doSubAss1();
         }
 
@@ -96,7 +96,7 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS2;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             callMoveMs("right");
         }
 
@@ -113,7 +113,7 @@ public class Robot1Coordinator extends StateMachine{
         protected void entry() {
             SendAcquire2W2();
             robot1State = Robot1CoordinatorState.WAITING4W2;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             wait4W2();
         }
 
@@ -129,7 +129,7 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot1State = Robot1CoordinatorState.SUBASSW2;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             doSubAssW2();
         }
 
@@ -152,7 +152,7 @@ public class Robot1Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot1State = Robot1CoordinatorState.MOVING2POS1;
-            Robot1Coordinator.LOGGER.severe("R1: Controller State = " + robot1State +"\n");
+            Robot1Coordinator.LOGGER.severe("R1: Assembly Coordinator State = " + robot1State +"\n");
             callMoveMs("left");
         }
 

@@ -54,7 +54,7 @@ public class Robot2Coordinator extends StateMachine{
         LOGGER.info("Robot2 starting");
         server.start();
         setInitState(waiting4w1pos2);
-        Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+        Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
     }
 
     //-----------------States----------------
@@ -65,7 +65,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             SendAcquire2W1Pos2();
             robot2State = Robot2CoordinatorState.WAITING_4_W1POS2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
         }
 
         @Override
@@ -80,7 +80,7 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot2State = Robot2CoordinatorState.SUBASS2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
             doSubAss2OnW1();
         }
 
@@ -96,7 +96,7 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
             callMoveMs("left");
             //SignalDetector.msgQ.add(new Pos2Reached());
         }
@@ -114,7 +114,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void entry() {
             SendAcquire2W2();
             robot2State = Robot2CoordinatorState.WAITING_4_W2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
         }
 
         @Override
@@ -129,7 +129,7 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot2State = Robot2CoordinatorState.SUBASSW2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
             doSubAss2OnW2();
         }
 
@@ -154,7 +154,7 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot2State = Robot2CoordinatorState.MOVING_2_POS1;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
             callMoveMs("right");
             //SignalDetector.msgQ.add(new Pos1Reached());
         }
@@ -171,7 +171,7 @@ public class Robot2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot2State = Robot2CoordinatorState.COMPLETINGSUBASS2;
-            Robot2Coordinator.LOGGER.severe("R2: Controller State = " + robot2State +"\n");
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
             completeSubAss2OnW1();
         }
 

@@ -1,4 +1,5 @@
 workbench2/lwm2m/ports/Robot1Port$Attribute.class
+workbench2/gpio/GpioConfig.class
 workbench2/lwm2m/resources/ResourceIf.class
 workbench2/fsm/W2Application.class
 workbench2/fsm/W2Coordinator$Free.class
@@ -21,6 +22,7 @@ workbench2/lwm2m/ports/Robot2Port$Execute.class
 workbench2/lwm2m/leshanWrapper/LeshanUriIf.class
 workbench2/lwm2m/ObservationData.class
 workbench2/fsm/W2SMEvent.class
+workbench2/gpio/MyGpioController.class
 workbench2/fsm/W2Coordinator$SubAssR1W2Compl_2_SubAssR2W2.class
 workbench2/fsm/W2Coordinator$Free_2_SubAssR1W2.class
 workbench2/lwm2m/ports/Robot2Port$Events.class

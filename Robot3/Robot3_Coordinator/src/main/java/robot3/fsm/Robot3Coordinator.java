@@ -42,7 +42,7 @@ public class Robot3Coordinator extends StateMachine{
         LOGGER.info("Robot3 starting");
         setInitState(waiting4w1pos3);
         server.start();
-        LOGGER.info("R3: Controller State = " + robot3State +"\n");
+        LOGGER.info("R3: Assembly Coordinator State = " + robot3State +"\n");
     }
 
     public BlockingQueue<SMReception> getEventQueue() {
@@ -57,7 +57,7 @@ public class Robot3Coordinator extends StateMachine{
         protected void entry() {
             SendAcquire2W1Pos3();
             robot3State = Robot3CoordinatorState.WAITING4W1POS3;
-            LOGGER.warning("R3: Controller State = " + robot3State +"\n");
+            LOGGER.warning("R3: Assembly Coordinator State = " + robot3State +"\n");
         }
 
         @Override
@@ -72,7 +72,7 @@ public class Robot3Coordinator extends StateMachine{
         @Override
         protected void entry() {
             robot3State = Robot3CoordinatorState.SUBASS3;
-            LOGGER.warning("R3: Controller State = " + robot3State +"\n");
+            LOGGER.warning("R3: Assembly Coordinator State = " + robot3State +"\n");
             try {
                 workOnW1();
             } catch (InterruptedException e) {
