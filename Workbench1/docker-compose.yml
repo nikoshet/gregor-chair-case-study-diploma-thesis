@@ -41,7 +41,7 @@ services:
     volumes:
       - /tmp:/tmp
     links:
-      - w1controller
+      - w1_controller
     mem_limit: 500m
   w1_controller:
     build:

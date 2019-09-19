@@ -51,7 +51,7 @@ services:
     volumes:
       - /tmp:/tmp
     links:
-      - robot1controller
+      - r1_controller
     environment:
       - PYTHONUNBUFFERED=1
     mem_limit: 500m
@@ -63,7 +63,7 @@ services:
     volumes:
       - /tmp:/tmp
     links:
-      - robot1controller
+      - r1_controller
     environment:
       - PYTHONUNBUFFERED=1
     mem_limit: 500m

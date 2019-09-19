@@ -42,7 +42,7 @@ services:
     volumes:
       - /tmp:/tmp
     links:
-      - w2controller
+      - w2_controller
     mem_limit: 500m
   w2_controller:
     build:
