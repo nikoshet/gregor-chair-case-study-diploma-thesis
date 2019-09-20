@@ -1,0 +1,17 @@
+{
+	"ulid": "01DN6YCMZ95EQ633YN3WMHWPDK",
+	"minTime": 1568959200000,
+	"maxTime": 1568966400000,
+	"stats": {
+		"numSamples": 1678499,
+		"numSeries": 4219,
+		"numChunks": 11601
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01DN6YCMZ95EQ633YN3WMHWPDK"
+		]
+	},
+	"version": 1
+}

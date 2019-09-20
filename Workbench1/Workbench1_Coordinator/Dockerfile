@@ -23,9 +23,15 @@ RUN export LANGUAGE=${LANG} && export LANG=${LANG} && \
 # Updates and Installations
      apt-get update && \
      apt-get install -y \
-        iputils-ping \
-        openjdk-8-jdk-headless && \
-     apt-get clean all && \
+        openjdk-8-jdk-headless \
+        git \
+        sudo \
+        make \
+        gcc && \
+     git clone https://github.com/wiringpi/wiringpi && cd wiringpi && sudo ./build && cd .. && \
+     apt-get remove --purge -y git make gcc && \
+     rm -rf wiringpi && \
+     apt-get clean all && apt autoremove -y && \
 # Set java paths
      export JAVA_HOME=${JAVA_HOME} && \
      export PATH=$JAVA_HOME/jre/bin:$PATH
