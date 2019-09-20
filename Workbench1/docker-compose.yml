@@ -43,6 +43,7 @@ services:
     links:
       - w1_controller
     mem_limit: 500m
+    privileged: true
   w1_controller:
     build:
       context: ./Workbench1ControllerMs

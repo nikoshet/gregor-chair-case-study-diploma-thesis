@@ -18,7 +18,7 @@ services:
     restart: always
   cadvisor:
     image: budry/cadvisor-arm:latest #google/cadvisor:v0.33.0  #
-    container_name: r2_assembly_coordinator
+    container_name: r2_cadvisor
     restart: always
     ports:
       - "8080:8080"
@@ -29,7 +29,7 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
     privileged: true
     depends_on:
-      - robot2coordinator
+      - r2_assembly_coordinator
   r2_assembly_coordinator:
     build:
       context: ./Robot2_Coordinator

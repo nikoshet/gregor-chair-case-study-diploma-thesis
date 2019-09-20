@@ -44,6 +44,7 @@ services:
     links:
       - w2_controller
     mem_limit: 500m
+    privileged: true
   w2_controller:
     build:
       context: ./Workbench2ControllerMs
