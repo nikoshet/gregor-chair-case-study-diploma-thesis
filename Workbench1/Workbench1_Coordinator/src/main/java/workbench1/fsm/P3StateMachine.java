@@ -10,6 +10,8 @@ import org.eclipse.leshan.server.registration.Registration;
 import workbench1.events.Rbt_2_W1_Event;
 import workbench1.lwm2m.W1_LwM2mServer;
 
+import static workbench1.fsm.W1Coordinator.gpioconfig;
+
 
 public enum P3StateMachine implements P3StateMachineIf {
     Free{
@@ -39,6 +41,16 @@ public enum P3StateMachine implements P3StateMachineIf {
         }
 
         public void performActions(P3StateMachine p3TargSt, Rbt_2_W1_Event ev){
+            /****************** show P3 state via LEDs *********************/
+            gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+            gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+            gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
+            if(p3TargSt == P3StateMachine.Sub2Completed) {
+                gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
+            }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
@@ -79,6 +91,16 @@ public enum P3StateMachine implements P3StateMachineIf {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+            /****************** show P3 state via LEDs *********************/
+            gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+            gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+            gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
+            if(p3TargSt == P3StateMachine.SubAss3) {
+                gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+                gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
+                }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
@@ -110,6 +132,21 @@ public enum P3StateMachine implements P3StateMachineIf {
         }
 
         public void performActions(P3StateMachine p3TargSt, Rbt_2_W1_Event ev){
+            /****************** show P3 state via LEDs *********************/
+            gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+            gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+            gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
+            if(p3TargSt == P3StateMachine.Sub2Completed) {
+                gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
+                }
+            if(p3TargSt == P3StateMachine.Free) {
+                gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+                gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
+                }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){

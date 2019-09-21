@@ -9,6 +9,8 @@ import org.eclipse.leshan.server.registration.Registration;
 import workbench1.events.Rbt_2_W1_Event;
 import workbench1.lwm2m.W1_LwM2mServer;
 
+import static workbench1.fsm.W1Coordinator.gpioconfig;
+
 
 public enum P2StateMachine implements P2StateMachineIf {
     Free{
@@ -41,6 +43,24 @@ public enum P2StateMachine implements P2StateMachineIf {
         }
 
         public void performActions(P2StateMachine targSt, Rbt_2_W1_Event ev){
+            /****************** show P2 state via LEDs *********************/
+            gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+            gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+            gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+            gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+            if(targSt == P2StateMachine.Free) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+            }
+            else if(targSt == P2StateMachine.Sub1Completed) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                gpioconfig.W1pending2_gpio.turnOnPin(gpioconfig.W1pending2pin);
+            }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P3StateMachine p3CurSt){
@@ -88,6 +108,18 @@ public enum P2StateMachine implements P2StateMachineIf {
 					e.printStackTrace();
 				}
             }
+            /****************** show P2 state via LEDs *********************/
+            gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+            gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+            gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+            gpioconfig.W1pending2_gpio.turnOnPin(gpioconfig.W1pending2pin);
+            if(targSt == P2StateMachine.SubAss2) {
+                gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                gpioconfig.W1working2_gpio.turnOnPin(gpioconfig.W1working2pin);
+            }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P3StateMachine p3CurSt){
@@ -133,6 +165,30 @@ public enum P2StateMachine implements P2StateMachineIf {
         }
 
         public void performActions(P2StateMachine p2TargSt, Rbt_2_W1_Event event){
+            /****************** show P2 state via LEDs *********************/
+            gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+            gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+            gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+            gpioconfig.W1working2_gpio.turnOnPin(gpioconfig.W1working2pin);
+            if(p2TargSt == P2StateMachine.Free) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+            }
+            else if(p2TargSt == P2StateMachine.Sub1Completed) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                gpioconfig.W1pending2_gpio.turnOnPin(gpioconfig.W1pending2pin);
+            }
+            else if(p2TargSt == P2StateMachine.SubAss2Completed) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                gpioconfig.W1completed2_gpio.turnOnPin(gpioconfig.W1completed2pin);
+                }
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P3StateMachine p3CurSt){
@@ -175,6 +231,24 @@ public enum P2StateMachine implements P2StateMachineIf {
         }
 
         public void performActions(P2StateMachine p2TargSt, Rbt_2_W1_Event ev){
+            /****************** show P2 state via LEDs *********************/
+            gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+            gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+            gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+            gpioconfig.W1completed2_gpio.turnOnPin(gpioconfig.W1completed2pin);
+            if(p2TargSt == P2StateMachine.Free) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1pending2_gpio.turnOffPin(gpioconfig.W1pending2pin);
+                gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+                }
+            else if(p2TargSt == P2StateMachine.Sub1Completed) {
+                gpioconfig.W1working2_gpio.turnOffPin(gpioconfig.W1working2pin);
+                gpioconfig.W1completed2_gpio.turnOffPin(gpioconfig.W1completed2pin);
+                gpioconfig.W1free2_gpio.turnOffPin(gpioconfig.W1free2pin);
+                gpioconfig.W1pending2_gpio.turnOnPin(gpioconfig.W1pending2pin);
+                }
+            else{}
          }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P3StateMachine p3CurSt){
