@@ -82,7 +82,7 @@ public enum P1StateMachine implements P1StateMachineIf {
 
             if(ev == Rbt_2_W1_Event.R1ReleaseP1){
                 W1Coordinator.LOGGER.info("Event : R1ReleaseP1");
-                if((p2CurSt == (P2StateMachine.Free) || p2CurSt == P2StateMachine.SubAss2Completed) && p3CurSt == P3StateMachine.Free){
+                if((p2CurSt == (P2StateMachine.Free) || p2CurSt == P2StateMachine.SubAss2_Part2Completed) && p3CurSt == P3StateMachine.Free){
                     targSt = Free;
                     W1Coordinator.LOGGER.info("After transition : p1CurSt == Free");
                     performActions(targSt, ev);
@@ -121,7 +121,7 @@ public enum P1StateMachine implements P1StateMachineIf {
         }
 
         public boolean getTMTStatus(P2StateMachine p2CurSt, P3StateMachine p3CurSt){
-            if((p2CurSt == (P2StateMachine.Free) || p2CurSt == P2StateMachine.SubAss2Completed) && p3CurSt == P3StateMachine.Free)
+            if((p2CurSt == (P2StateMachine.Free) || p2CurSt == P2StateMachine.SubAss2_Part2Completed) && p3CurSt == P3StateMachine.Free)
                 return true;
             else
                 return false;

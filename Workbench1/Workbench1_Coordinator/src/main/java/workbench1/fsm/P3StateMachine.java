@@ -18,7 +18,7 @@ public enum P3StateMachine implements P3StateMachineIf {
         public P3StateMachine definePosStates(Rbt_2_W1_Event ev, boolean tmt, P1StateMachine p1CurSt, P2StateMachine p2CurSt){
             W1Coordinator.LOGGER.info("Before transition : p3CurSt == Free \n ");
             P3StateMachine p3TargSt = Free;
-            if(tmt && ((p2CurSt == P2StateMachine.SubAss2)||(p2CurSt == P2StateMachine.SubAss2Completed))){
+            if(tmt && ((p2CurSt == P2StateMachine.SubAss2_Part1)||(p2CurSt == P2StateMachine.SubAss2_Part2Completed))){
                 p3TargSt = Sub2Completed;
                 W1Coordinator.LOGGER.info("After transition : p3CurSt == Sub2Completed \n ");
                 performActions(p3TargSt, ev);
@@ -123,7 +123,7 @@ public enum P3StateMachine implements P3StateMachineIf {
             P3StateMachine p3TargSt = SubAss3;
             if(ev == Rbt_2_W1_Event.R3ReleaseP3){
                 W1Coordinator.LOGGER.info("Event : R3ReleaseP3 \n");
-                if(((p1CurSt == P1StateMachine.Free) || (p1CurSt == P1StateMachine.SubAss1Completed))&& (p2CurSt == P2StateMachine.SubAss2Completed)){
+                if(((p1CurSt == P1StateMachine.Free) || (p1CurSt == P1StateMachine.SubAss1Completed))&& (p2CurSt == P2StateMachine.SubAss2_Part2Completed)){
                     p3TargSt = Sub2Completed;
                     W1Coordinator.LOGGER.info("After transition : p3CurSt == Sub2Completed \n");
                     performActions(p3TargSt, ev);
@@ -163,7 +163,7 @@ public enum P3StateMachine implements P3StateMachineIf {
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
-            if(((p1CurSt == P1StateMachine.Free) || (p1CurSt == P1StateMachine.SubAss1Completed))&& (p2CurSt == P2StateMachine.SubAss2Completed))
+            if(((p1CurSt == P1StateMachine.Free) || (p1CurSt == P1StateMachine.SubAss1Completed))&& (p2CurSt == P2StateMachine.SubAss2_Part2Completed))
                 return true;
             else
                 return false;

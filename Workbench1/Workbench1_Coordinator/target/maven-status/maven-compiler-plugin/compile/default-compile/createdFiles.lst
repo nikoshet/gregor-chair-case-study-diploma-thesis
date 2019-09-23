@@ -23,6 +23,7 @@ workbench1/lwm2m/ports/Robot2Port$Events.class
 workbench1/fsm/P2StateMachine$2.class
 workbench1/lwm2m/leshanWrapper/LeshanPort.class
 workbench1/lwm2m/ports/Robot3Port$Execute.class
+workbench1/fsm/P2StateMachine$5.class
 workbench1/lwm2m/leshanWrapper/LeshanExecuteIf.class
 workbench1/fsm/P3StateMachine$1.class
 workbench1/lwm2m/ports/Robot1Port$Execute.class
@@ -36,6 +37,7 @@ workbench1/fsm/W1_App.class
 workbench1/fsm/P2StateMachine$4.class
 workbench1/lwm2m/ports/Robot2Port$Attribute.class
 workbench1/lwm2m/leshanWrapper/LeshanUriIf.class
+workbench1/fsm/P2StateMachine$6.class
 workbench1/lwm2m/ports/Robot1Port.class
 workbench1/fsm/P1StateMachine$1.class
 workbench1/Workbench1CoordinatorApplication.class
