@@ -19,9 +19,9 @@ public class GpioConfig {
     public static MyGpioController W1free2_gpio = new MyGpioController(W1free2pin);
     public static Pin W1working2pin= RaspiPin.GPIO_27;
     public static MyGpioController W1working2_gpio = new MyGpioController(W1working2pin);
-    public static Pin W1completed2pin= RaspiPin.GPIO_28;
+    public static Pin W1completed2pin= RaspiPin.GPIO_29;
     public static MyGpioController W1completed2_gpio = new MyGpioController(W1completed2pin);
-    public static Pin W1pending2pin= RaspiPin.GPIO_29;
+    public static Pin W1pending2pin= RaspiPin.GPIO_28;
     public static MyGpioController W1pending2_gpio = new MyGpioController(W1pending2pin);
 
 

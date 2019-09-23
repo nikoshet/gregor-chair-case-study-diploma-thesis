@@ -45,7 +45,7 @@ public enum P3StateMachine implements P3StateMachineIf {
             gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
             gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
             gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
-            /*if(p3TargSt == P3StateMachine.Sub2Completed) {
+            if(p3TargSt == P3StateMachine.Sub2Completed) {
                 gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
                 gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
                 gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
@@ -55,7 +55,7 @@ public enum P3StateMachine implements P3StateMachineIf {
                 gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
                 gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
             }
-            else{}*/
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
@@ -100,7 +100,7 @@ public enum P3StateMachine implements P3StateMachineIf {
             gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
             gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
             gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
-            /*if(p3TargSt == P3StateMachine.SubAss3) {
+            if(p3TargSt == P3StateMachine.SubAss3) {
                 gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
                 gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
                 gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
@@ -110,7 +110,7 @@ public enum P3StateMachine implements P3StateMachineIf {
                 gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
                 gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
             }
-            else{}*/
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
@@ -146,7 +146,7 @@ public enum P3StateMachine implements P3StateMachineIf {
             gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
             gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
             gpioconfig.W1working3_gpio.turnOnPin(gpioconfig.W1working3pin);
-            /*if(p3TargSt == P3StateMachine.Sub2Completed) {
+            if(p3TargSt == P3StateMachine.Sub2Completed) {
                 gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
                 gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
                 gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
@@ -156,7 +156,7 @@ public enum P3StateMachine implements P3StateMachineIf {
                 gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
                 gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
                 }
-            else{}*/
+            else{}
         }
 
         public boolean getTMTStatus(P1StateMachine p1CurSt, P2StateMachine p2CurSt){
