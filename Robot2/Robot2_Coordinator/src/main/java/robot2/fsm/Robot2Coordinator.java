@@ -26,45 +26,47 @@ public class Robot2Coordinator extends StateMachine{
     public static Logger LOGGER;
     public static boolean pos2avail=false;
     public static BlockingQueue<SMReception> notificationQueue;
-    State waiting4w1pos2,subass2,moving2pos2,waiting4w2,subassw2,moving2pos1,completingSubAss2;
+    State waiting4w1pos2_part1,subass2,moving2pos2,waiting4w2,subassw2,moving2pos1,waiting4w1pos2_part2,completingSubAss2;
     private static UnixClient unixClient = new UnixClient();
     UnixServer server = new UnixServer();
     public Robot2Coordinator(){
         super(null);
         notificationQueue = new ArrayBlockingQueue<SMReception>(10);
-        waiting4w1pos2 = new Waiting4W1Pos2();
-        subass2 = new SubAss2();
+        waiting4w1pos2_part1 = new Waiting4W1Pos2_Part1();
+        subass2 = new SubAss2_Part1();
         moving2pos2 = new Moving2Pos2();
         waiting4w2 = new Waiting4W2();
         subassw2 = new SubAssW2();
         moving2pos1 = new Moving2Pos1();
+        waiting4w1pos2_part2 = new Waiting4W1Pos2_Part2();
         completingSubAss2 = new CompletingSubAss2();
 
-        new Waiting4W1POS2_2_SubAss2(waiting4w1pos2,subass2);
+        new Waiting4W1POS2Part1_2_SubAss2(waiting4w1pos2_part1,subass2);
         new SubAss2_2_Moving2P2(subass2,moving2pos2);
         new Moving2P2_2_Wating4W2(moving2pos2,waiting4w2);
         new Wating4W2_2_SubAssW2(waiting4w2 ,subassw2);
         new SubAssW2_2_Moving2P1(subassw2,moving2pos1);
-        new Moving2P1_2_completingSubAss2(moving2pos1,completingSubAss2);
-        new CompletingSubAss2_2_Waiting4W1POS2(completingSubAss2 , waiting4w1pos2);
+        new Moving2P1_2_Waiting4W1POS2Part2(moving2pos1,waiting4w1pos2_part2);
+        new Waiting4W1POS2Part2_2_completingSubAss2(waiting4w1pos2_part2,completingSubAss2);
+        new CompletingSubAss2_2_Waiting4W1POS2(completingSubAss2 , waiting4w1pos2_part1);
 
         LOGGER = Logger.getLogger(Robot2Coordinator.class.getName() + " LOGGER");
         LOGGER.info("\n");
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
         LOGGER.info("Robot2 starting");
         server.start();
-        setInitState(waiting4w1pos2);
+        setInitState(waiting4w1pos2_part1);
         Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
     }
 
     //-----------------States----------------
 
-    public class Waiting4W1Pos2 extends State {
+    public class Waiting4W1Pos2_Part1 extends State {
 
         @Override
         protected void entry() {
             SendAcquire2W1Pos2();
-            robot2State = Robot2CoordinatorState.WAITING_4_W1POS2;
+            robot2State = Robot2CoordinatorState.WAITING_4_W1POS2_PART1;
             Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
         }
 
@@ -75,7 +77,7 @@ public class Robot2Coordinator extends StateMachine{
         protected void exit() { }
     }
 
-    public class SubAss2 extends State {
+    public class SubAss2_Part1 extends State {
 
         @Override
         protected void entry() {
@@ -88,7 +90,15 @@ public class Robot2Coordinator extends StateMachine{
         protected void doActivity() { }
 
         @Override
-        protected void exit() { }
+        protected void exit() {
+            SendRelease2W1Pos2();
+            try {
+                Thread.sleep(750);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
     }
 
     public class Moving2Pos2 extends State {
@@ -166,6 +176,22 @@ public class Robot2Coordinator extends StateMachine{
         protected void exit() { }
     }
 
+    public class Waiting4W1Pos2_Part2 extends State {
+
+        @Override
+        protected void entry() {
+            SendAcquire2W1Pos2();
+            robot2State = Robot2CoordinatorState.WAITING_4_W1POS2_PART2;
+            Robot2Coordinator.LOGGER.severe("R2: Assembly Coordinator State = " + robot2State +"\n");
+        }
+
+        @Override
+        protected void doActivity() { }
+
+        @Override
+        protected void exit() { }
+    }
+
     private class CompletingSubAss2 extends State {
 
         @Override
@@ -193,10 +219,10 @@ public class Robot2Coordinator extends StateMachine{
 
     //---------------------Transitions----------------
 
-    class Waiting4W1POS2_2_SubAss2 extends Transition {
+    class Waiting4W1POS2Part1_2_SubAss2 extends Transition {
 
 
-        public Waiting4W1POS2_2_SubAss2(State fromState, State toState) {
+        public Waiting4W1POS2Part1_2_SubAss2(State fromState, State toState) {
             super(fromState, toState);
         }
 
@@ -278,10 +304,10 @@ public class Robot2Coordinator extends StateMachine{
         protected void effect() { }
     }
 
-    class Moving2P1_2_completingSubAss2 extends Transition {
+    class Moving2P1_2_Waiting4W1POS2Part2 extends Transition {
 
 
-        public Moving2P1_2_completingSubAss2(State fromState, State toState) {
+        public Moving2P1_2_Waiting4W1POS2Part2(State fromState, State toState) {
             super(fromState, toState);
         }
 
@@ -289,6 +315,23 @@ public class Robot2Coordinator extends StateMachine{
         protected boolean trigger(SMReception smReception) {
             Robot2Coordinator.LOGGER.warning("R2: Event Reception = " + smReception +"\n");
         	 return (smReception instanceof Pos1Reached);
+        }
+
+        @Override
+        protected void effect() { }
+    }
+
+    class Waiting4W1POS2Part2_2_completingSubAss2 extends Transition {
+
+
+        public Waiting4W1POS2Part2_2_completingSubAss2(State fromState, State toState) {
+            super(fromState, toState);
+        }
+
+        @Override
+        protected boolean trigger(SMReception smReception) {
+            Robot2Coordinator.LOGGER.warning("R2: Event Reception = " + smReception +"\n");
+            return (smReception instanceof W1Pos2Available);
         }
 
         @Override
