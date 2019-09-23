@@ -46,9 +46,9 @@ public enum P3StateMachine implements P3StateMachineIf {
             gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
             gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
             if(p3TargSt == P3StateMachine.Sub2Completed) {
-                gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
-                gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
-                gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
+                //gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                //gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                //gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
             }
             else if(p3TargSt == P3StateMachine.SubAss3) {
                 gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
@@ -152,9 +152,12 @@ public enum P3StateMachine implements P3StateMachineIf {
                 gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
                 }
             else if(p3TargSt == P3StateMachine.Free) {
+                //gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
+                //gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
+                //gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
                 gpioconfig.W1working3_gpio.turnOffPin(gpioconfig.W1working3pin);
-                gpioconfig.W1pending3_gpio.turnOffPin(gpioconfig.W1pending3pin);
-                gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
+                gpioconfig.W1free3_gpio.turnOffPin(gpioconfig.W1free3pin);
+                gpioconfig.W1pending3_gpio.turnOnPin(gpioconfig.W1pending3pin);
                 }
             else{}
         }
