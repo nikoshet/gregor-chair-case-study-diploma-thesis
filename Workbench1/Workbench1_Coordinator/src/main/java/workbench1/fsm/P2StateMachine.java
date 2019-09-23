@@ -172,7 +172,7 @@ public enum P2StateMachine implements P2StateMachineIf {
             P2StateMachine p2TargSt = SubAss2_Part1Completed;
             if(ev == Rbt_2_W1_Event.R2AcquireP2)
             {
-                p2TargSt = SubAss2_Part1Completed;
+                p2TargSt = SubAss2_Part2;
                 W1Coordinator.LOGGER.info("Event : R2AcquireP2 \n");
                 W1Coordinator.LOGGER.info("After transition : p2CurSt == SubAss2_Part2 \n");
                 performActions(p2TargSt, ev);
