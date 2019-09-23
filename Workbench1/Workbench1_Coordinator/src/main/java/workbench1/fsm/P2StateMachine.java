@@ -147,9 +147,6 @@ public enum P2StateMachine implements P2StateMachineIf {
                 performActions(p2TargSt, ev);
                 return p2TargSt;
             }
-
-
-
         }
 
         public void performActions(P2StateMachine p2TargSt, Rbt_2_W1_Event event){
@@ -230,7 +227,7 @@ public enum P2StateMachine implements P2StateMachineIf {
 
         public P2StateMachine definePosStates(Rbt_2_W1_Event ev, boolean tmt, P1StateMachine p1CurSt, P3StateMachine p3CurSt){
             W1Coordinator.LOGGER.info("Before transition : p2CurSt == SubAss2_Part2 \n");
-            System.out.println("into subass2_Part1.........................");
+            System.out.println("into subass2_Part2.........................");
 
             P2StateMachine p2TargSt = SubAss2_Part2;
             if(ev == Rbt_2_W1_Event.R2ReleaseP2){
