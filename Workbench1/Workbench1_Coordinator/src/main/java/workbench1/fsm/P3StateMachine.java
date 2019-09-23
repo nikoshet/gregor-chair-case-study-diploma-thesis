@@ -18,7 +18,7 @@ public enum P3StateMachine implements P3StateMachineIf {
         public P3StateMachine definePosStates(Rbt_2_W1_Event ev, boolean tmt, P1StateMachine p1CurSt, P2StateMachine p2CurSt){
             W1Coordinator.LOGGER.info("Before transition : p3CurSt == Free \n ");
             P3StateMachine p3TargSt = Free;
-            if(tmt && ((p2CurSt == P2StateMachine.SubAss2_Part1)||(p2CurSt == P2StateMachine.SubAss2_Part2Completed))){
+            if(tmt && ((p2CurSt == P2StateMachine.SubAss2_Part2)||(p2CurSt == P2StateMachine.SubAss2_Part2Completed))){
                 p3TargSt = Sub2Completed;
                 W1Coordinator.LOGGER.info("After transition : p3CurSt == Sub2Completed \n ");
                 performActions(p3TargSt, ev);
