@@ -14,7 +14,7 @@ import org.eclipse.leshan.server.model.LwM2mModelProvider;
 import org.eclipse.leshan.server.registration.Registration;
 import org.springframework.stereotype.Component;
 import workbench1.ConfigurationUtils;
-import workbench1.fsm.W1_App;
+import workbench1.fsm.W1_Initializer;
 import workbench1.lwm2m.ports.Robot1Port;
 import workbench1.lwm2m.ports.Robot2Port;
 import workbench1.lwm2m.ports.Robot3Port;
@@ -31,7 +31,7 @@ public class W1_LwM2mServer {
 	private static int securelocalPort;
 	private static int localPort;
 	private static LwM2mModelProvider modelProvider;
-	private static W1_App w1_App;
+	private static W1_Initializer w1_Initializer;
 	public static Robot1Port robot1port;
 	public static Robot2Port robot2port;
 	public static Robot3Port robot3port;
@@ -53,17 +53,17 @@ public class W1_LwM2mServer {
 		setSecurelocalAddress(ConfigurationUtils.W1_HOSTNAME);
 		setSecurelocalPort(ConfigurationUtils.W1_COAPS_PORT);
 		initServer();
-		setW1_App(new W1_App(W1_LwM2mServer.lwServer, null));
-		getW1_App().start();
+		setW1_Initializer(new W1_Initializer(W1_LwM2mServer.lwServer, null));
+		getW1_Initializer().start();
 		//addRegistationService();
 	}
 	
-	public static W1_App getW1_App() {
-		return w1_App;
+	public static W1_Initializer getW1_Initializer() {
+		return w1_Initializer;
 	}
 
-	public static void setW1_App(W1_App w1_App) {
-		W1_LwM2mServer.w1_App = w1_App;
+	public static void setW1_Initializer(W1_Initializer w1_Initializer) {
+		W1_LwM2mServer.w1_Initializer = w1_Initializer;
 	}
 
 	private void initServer() {
