@@ -18,7 +18,7 @@ public class RegistrationManager implements RegistrationListener{
 
 	private static final Logger LOG = LoggerFactory.getLogger(RegistrationManager.class);
 
-	  public static Map<String, Registration> registrations = new HashMap<>();
+	  private static Map<String, Registration> registrations = new HashMap<>();
 	  //public static ArrayList<String > registrations = new ArrayList();
 	  public LeshanServer server;
 	  

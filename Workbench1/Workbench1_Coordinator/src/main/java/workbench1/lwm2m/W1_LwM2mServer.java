@@ -66,7 +66,7 @@ public class W1_LwM2mServer {
 		W1_LwM2mServer.w1_App = w1_App;
 	}
 
-	public void initServer() {
+	private void initServer() {
 		  	serverBuilder = new LeshanServerBuilder();
 		  	serverBuilder.setLocalAddress(localAddress, localPort);
 		  	serverBuilder.setLocalSecureAddress(securelocalAddress, securelocalPort);

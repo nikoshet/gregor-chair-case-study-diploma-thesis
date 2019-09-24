@@ -2,6 +2,7 @@ package workbench1.fsm;
 
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 
+
 import workbench1.lwm2m.ObservationManager;
 import workbench1.lwm2m.RegistrationManager;
 import workbench1.lwm2m.W1_LwM2mServer;
@@ -9,7 +10,7 @@ import workbench1.lwm2m.W1_LwM2mServer;
 public class W1_App extends Thread{
 	
 	public static LeshanServer server;
-	public static W1Coordinator w1controller;
+	public static W1Coordinator w1cooordinator;
 	public static RegistrationManager registrationManager;
 	public static String[] args;
 	 
@@ -23,7 +24,7 @@ public class W1_App extends Thread{
 	    public void run() {
 
 
-		 w1controller = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
+		 w1cooordinator = new W1Coordinator(P1StateMachine.Free, P2StateMachine.Free, P3StateMachine.Free);
 		 new ObservationManager(W1_LwM2mServer.lwServer, W1Coordinator.eventQueue);
 
 		 try {
@@ -36,6 +37,6 @@ public class W1_App extends Thread{
 		try { Thread.sleep(2000); }
 		catch (InterruptedException e) { e.printStackTrace(); }
 
-		w1controller.start();
+		w1cooordinator.start();
 	    }
 }
