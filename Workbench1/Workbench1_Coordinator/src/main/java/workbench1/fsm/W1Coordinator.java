@@ -22,6 +22,7 @@ public class W1Coordinator extends Thread {
     int[][] pos = new int[][]{ // shows the posLfc that needs to be updated
             {1, 2, 3}, {2, 1, 3}, {3, 1, 2}
     };
+    public static int rotateTimes = 0;
     private Rbt_2_W1_Event nextEvent;
     private P1StateMachine p1CurSt, p1TargSt;
     private P2StateMachine p2CurSt, p2TargSt;
@@ -72,6 +73,7 @@ public class W1Coordinator extends Thread {
                         switch (value.toString()){
                             case "ROTATE_FINISHED":
                                 System.out.println("\n \n ROTATE FINISHED \n \n ");
+                                rotateTimes+=1;
                                 break outerloop;
                         }
                     } catch (InterruptedException e) {
