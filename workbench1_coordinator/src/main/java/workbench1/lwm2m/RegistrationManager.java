@@ -12,13 +12,13 @@ import org.eclipse.leshan.server.registration.RegistrationListener;
 import org.eclipse.leshan.server.registration.RegistrationUpdate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import workbench1.fsm.W1_App;
+import workbench1.fsm.W1_Initializer;
 
 public class RegistrationManager implements RegistrationListener{
 
 	private static final Logger LOG = LoggerFactory.getLogger(RegistrationManager.class);
 
-	  public static Map<String, Registration> registrations = new HashMap<>();
+	  private static Map<String, Registration> registrations = new HashMap<>();
 	  //public static ArrayList<String > registrations = new ArrayList();
 	  public LeshanServer server;
 	  
@@ -51,7 +51,7 @@ public class RegistrationManager implements RegistrationListener{
 			if(reg.getEndpoint().equals("Robot1")) {
 				ObserveRequest observe1 = new ObserveRequest("/20000/0/16");
 				try {
-					LwM2mResponse response1= W1_App.server.send(reg, observe1);
+					LwM2mResponse response1= W1_Initializer.server.send(reg, observe1);
 					System.out.println("device response: " + response1);
 				}
 				catch (InterruptedException e) { e.printStackTrace(); }
@@ -60,7 +60,7 @@ public class RegistrationManager implements RegistrationListener{
 				ObserveRequest observe0 = new ObserveRequest("/20001/0/16");
 				System.out.println(observe0.getPath());
 				try {
-					LwM2mResponse response0= W1_App.server.send(reg, observe0);
+					LwM2mResponse response0= W1_Initializer.server.send(reg, observe0);
 					System.out.println("device response: " + response0);
 				}
 				catch (InterruptedException e) { e.printStackTrace(); }
@@ -69,7 +69,7 @@ public class RegistrationManager implements RegistrationListener{
 				ObserveRequest observe0 = new ObserveRequest("/20002/0/16");
 				System.out.println(observe0.getPath());
 				try {
-					LwM2mResponse response0= W1_App.server.send(reg, observe0);
+					LwM2mResponse response0= W1_Initializer.server.send(reg, observe0);
 					System.out.println("device response: " + response0);
 				}
 				catch (InterruptedException e) {e.printStackTrace(); }

@@ -2,6 +2,7 @@ package workbench1.fsm;
 import org.json.JSONObject;
 import workbench1.ConfigurationUtils;
 import workbench1.events.Rbt_2_W1_Event;
+import workbench1.gpio.GpioConfig;
 import workbench1.unixsocket.UnixClient;
 import workbench1.unixsocket.UnixServer;
 
@@ -21,19 +22,20 @@ public class W1Coordinator extends Thread {
     int[][] pos = new int[][]{ // shows the posLfc that needs to be updated
             {1, 2, 3}, {2, 1, 3}, {3, 1, 2}
     };
+    public static int rotateTimes = 0;
     private Rbt_2_W1_Event nextEvent;
     private P1StateMachine p1CurSt, p1TargSt;
     private P2StateMachine p2CurSt, p2TargSt;
     private P3StateMachine p3CurSt, p3TargSt;
     private boolean tmt = false;
     static Logger LOGGER;
-
+    public static GpioConfig gpioconfig = new GpioConfig();
     public static BlockingQueue<String> ctrlQueue = new LinkedBlockingDeque<>();
     UnixServer unixServer = new UnixServer();
     UnixClient unixclient = new UnixClient();
     W1Coordinator(P1StateMachine p1St, P2StateMachine p2St, P3StateMachine p3St){
         /*Create Logger file and make configurations */
-    	System.out.println("controller started");
+    	System.out.println("Assembly Coordinator started");
         LOGGER = Logger.getLogger(W1Coordinator.class.getName()+ "LOGGER");
 
         LOGGER.setLevel(Level.ALL); // Request that every detail gets logged.
@@ -42,6 +44,9 @@ public class W1Coordinator extends Thread {
         p1CurSt = p1St;
         p2CurSt = p2St;
         p3CurSt = p3St;
+        gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
+        gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
+        gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
     }
 
     /*** run method ***/
@@ -68,12 +73,12 @@ public class W1Coordinator extends Thread {
                         switch (value.toString()){
                             case "ROTATE_FINISHED":
                                 System.out.println("\n \n ROTATE FINISHED \n \n ");
+                                rotateTimes+=1;
                                 break outerloop;
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
                 }
 
                 /*updatePosLfcs*/
@@ -106,7 +111,7 @@ public class W1Coordinator extends Thread {
         if(pos[nextEvent.eventSource][0] == 1){
 
             p1TargSt = p1CurSt.definePosStates(nextEvent, tmt, p2CurSt, p3CurSt);
-            tmt = p1CurSt.getTMTStatus(p2CurSt, p3CurSt); //edw tou allazw to tmt value!!!
+            tmt = p1CurSt.getTMTStatus(p2CurSt, p3CurSt);
 
             if((nextEvent == Rbt_2_W1_Event.R1AcquireP1) && (p1CurSt == P1StateMachine.SubAss1Completed)){
                 defEvQueue.add(Rbt_2_W1_Event.R1AcquireP1);//edw prosthetw defEv an uparxei
@@ -116,16 +121,14 @@ public class W1Coordinator extends Thread {
             if(!tmt){
                 p1CurSt = p1TargSt;
             }
-            else{
-                //edw na ginei to rotate
-            }
+            else{}
         }
         else if(pos[nextEvent.eventSource][0]== 2){
             p2TargSt = p2CurSt.definePosStates(nextEvent, tmt, p1CurSt, p3CurSt);
             System.out.println("------------------- " +p2TargSt + p2CurSt);
             tmt = p2CurSt.getTMTStatus(p1CurSt, p3CurSt); //edw tou allazw to tmt value!!!
 
-            if((nextEvent == Rbt_2_W1_Event.R2AcquireP2) && ((p2CurSt == P2StateMachine.SubAss2Completed) || (p2CurSt == P2StateMachine.Free))){
+            if((nextEvent == Rbt_2_W1_Event.R2AcquireP2) && ((p2CurSt == P2StateMachine.SubAss2_Part2Completed) || (p2CurSt == P2StateMachine.Free))){
                 defEvQueue.add(Rbt_2_W1_Event.R2AcquireP2);//edw prosthetw defEv an uparxei
                 System.out.println("DeferredEvent4P2: R2AcquireP2");
             }
@@ -180,7 +183,6 @@ public class W1Coordinator extends Thread {
             for(int i = 0; i < size; i++){
                 //Retrieve event from defEvQueue
                 nextEvent = defEvQueue.poll();
-
                 /*updatePosLfc*/
                 updatePosLfc();
             }

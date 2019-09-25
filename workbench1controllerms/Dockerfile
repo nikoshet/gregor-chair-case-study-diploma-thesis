@@ -1,18 +1,28 @@
-#FROM frolvlad/alpine-python3:latest
-#FROM arm32v7/python:2.7.13-jessie
-FROM arm32v6/python:3.5-alpine
-LABEL MAINTAINER GOCAS
+# Alpine base image v.3.10 that contains python 3.5.7
+FROM python:3.5.7-alpine3.10
 
+LABEL maintainer="GOCAS"
+
+# Environment Variables
 ENV DEVICE                   RPI
 #ENV DEVICE                   LAPTOP
 
+# Copy files
 COPY . /Workbench1ControllerMs
+# Set working directory
 WORKDIR /Workbench1ControllerMs
 
-# RUN pip install -r requirements.txt
-RUN apk add --no-cache gcc musl-dev &&\
-pip install --no-cache-dir rpi.gpio
-#pip install RPi.GPIO
-ENTRYPOINT ["sh","-c","python3 main.py ${DEVICE}"]
+# Remove cache,tmp files and update
+RUN rm -rf /var/cache/apk/* && \
+    rm -rf /tmp/* && \
+    apk update && \
+# Install necessary libs for rpi.gpio
+    apk add --no-cache gcc musl-dev && \
+# Install rpi.gpio  to have access to gpio pins from docker
+    pip install --no-cache-dir rpi.gpio && \
+# Remove libs
+    apk del gcc musl-dev
 
+# Final command
+ENTRYPOINT ["sh","-c","python3 main.py ${DEVICE}"]
 

@@ -16,7 +16,7 @@ public class UnixServer extends Thread{
 
     public void startServer(){
 
-            final File socketFile = ConfigurationUtils.Robot1CoordinatorSocketFile;
+        final File socketFile = ConfigurationUtils.Robot1CoordinatorSocketFile;
         try (AFUNIXServerSocket server = AFUNIXServerSocket.newInstance()) {
             server.bind(new AFUNIXSocketAddress(socketFile));
             System.out.println("server: " + server);
@@ -39,22 +39,22 @@ public class UnixServer extends Thread{
                                     Robot1Coordinator.LOGGER.info("AT1 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAss1 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAss1Completed());
-				                    break;
-                                    //break outerloop;
-                                case "AT2_FINISHED":
-                                    Robot1Coordinator.LOGGER.info("AT2 finished.");
+                                    break;
+                                //break outerloop;
+                                case "AT4_FINISHED":
+                                    Robot1Coordinator.LOGGER.info("AT4 finished.");
                                     Robot1Coordinator.LOGGER.warning("SubAssW2 completed.."+"\n");
                                     SignalDetector.msgQ.add(new SubAssW2Completed());
                                     break; //outerloop;
                                 case "POS1_REACHED":
                                     Robot1Coordinator.LOGGER.info("POS1_REACHED");
                                     SignalDetector.msgQ.add(new Pos1Reached());
-				                    break;
-				                case "POS2_REACHED":
+                                    break;
+                                case "POS2_REACHED":
                                     Robot1Coordinator.LOGGER.info("POS2_REACHED.");
                                     SignalDetector.msgQ.add(new Pos2Reached());
                                     break;
-                                    //break outerloop;
+                                //break outerloop;
                             }
                         }
                     }
