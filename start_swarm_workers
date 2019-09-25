@@ -4,6 +4,7 @@ hosts=(
 pi@192.168.10.123 #Robot1
 pi@192.168.10.124 #Robot2
 pi@192.168.10.121 #Robot3
+pi@192.168.10.122 #Workbench1
 pi@192.168.10.125 #Workbench2
 )
 
