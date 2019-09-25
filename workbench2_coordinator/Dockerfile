@@ -8,7 +8,8 @@ ENV JAVA_HOME                /usr/lib/jvm/java-1.8.0-openjdk-armhf
 #ENV JAVA_HOME                /usr/lib/jvm/java-8-openjdk-amd64/
 ENV LANG                     en_US.UTF-8
 ENV TZ                       Europe/Athens
-ENV W2_COAP_SERVER           192.168.5.50
+ENV W2_COAP_SERVER           192.1.1.20
+
 # Copy files
 COPY target/Workbench2_Coordinator-0.0.1-SNAPSHOT.jar /Workbench2Coordinator/Workbench2_Coordinator-0.0.1-SNAPSHOT.jar
 # Set working directory
