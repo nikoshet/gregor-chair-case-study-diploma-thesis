@@ -2,7 +2,7 @@ version: "3"
 
 networks:
   gregor-chair-network:
-#    external: true
+    external: true
 #    driver: overlay
 #    ipam:
 #      driver: default
@@ -70,9 +70,9 @@ services:
       resources:
         limits:
           memory: 500M
-#    volumes:
-#      - /tmp:/tmp
-#      - /dev/gpiomem:/dev/gpiomem
+    volumes:
+      - /tmp:/tmp
+      - /dev/gpiomem:/dev/gpiomem
     links:
       - w2controller
     privileged: true
