@@ -2,7 +2,7 @@ package workbench1.fsm;
 import org.json.JSONObject;
 import workbench1.ConfigurationUtils;
 import workbench1.events.Rbt_2_W1_Event;
-import workbench1.gpio.GpioConfig;
+//import workbench1.gpio.GpioConfig;
 import workbench1.unixsocket.UnixClient;
 import workbench1.unixsocket.UnixServer;
 
@@ -29,7 +29,7 @@ public class W1Coordinator extends Thread {
     private P3StateMachine p3CurSt, p3TargSt;
     private boolean tmt = false;
     static Logger LOGGER;
-    public static GpioConfig gpioconfig = new GpioConfig();
+    //public static GpioConfig gpioconfig = new GpioConfig();
     public static BlockingQueue<String> ctrlQueue = new LinkedBlockingDeque<>();
     UnixServer unixServer = new UnixServer();
     UnixClient unixclient = new UnixClient();
@@ -44,9 +44,9 @@ public class W1Coordinator extends Thread {
         p1CurSt = p1St;
         p2CurSt = p2St;
         p3CurSt = p3St;
-        gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
+/*        gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
         gpioconfig.W1free2_gpio.turnOnPin(gpioconfig.W1free2pin);
-        gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);
+        gpioconfig.W1free3_gpio.turnOnPin(gpioconfig.W1free3pin);*/
     }
 
     /*** run method ***/

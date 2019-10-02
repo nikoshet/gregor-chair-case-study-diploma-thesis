@@ -44,12 +44,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.pi4j</groupId>
-			<artifactId>pi4j-core</artifactId>
-			<version>1.2-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
         </dependency>

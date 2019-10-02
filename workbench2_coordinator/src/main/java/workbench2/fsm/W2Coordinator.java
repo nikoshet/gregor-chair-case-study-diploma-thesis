@@ -1,7 +1,7 @@
 package workbench2.fsm;
 
 import uml4iot.GenericStateMachine.core.*;
-import workbench2.gpio.GpioConfig;
+//import workbench2.gpio.GpioConfig;
 import workbench2.lwm2m.W2_LwM2mServer;
 import java.sql.Timestamp;
 import java.util.concurrent.BlockingQueue;
@@ -18,7 +18,7 @@ public class W2Coordinator extends StateMachine{
     public static W2CoordinatorState w2State;
     public static Logger LOGGER;
 	static State free,subassR1_W2,subassR1_W2_compl, subassR2_W2;
-    public static GpioConfig gpioconfig = new GpioConfig();
+    //public static GpioConfig gpioconfig = new GpioConfig();
 
     public W2Coordinator(){
         super(null);
@@ -50,7 +50,7 @@ public class W2Coordinator extends StateMachine{
 
     private void initialize(){
         setInitState(free);
-        GpioConfig.W2free_gpio.turnOnPin(GpioConfig.W2freepin);
+        //GpioConfig.W2free_gpio.turnOnPin(GpioConfig.W2freepin);
         LOGGER.severe("W2: Assembly Coordinator State = " + w2State +"\n");
     }
 
@@ -65,9 +65,9 @@ public class W2Coordinator extends StateMachine{
         @Override
         protected void entry() {
             w2State = W2CoordinatorState.FREE;
-            GpioConfig.W2free_gpio.turnOnPin(GpioConfig.W2freepin);
+           /* GpioConfig.W2free_gpio.turnOnPin(GpioConfig.W2freepin);
             GpioConfig.W2assembling_gpio.turnOffPin(GpioConfig.W2assemblingpin);
-            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);
+            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);*/
             W2Coordinator.LOGGER.severe("W2: Assembly Coordinator State = " + w2State +"\n");
         }
 
@@ -82,10 +82,10 @@ public class W2Coordinator extends StateMachine{
 
         @Override
         protected void entry() {
-            w2State = W2CoordinatorState.SUBASSR1_W2;
+            w2State = W2CoordinatorState.SUBASSR1_W2;/*
             GpioConfig.W2free_gpio.turnOffPin(GpioConfig.W2freepin);
             GpioConfig.W2assembling_gpio.turnOnPin(GpioConfig.W2assemblingpin);
-            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);
+            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);*/
             W2Coordinator.LOGGER.severe("W2: Assembly Coordinator State = " + w2State +"\n");
             sendAvailableToR1();
         }
@@ -101,10 +101,10 @@ public class W2Coordinator extends StateMachine{
 
         @Override
         protected void entry() {
-            w2State = W2CoordinatorState.SUBASSR1_W2_COMPLETED;
+            w2State = W2CoordinatorState.SUBASSR1_W2_COMPLETED;/*
             GpioConfig.W2free_gpio.turnOffPin(GpioConfig.W2freepin);
             GpioConfig.W2assembling_gpio.turnOffPin(GpioConfig.W2assemblingpin);
-            GpioConfig.W2penfing_gpio.turnOnPin(GpioConfig.W2pendingpin);
+            GpioConfig.W2penfing_gpio.turnOnPin(GpioConfig.W2pendingpin);*/
             W2Coordinator.LOGGER.severe("W2: Assembly Coordinator State = " + w2State +"\n");
         }
 
@@ -118,10 +118,10 @@ public class W2Coordinator extends StateMachine{
     public class SubAss_R2_W2 extends State {
 
         @Override
-        protected void entry() {
+        protected void entry() {/*
             GpioConfig.W2free_gpio.turnOffPin(GpioConfig.W2freepin);
             GpioConfig.W2assembling_gpio.turnOnPin(GpioConfig.W2assemblingpin);
-            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);
+            GpioConfig.W2penfing_gpio.turnOffPin(GpioConfig.W2pendingpin);*/
             w2State = W2CoordinatorState.SUBASSR2_W2;
             W2Coordinator.LOGGER.severe("W2: Assembly Coordinator State = " + w2State +"\n");
             sendAvailableToR2();

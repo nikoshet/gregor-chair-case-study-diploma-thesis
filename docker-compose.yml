@@ -2,12 +2,12 @@ version: "3"
 
 networks:
   gregor-chair-network:
-    external: true
-    driver: overlay
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.1.1.0/24
+#    external: true
+#    driver: overlay
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 192.1.1.0/24
 
 
 services:
@@ -70,9 +70,9 @@ services:
       resources:
         limits:
           memory: 500M
-    volumes:
-      - /tmp:/tmp
-      - /dev/gpiomem:/dev/gpiomem
+#    volumes:
+#      - /tmp:/tmp
+#      - /dev/gpiomem:/dev/gpiomem
     links:
       - w2controller
     privileged: true
@@ -224,6 +224,7 @@ services:
       - robot2controller
     environment:
       - PYTHONUNBUFFERED=1
+  workertask5:
     image: 192.168.10.123:5000/workertask5:v1
     container_name: workertask5
     deploy:

@@ -10,7 +10,7 @@ import org.eclipse.leshan.server.registration.Registration;
 import workbench1.events.Rbt_2_W1_Event;
 import workbench1.lwm2m.W1_LwM2mServer;
 
-import static workbench1.fsm.W1Coordinator.gpioconfig;
+//import static workbench1.fsm.W1Coordinator.gpioconfig;
 
 public enum P1StateMachine implements P1StateMachineIf {
     Free{
@@ -54,7 +54,7 @@ public enum P1StateMachine implements P1StateMachineIf {
     				System.out.println("P1Available sended");
 
                 /****************** show P1 state via LEDs *********************/
-                if(targSt == P1StateMachine.Free)
+            /*    if(targSt == P1StateMachine.Free)
                 {
                     gpioconfig.W1working1_gpio.turnOffPin(gpioconfig.W1working1pin);
                     gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
@@ -66,7 +66,7 @@ public enum P1StateMachine implements P1StateMachineIf {
                     gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
                     gpioconfig.W1working1_gpio.turnOnPin(gpioconfig.W1working1pin);
                 }
-                else{}
+                else{}*/
     	    }
         }
 
@@ -104,7 +104,7 @@ public enum P1StateMachine implements P1StateMachineIf {
 
         public void performActions(P1StateMachine targSt, Rbt_2_W1_Event event){
             /****************** show P1 state via LEDs *********************/
-            gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
+/*            gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
             gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
             gpioconfig.W1working1_gpio.turnOnPin(gpioconfig.W1working1pin);
             if(targSt == P1StateMachine.Free) {
@@ -117,7 +117,7 @@ public enum P1StateMachine implements P1StateMachineIf {
                 gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
                 gpioconfig.W1completed1_gpio.turnOnPin(gpioconfig.W1completed1pin);
             }
-            else{}
+            else{}*/
         }
 
         public boolean getTMTStatus(P2StateMachine p2CurSt, P3StateMachine p3CurSt){
@@ -153,7 +153,7 @@ public enum P1StateMachine implements P1StateMachineIf {
 
         public void performActions(P1StateMachine targSt, Rbt_2_W1_Event event) {
             /****************** show P1 state via LEDs *********************/
-            gpioconfig.W1working1_gpio.turnOffPin(gpioconfig.W1working1pin);
+      /*      gpioconfig.W1working1_gpio.turnOffPin(gpioconfig.W1working1pin);
             gpioconfig.W1free1_gpio.turnOffPin(gpioconfig.W1free1pin);
             gpioconfig.W1completed1_gpio.turnOnPin(gpioconfig.W1completed1pin);
             if (targSt == P1StateMachine.Free) {
@@ -161,7 +161,7 @@ public enum P1StateMachine implements P1StateMachineIf {
                 gpioconfig.W1completed1_gpio.turnOffPin(gpioconfig.W1completed1pin);
                 gpioconfig.W1free1_gpio.turnOnPin(gpioconfig.W1free1pin);
             }
-            else {}
+            else {}*/
         }
 
         public boolean getTMTStatus(P2StateMachine p2CurSt, P3StateMachine p3CurSt){

@@ -14,7 +14,6 @@ workbench1/fsm/P3StateMachineIf.class
 workbench1/lwm2m/leshanWrapper/LeshanAttributeIf.class
 workbench1/fsm/P2StateMachine.class
 workbench1/events/Rbt_2_W1_Event.class
-workbench1/gpio/MyGpioController.class
 workbench1/lwm2m/ports/Robot3Port.class
 workbench1/fsm/P1StateMachine$3.class
 workbench1/fsm/P1StateMachine.class
@@ -46,5 +45,4 @@ workbench1/fsm/P3StateMachine$3.class
 workbench1/lwm2m/W1_LwM2mServer$1.class
 workbench1/lwm2m/ports/Robot3Port$Events.class
 workbench1/lwm2m/ObservationData.class
-workbench1/gpio/GpioConfig.class
 workbench1/lwm2m/W1_LwM2mServer.class
