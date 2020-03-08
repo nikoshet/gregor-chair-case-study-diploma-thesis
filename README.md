@@ -18,4 +18,7 @@ Thesis: "Design and Development of Cyber-Physical Systems with use of Internet o
 ---
 ### Gregor Office Chair Assembly System Case Study
 
+--- 
+### Licence
+Copyright © 2019 Nick Nikitas, Achilleas Triantafyllou
 
