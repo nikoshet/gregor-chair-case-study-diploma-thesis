@@ -12,13 +12,14 @@ The goal of this thesis project is the design and development of a Cyber-Physica
 Technologies/Languages/Tools:
 Java, Python, Docker (Compose-Swarm), Prometheus, Grafana, LwM2M Protocol, UML, Unix Sockets
 
+---
 ## Contributors
-
 [Nick Nikitas](https://github.com/nikoshet)
 Thesis: "Use of Internet of Things technologies and Containers on Cyber-Physical Systems"
 
 [Achilleas Triantafyllou](https://github.com/axilleastr)
 Thesis: "Design and Development of Cyber-Physical Systems with use of Internet of Things and Microservices"
+
 --- 
 ### Licence
 Copyright © 2019 Nick Nikitas, Achilleas Triantafyllou
