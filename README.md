@@ -8,7 +8,7 @@ The implemented demo of the case study can be found [here](https://www.youtube.c
 
 ---
 ### Case Study
-The goal of this thesis project is the design and development of a Cyber-Physical System using IoT technologies & Containers. Our case study is the GREGOR Office Chair assembly system, which consists of three (3) robotic arms and two (2) smart workbences , simulating in this way the operation of an assembly system line in the world of IoT.
+The goal of this thesis project is the design and development of a Cyber-Physical System using IoT technologies & Containers. Our case study is the GREGOR Office Chair assembly system, which consists of three (3) robotic arms and two (2) smart workbenches, simulating in this way the operation of an assembly system line in the world of IoT.
 Technologies/Languages/Tools:
 
 ***Java, Python, Docker (Compose-Swarm), Prometheus, Grafana, LwM2M Protocol, UML, Unix Sockets***
